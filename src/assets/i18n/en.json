@@ -32,7 +32,12 @@
   },
   "login": {
     "title": "Login",
-    "spaceTitle": "Log In"
+    "spaceTitle": "Log In",
+    "placeholder": {
+      "email": "Email",
+      "password": "Password"
+    },
+    "button": "Log In"
   },
   "logout": {
     "title": "Logout",
