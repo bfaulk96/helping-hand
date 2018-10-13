@@ -13,15 +13,15 @@ export class HomePage {
   public language: string;
 
   constructor(private platform: Platform,
-              public translate: TranslateService) {
+              private translate: TranslateService) {
   }
 
   public ionViewDidLoad() : void {
-      this.initialiseTranslation();
+    this.initialiseTranslation();
   }
 
   public changeLanguage() : void {
-      this.translateLanguage();
+    this.translateLanguage();
   }
 
   private translateLanguage() : void {
@@ -31,8 +31,12 @@ export class HomePage {
 
   private initialiseTranslation() : void {
     setTimeout(() => {
-        this.appTitle = this.translate.instant("app.title");
-        this.pageTitle = this.translate.instant("home.title");
+      this.appTitle = this.translate.instant("app.title");
+      this.pageTitle = this.translate.instant("home.title");
     }, 250);
+  }
+
+  checkCurrentLang(language: string) {
+    return language === this.translate.currentLang;
   }
 }
