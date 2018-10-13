@@ -1,10 +1,25 @@
 
-.login-col {
-}
 
 ion-button {
   --width: 100%;
   --border-radius: 2px;
   min-width: 100% !important;
   width: 100% !important;
+}
+
+.login-input {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.submit-row {
+  margin-top: 2em;
+}
+
+.hand-img {
+  max-width: 100px;
+  margin: 2em auto;
 }

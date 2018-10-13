@@ -21,13 +21,13 @@
                         <ion-label>User Info</ion-label>
                     </ion-list-header>
                     <ion-item>
-                        <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="email" required clearInput></ion-input>
+                        <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="email" required clearInput [clearOnEdit]="false"></ion-input>
                     </ion-item>
                     <ion-item>
-                        <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password" required clearInput></ion-input>
+                        <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password" required clearInput [clearOnEdit]="false"></ion-input>
                     </ion-item>
                     <ion-item>
-                        <ion-input type="password" placeholder="Confirm Password" name="confirm-password" [(ngModel)]="confirmPassword" required clearInput></ion-input>
+                        <ion-input type="password" placeholder="Confirm Password" name="confirm-password" [(ngModel)]="confirmPassword" required clearInput [clearOnEdit]="false"></ion-input>
                     </ion-item>
                 </ion-list>
             </ion-col>
