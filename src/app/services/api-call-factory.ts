@@ -24,7 +24,7 @@ export class ApiCallFactory {
     }
 
     getDefaultForRegister(data: any): ApiCall {
-        this.apiCall.url = this.apiHelper.getServiceEndPoint() + Constants.API.RESOURCES.REGISTER;
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + "/" + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.REGISTER;
         this.apiCall.method = Constants.API.VERBS.POST;
         this.apiCall.data = data;
         this.apiCall.params = null;
@@ -32,7 +32,7 @@ export class ApiCallFactory {
     }
 
     getDefaultForLogin(data: any): ApiCall {
-        this.apiCall.url = this.apiHelper.getServiceEndPoint() + 'users/login';
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + '/users/login';
         this.apiCall.method = Constants.API.VERBS.POST;
         this.apiCall.data = data;
         this.apiCall.params = null;
