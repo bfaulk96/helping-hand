@@ -1,0 +1,2 @@
+# helping-hand
+GlobalHackVII
