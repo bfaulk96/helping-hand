@@ -2,6 +2,14 @@
   "app": {
     "title": "Mano Amiga"
   },
+  "setup": {
+    "next": "Siguiente",
+    "welcome": "Bienvenido",
+    "choice": "Eligue tu idioma"
+  },
+  "settings":{
+    "title": "Ajustes"
+  },
   "menu": {
     "title": "Menú"
   },

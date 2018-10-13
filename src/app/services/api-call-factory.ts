@@ -23,8 +23,23 @@ export class ApiCallFactory {
         return this.apiCall;
     }
 
+    getDefaultForRegister(data: any): ApiCall {
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + "/" + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.REGISTER;
+        this.apiCall.method = Constants.API.VERBS.POST;
+        this.apiCall.data = data;
+        this.apiCall.params = null;
+        return this.apiCall;
+    }
+
+    getDefaultForVerify(data: any): ApiCall {
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + "/" + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.VERIFY;
+        this.apiCall.method = Constants.API.VERBS.GET;
+        this.apiCall.params = null;
+        return this.apiCall;
+    }
+
     getDefaultForLogin(data: any): ApiCall {
-        this.apiCall.url = this.apiHelper.getServiceEndPoint() + 'users/login';
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + '/users/login';
         this.apiCall.method = Constants.API.VERBS.POST;
         this.apiCall.data = data;
         this.apiCall.params = null;
