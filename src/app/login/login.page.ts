@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../services/auth-service';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {AppComponent} from '../app.component';
 
 @Component({
@@ -15,14 +15,15 @@ export class LoginPage implements OnInit {
   };
   loading: boolean = false;
 
-  authSvc: AuthService;
-
-  constructor(
-    private appComp: AppComponent,
-    private router: Router,
-    authSvc: AuthService,
-  ) {
-    this.authSvc = authSvc;
+  constructor(private appComp: AppComponent,
+              private router: Router,
+              private authSvc: AuthService,
+              private route: ActivatedRoute) {
+    console.log(this.route.snapshot.data);
+    if (this.route.snapshot.data && this.route.snapshot.data.logout) {
+      this.appComp.isLoggedIn = false;
+      localStorage.removeItem("token");
+    }
   }
 
   ngOnInit() {
@@ -32,7 +33,8 @@ export class LoginPage implements OnInit {
     console.log(this.currentLoginCredentials);
     this.loading = true;
     this.authSvc.login(this.currentLoginCredentials.email, this.currentLoginCredentials.password).subscribe(
-      data => {
+        (data: any) => {
+        console.log(data);
         this.router.navigate(['/home']);
         this.appComp.isLoggedIn = true;
         this.loading = false;
@@ -40,6 +42,7 @@ export class LoginPage implements OnInit {
       error => {
         console.log('stuff happens');
         this.loading = false;
+        localStorage.removeItem("token");
       }, () => {
         this.loading = false;
       }

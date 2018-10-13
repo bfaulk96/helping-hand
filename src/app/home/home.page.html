@@ -7,7 +7,7 @@
       {{ 'app.title' | translate }}
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button [routerDirection]="'root'" class="{{ appComp.isLoggedIn ? 'logout' : 'login' }}" [routerLink]="appComp.isLoggedIn ? ['/logout'] : ['/login']"><ion-icon name="{{ appComp.isLoggedIn ? 'log-out' : 'log-in'}}"></ion-icon></ion-button>
+      <ion-button [routerDirection]="'root'" [ngClass]="isLoggedIn ? 'logout' : 'login'" [routerLink]="isLoggedIn ? ['/logout'] : ['/login']"><ion-icon [name]="isLoggedIn ? 'log-out' : 'log-in'"></ion-icon></ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

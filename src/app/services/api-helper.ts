@@ -33,10 +33,12 @@ export class ApiHelper {
     }
 
     public getAccessToken(): string {
-        return 'todo';
+        this.accessToken = this.accessToken || localStorage.getItem("token");
+        return this.accessToken;
     }
 
     public setAccessToken(token: string): void {
+        localStorage.setItem("token", token);
         this.accessToken = token;
     }
 
