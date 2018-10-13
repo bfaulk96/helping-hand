@@ -1,58 +1,64 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 
-import {Platform} from '@ionic/angular';
-import {SplashScreen} from '@ionic-native/splash-screen/ngx';
-import {StatusBar} from '@ionic-native/status-bar/ngx';
-import { TranslateService } from '@ngx-translate/core';
+import {Platform} from "@ionic/angular";
+import {SplashScreen} from "@ionic-native/splash-screen/ngx";
+import {StatusBar} from "@ionic-native/status-bar/ngx";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
-    selector: 'app-root',
-    templateUrl: 'app.component.html'
+    selector: "app-root",
+    templateUrl: "app.component.html"
 })
 export class AppComponent {
     public isLoggedIn: boolean = false;
     public appPages = [
         {
-            title: 'home.title',
-            viewType: 'both',
-            url: '/home',
-            icon: 'home'
+            title: "home.title",
+            viewType: "both",
+            url: "/home",
+            icon: "home"
         },
         {
-            title: 'about.title',
-            viewType: 'both',
-            url: '/about',
-            icon: 'information-circle-outline'
+            title: "about.title",
+            viewType: "both",
+            url: "/about",
+            icon: "information-circle-outline"
         },
         {
-            title: 'resources.title',
-            viewType: 'both',
-            url: '/resources',
-            icon: 'link'
+            title: "resources.title",
+            viewType: "both",
+            url: "/resources",
+            icon: "link"
         },
         {
-            title: 'contact.title',
-            viewType: 'both',
-            url: '/contact',
-            icon: 'phone-portrait'
+            title: "contact.title",
+            viewType: "both",
+            url: "/contact",
+            icon: "phone-portrait"
         },
         {
-            title: 'register.title',
-            viewType: 'loggedOut',
-            url: '/register',
-            icon: 'create'
+            title: "register.title",
+            viewType: "loggedOut",
+            url: "/register",
+            icon: "create"
         },
         {
-            title: 'login.title',
-            viewType: 'loggedOut',
-            url: '/login',
-            icon: 'log-in'
+            title: "login.title",
+            viewType: "loggedOut",
+            url: "/login",
+            icon: "log-in"
         },
         {
-            title: 'logout.title',
-            viewType: 'loggedIn',
-            url: '/logout',
-            icon: 'log-out'
+            title: "logout.title",
+            viewType: "loggedIn",
+            url: "/logout",
+            icon: "log-out"
+        },
+        {
+            title: "vision.title",
+            viewType: "both",
+            url: "/vision",
+            icon: "log-out"
         }
     ];
 
@@ -73,16 +79,16 @@ export class AppComponent {
     }
 
     private initTranslate(){
-        this.translate.setDefaultLang('en');
+        this.translate.setDefaultLang("en");
 
         if (this.translate.getBrowserLang() !== undefined) {
             this.translate.use(this.translate.getBrowserLang());
         } else {
-            this.translate.use('en');
+            this.translate.use("en");
         }
     }
 
     shouldShowLink(appPage) {
-        return appPage.viewType === 'both' || (this.isLoggedIn ? appPage.viewType === 'loggedIn' : appPage.viewType === 'loggedOut');
+        return appPage.viewType === "both" || (this.isLoggedIn ? appPage.viewType === "loggedIn" : appPage.viewType === "loggedOut");
     }
 }
