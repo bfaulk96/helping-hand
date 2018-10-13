@@ -29,5 +29,11 @@
   },
   "resources": {
     "title": "Resources"
+  },
+  "login": {
+    "title": "Login"
+  },
+  "logout": {
+    "title": "Logout"
   }
 }

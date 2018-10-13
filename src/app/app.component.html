@@ -8,14 +8,16 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item class="menu-item" [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
-              <ion-label>
-                {{p.title | translate}}
-              </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
+          <ng-container *ngFor="let p of appPages">
+            <ion-menu-toggle auto-hide="false" *ngIf="shouldShowLink(p)">
+              <ion-item class="menu-item" [routerDirection]="'root'" [routerLink]="[p.url]">
+                <ion-icon slot="start" [name]="p.icon"></ion-icon>
+                <ion-label>
+                  {{p.title | translate}}
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ng-container>
         </ion-list>
       </ion-content>
     </ion-menu>

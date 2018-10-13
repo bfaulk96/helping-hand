@@ -10,31 +10,49 @@ import { TranslateService } from '@ngx-translate/core';
     templateUrl: 'app.component.html'
 })
 export class AppComponent {
+    public isLoggedIn: boolean = false;
     public appPages = [
         {
             title: 'home.title',
+            viewType: 'both',
             url: '/home',
             icon: 'home'
         },
         {
             title: 'about.title',
+            viewType: 'both',
             url: '/about',
             icon: 'information-circle-outline'
         },
         {
             title: 'resources.title',
+            viewType: 'both',
             url: '/resources',
             icon: 'link'
         },
         {
             title: 'contact.title',
+            viewType: 'both',
             url: '/contact',
             icon: 'phone-portrait'
         },
         {
             title: 'register.title',
+            viewType: 'loggedOut',
             url: '/register',
             icon: 'create'
+        },
+        {
+            title: 'login.title',
+            viewType: 'loggedOut',
+            url: '/login',
+            icon: 'log-in'
+        },
+        {
+            title: 'logout.title',
+            viewType: 'loggedIn',
+            url: '/logout',
+            icon: 'log-out'
         }
     ];
 
@@ -62,5 +80,9 @@ export class AppComponent {
         } else {
             this.translate.use('en');
         }
+    }
+
+    shouldShowLink(appPage) {
+        return appPage.viewType === 'both' || (this.isLoggedIn ? appPage.viewType === 'loggedIn' : appPage.viewType === 'loggedOut');
     }
 }
