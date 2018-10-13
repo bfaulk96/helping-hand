@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import {TranslateModule} from "@ngx-translate/core";
+import {AppComponent} from "../app.component";
 
 @NgModule({
   imports: [
@@ -22,4 +23,5 @@ import {TranslateModule} from "@ngx-translate/core";
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule {
+}

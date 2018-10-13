@@ -5,11 +5,29 @@
     </ion-buttons>
     <ion-title>{{ 'login.title' | translate }}</ion-title>
     <ion-buttons slot="end">
-      <ion-button [routerLink]="['/home']"><ion-icon name="home"></ion-icon></ion-button>
+      <ion-button [routerDirection]="'root'" [routerLink]="['/home']"><ion-icon name="home"></ion-icon></ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+  <form (submit)="login()" #loginForm="ngForm">
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item>
+            <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="currentLoginCredentials.email" required clearInput></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="currentLoginCredentials.password" required clearInput></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="login-col">
+        <ion-button class="submit-btn" type="submit" [disabled]="!loginForm.form.valid">Log In</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>

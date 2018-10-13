@@ -1,6 +1,6 @@
 <ion-app>
   <ion-split-pane>
-    <ion-menu>
+    <ion-menu #ionMenu>
       <ion-header>
         <ion-toolbar>
           <ion-title>{{ 'menu.title' | translate }}</ion-title>
@@ -20,6 +20,23 @@
           </ng-container>
         </ion-list>
       </ion-content>
+
+      <div class="menu-footer">
+        <ion-footer *ngIf="isLoggedIn" class="logout">
+          <ion-toolbar>
+            <div [routerDirection]="'root'" [routerLink]="['/logout']" (click)="ionMenu.close()" detail-none>
+              <span class="logout">{{ 'logout.spaceTitle' | translate }}</span>&nbsp;<ion-icon name="log-out"></ion-icon>
+            </div>
+          </ion-toolbar>
+        </ion-footer>
+        <ion-footer *ngIf="!isLoggedIn" class="login">
+          <ion-toolbar>
+            <div [routerDirection]="'root'" [routerLink]="['/login']" (click)="ionMenu.close()" detail-none>
+              <span class="login">{{ 'login.spaceTitle' | translate }}</span>&nbsp;<ion-icon name="log-in"></ion-icon>
+            </div>
+          </ion-toolbar>
+        </ion-footer>
+      </div>
     </ion-menu>
     <ion-router-outlet main></ion-router-outlet>
   </ion-split-pane>
