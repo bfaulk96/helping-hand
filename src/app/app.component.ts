@@ -3,7 +3,8 @@ import {Component} from '@angular/core';
 import {Platform} from '@ionic/angular';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
-import { TranslateService } from '@ngx-translate/core';
+import {TranslateService} from '@ngx-translate/core';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -42,6 +43,12 @@ export class AppComponent {
             viewType: 'loggedOut',
             url: '/register',
             icon: 'create'
+        },
+        {
+            title: 'settings.title',
+            viewType: 'both',
+            url: '/settings',
+            icon: 'settings'
         }
     ];
 
@@ -49,7 +56,8 @@ export class AppComponent {
         private platform: Platform,
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
-        private translate: TranslateService) {
+        private translate: TranslateService,
+        private router: Router) {
         this.initializeApp();
     }
 
@@ -62,13 +70,19 @@ export class AppComponent {
     }
 
     private initTranslate(){
-        this.translate.setDefaultLang('en');
 
-        if (this.translate.getBrowserLang() !== undefined) {
-            this.translate.use(this.translate.getBrowserLang());
+        const lang = localStorage.getItem("language");
+        if (lang) {
+            this.translate.setDefaultLang(lang);
         } else {
-            this.translate.use('en');
+            if (this.translate.getBrowserLang() !== undefined) {
+                this.translate.use(this.translate.getBrowserLang());
+            } else {
+                this.translate.use('en');
+            }
+            this.router.navigate(['setup']);
         }
+
     }
 
     shouldShowLink(appPage) {

@@ -2,6 +2,14 @@
   "app": {
     "title": "Helping Hand"
   },
+  "setup": {
+    "next": "Next",
+    "welcome": "Welcome!",
+    "choice": "Choose your language"
+  },
+  "settings":{
+    "title": "Settings"
+  },
   "menu": {
     "title": "Menu"
   },
