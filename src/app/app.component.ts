@@ -4,6 +4,7 @@ import {Platform} from '@ionic/angular';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
 import { TranslateService } from '@ngx-translate/core';
+import {ApiHelper} from './services/api-helper';
 
 @Component({
     selector: 'app-root',
@@ -49,19 +50,23 @@ export class AppComponent {
         private platform: Platform,
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
-        private translate: TranslateService) {
+        private translate: TranslateService,
+        private apiHelper: ApiHelper,
+    ) {
         this.initializeApp();
     }
 
     initializeApp() {
+        this.apiHelper.setEnv('local');
         this.platform.ready().then(() => {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
             this.initTranslate();
         });
+
     }
 
-    private initTranslate(){
+    private initTranslate() {
         this.translate.setDefaultLang('en');
 
         if (this.translate.getBrowserLang() !== undefined) {

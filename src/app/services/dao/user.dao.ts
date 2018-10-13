@@ -3,7 +3,6 @@ import { Constants } from '../constants';
 import { ApiCallFactory } from '../api-call-factory';
 import { Injectable } from '@angular/core';
 import { BaseDAO } from './base.dao';
-import { Observable } from 'rxjs';
 import { User } from '../../models/user';
 
 @Injectable()
@@ -23,7 +22,6 @@ export class UserDAO extends BaseDAO {
 
     public setCurrentUser(user: User): void {
         this.currentUser = user;
-        this.setUserId(user.id);
     }
 
     public getCurrentUser(): User {
@@ -31,15 +29,11 @@ export class UserDAO extends BaseDAO {
     }
 
     public getUserId(): number {
-        const token = sessionStorage.getItem(this.USER_ID);
+        const token = window.localStorage.getItem(this.USER_ID);
         if (token) {
             return Number(token);
         } else {
             return null;
         }
-    }
-
-    public setUserId(value: number): void {
-        sessionStorage.setItem(this.USER_ID, value.toString());
     }
 }

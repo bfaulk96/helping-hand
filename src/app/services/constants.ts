@@ -1,7 +1,7 @@
 export class Constants {
     public static API = {
         ENDPOINTS: {
-            LOCAL: 'http://localhost:3000/',
+            LOCAL: 'http://1cd27c83.ngrok.io/',
             PROD: 'http://prod:3002/'
         },
         VERBS: {

@@ -11,6 +11,10 @@ import { AppRoutingModule } from './app-routing.module';
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateLoader, TranslateModule, TranslatePipe} from "@ngx-translate/core";
+import {AuthService} from './services/auth-service';
+import {ApiHelper} from './services/api-helper';
+import {ApiCallFactory} from './services/api-call-factory';
+import {UserDAO} from './services/dao/user.dao';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -36,7 +40,11 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    AuthService,
+    ApiHelper,
+    ApiCallFactory,
+    UserDAO,
   ],
   bootstrap: [AppComponent]
 })
