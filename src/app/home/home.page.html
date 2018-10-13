@@ -37,8 +37,9 @@
 
   <ion-item>
     <ion-select [(ngModel)]="language" (ionChange)="changeLanguage()">
-      <ion-select-option value="en" selected="true">English</ion-select-option>
-      <ion-select-option value="es">Español</ion-select-option>
+      <ion-select-option value="en" [selected]="translate.currentLang === 'en'">English</ion-select-option>
+      <ion-select-option value="es" [selected]="translate.currentLang === 'es'">Español</ion-select-option>
+      <ion-select-option value="ar" [selected]="translate.currentLang === 'ar'">عربى</ion-select-option>
     </ion-select>
   </ion-item>
 

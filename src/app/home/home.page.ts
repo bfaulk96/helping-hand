@@ -13,7 +13,7 @@ export class HomePage {
   public language: string;
 
   constructor(private platform: Platform,
-              private translate: TranslateService) {
+              public translate: TranslateService) {
   }
 
   public ionViewDidLoad() : void {
