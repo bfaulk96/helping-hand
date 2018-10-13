@@ -1,9 +1,9 @@
-import {Injectable} from '@angular/core';
-import {ApiHelper} from './api-helper';
-import {ApiCallFactory} from './api-call-factory';
-import {UserDAO} from './dao/user.dao';
-import {Observable} from 'rxjs/index';
-import {User} from '../models/user';
+import {Injectable} from "@angular/core";
+import {ApiHelper} from "./api-helper";
+import {ApiCallFactory} from "./api-call-factory";
+import {UserDAO} from "./dao/user.dao";
+import {Observable} from "rxjs";
+import {User} from "../models/user";
 
 @Injectable()
 export class AuthService {
@@ -26,7 +26,7 @@ export class AuthService {
     public login(email: string, password: string): Observable<User> {
 
         const data = {
-            grant_type: 'password',
+            grant_type: "password",
             email: email,
             password: password
         };
@@ -56,7 +56,6 @@ export class AuthService {
         return observable;
 
     }
-
 
 
 }

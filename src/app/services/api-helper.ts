@@ -1,9 +1,8 @@
-import {Injectable} from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Router} from '@angular/router';
-import {Constants} from './constants';
-import {Observable} from 'rxjs/index';
-import {ApiCall} from '../models/apiCall';
+import {Injectable} from "@angular/core";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {Constants} from "./constants";
+import {Observable} from "rxjs";
+import {ApiCall} from "../models/apiCall";
 
 @Injectable()
 export class ApiHelper {
@@ -23,17 +22,17 @@ export class ApiHelper {
     public setEnv(env: string): void {
         this.env = env;
         switch (env) {
-            case 'local':
+            case "local":
                 this.serviceEndpoint = Constants.API.ENDPOINTS.LOCAL;
                 break;
-            case 'prod':
+            case "prod":
                 this.serviceEndpoint = Constants.API.ENDPOINTS.PROD;
                 break;
         }
     }
 
     public getAccessToken(): string {
-        return 'todo';
+        return "todo";
     }
 
     public setAccessToken(token: string): void {
@@ -45,29 +44,29 @@ export class ApiHelper {
     }
 
     public makeApiCall<T>(apiCall: ApiCall): Observable<T> {
-        const reqOptions: any =  {
+        const reqOptions: any = {
             headers: apiCall.headers,
             body: apiCall.data,
             params: apiCall.params
         };
         reqOptions.headers = new HttpHeaders({
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer' + this.getAccessToken()
+            "Content-Type": "application/json",
+            "Authorization": "Bearer" + this.getAccessToken()
         });
 
         const that = this;
         const obs = Observable.create(function subscribe(observer) {
-           const httpRequest = that.httpClient.request(apiCall.method, apiCall.url, reqOptions);
-           httpRequest.subscribe(
-               data => {
+            const httpRequest = that.httpClient.request(apiCall.method, apiCall.url, reqOptions);
+            httpRequest.subscribe(
+                data => {
                     observer.next(data);
                     observer.complete();
-               },
-               error => {
-                   that.handleApiError(error);
-                   observer.error(error);
-               }
-           );
+                },
+                error => {
+                    that.handleApiError(error);
+                    observer.error(error);
+                }
+            );
         });
         return obs;
     }
@@ -77,8 +76,8 @@ export class ApiHelper {
         switch (apiError) {
             case 401:
                 this.displayApiError({
-                    title: 'Forbidden',
-                    message: 'Must be authenticated.'
+                    title: "Forbidden",
+                    message: "Must be authenticated."
                 });
         }
     }

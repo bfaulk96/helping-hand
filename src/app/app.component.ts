@@ -3,7 +3,8 @@ import {Component} from "@angular/core";
 import {Platform} from "@ionic/angular";
 import {SplashScreen} from "@ionic-native/splash-screen/ngx";
 import {StatusBar} from "@ionic-native/status-bar/ngx";
-import { TranslateService } from "@ngx-translate/core";
+import {TranslateService} from "@ngx-translate/core";
+import {SocketService} from "./services/socket.service";
 
 @Component({
     selector: "app-root",
@@ -66,7 +67,8 @@ export class AppComponent {
         private platform: Platform,
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
-        private translate: TranslateService) {
+        private translate: TranslateService,
+        private sockerService: SocketService) {
         this.initializeApp();
     }
 
@@ -75,10 +77,15 @@ export class AppComponent {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
             this.initTranslate();
+            this.sockerService.initSocket();
+
+            this.sockerService.onConnectedCount().subscribe(number => {
+                console.log({number});
+            });
         });
     }
 
-    private initTranslate(){
+    private initTranslate() {
         this.translate.setDefaultLang("en");
 
         if (this.translate.getBrowserLang() !== undefined) {
