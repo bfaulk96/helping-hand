@@ -11,5 +11,16 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ng-container *ngFor="let card of cards">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{card.title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ng-container *ngFor="let link of card.links">
+          <a href="{{link.href}}" rel="noopener" target="_blank">{{link.content}}</a><br>
+        </ng-container>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
 </ion-content>
