@@ -44,12 +44,6 @@ export class AppComponent {
             icon: "create"
         },
         {
-            title: 'register.title',
-            viewType: 'loggedOut',
-            url: '/register',
-            icon: 'create'
-        },
-        {
             title: "vision.title",
             viewType: "both",
             url: "/vision",
