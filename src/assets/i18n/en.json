@@ -1,0 +1,23 @@
+{
+  "app": {
+    "title": "Helping Hand"
+  },
+  "menu": {
+    "title": "Menu"
+  },
+  "home": {
+    "title": "Home"
+  },
+  "about": {
+    "title": "About"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "register": {
+    "title": "Register"
+  },
+  "resources": {
+    "title": "Resources"
+  }
+}
