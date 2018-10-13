@@ -13,6 +13,7 @@ export class LoginPage implements OnInit {
     email: "",
     password: ""
   };
+  loading: boolean = false;
 
   authSvc: AuthService;
 
@@ -29,13 +30,18 @@ export class LoginPage implements OnInit {
 
   login() {
     console.log(this.currentLoginCredentials);
+    this.loading = true;
     this.authSvc.login(this.currentLoginCredentials.email, this.currentLoginCredentials.password).subscribe(
       data => {
         this.router.navigate(['/home']);
         this.appComp.isLoggedIn = true;
+        this.loading = false;
       },
-      error2 => {
+      error => {
         console.log('stuff happens');
+        this.loading = false;
+      }, () => {
+        this.loading = false;
       }
     );
 

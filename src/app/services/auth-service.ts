@@ -48,7 +48,8 @@ export class AuthService {
                     observer.complete();
                 },
                 error => {
-
+                    observer.error(error);
+                    observer.complete();
                 }
             );
         });

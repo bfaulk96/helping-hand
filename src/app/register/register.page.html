@@ -13,8 +13,8 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-input required type="text" placeholder="Email" [(ngModel)]="email"></ion-input>
-    <ion-input required type="password" name="password" placeholder="Password" [(ngModel)]="password"></ion-input>
-    <ion-input required type="password" name="confirm-password" placeholder="Confirm Password" [(ngModel)]="confirmPassword"></ion-input>
+    <ion-input required type="text" placeholder="Email" [(ngModel)]="email" clearInput [clearOnEdit]="false"></ion-input>
+    <ion-input required type="password" name="password" placeholder="Password" [(ngModel)]="password" clearInput [clearOnEdit]="false"></ion-input>
+    <ion-input required type="password" name="confirm-password" placeholder="Confirm Password" [(ngModel)]="confirmPassword" clearInput [clearOnEdit]="false"></ion-input>
     <ion-button (click)="register();" [disabled]="validRegistration">Register</ion-button>
 </ion-content>
