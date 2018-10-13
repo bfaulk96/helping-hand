@@ -58,7 +58,7 @@ export class AppComponent {
             title: "vision.title",
             viewType: "both",
             url: "/vision",
-            icon: "log-out"
+            icon: "camera"
         }
     ];
 
