@@ -11,22 +11,24 @@
 </ion-header>
 
 <ion-content padding>
-  <form (submit)="login()" #loginForm="ngForm">
+  <ion-row>
+    <ion-img class="hand-img" src="{{ loading ? '/assets/images/hand-fade.gif?' : '/assets/images/hand.png?'}}"></ion-img>
+  </ion-row>
+
+  <form (submit)="login()" #loginForm="ngForm" class="login-form">
     <ion-row>
       <ion-col>
-        <ion-list inset>
-          <ion-item>
-            <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="currentLoginCredentials.email" required clearInput></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="currentLoginCredentials.password" required clearInput></ion-input>
-          </ion-item>
-        </ion-list>
+        <ion-card class="login-input">
+          <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="currentLoginCredentials.email" required clearInput></ion-input>
+        </ion-card>
+        <ion-card class="login-input">
+          <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="currentLoginCredentials.password" required clearInput></ion-input>
+        </ion-card>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col class="login-col">
-        <ion-button class="submit-btn" type="submit" [disabled]="!loginForm.form.valid">Log In</ion-button>
+    <ion-row class="submit-row">
+      <ion-col>
+        <ion-button color="secondary" class="submit-btn" type="submit" [disabled]="!loginForm.form.valid || loading">Log In</ion-button>
       </ion-col>
     </ion-row>
   </form>

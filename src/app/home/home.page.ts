@@ -15,7 +15,12 @@ export class HomePage {
 
   constructor(private platform: Platform,
               private translate: TranslateService,
-              public appComp: AppComponent) {
+              private appComp: AppComponent) {
+
+  }
+
+  get isLoggedIn() {
+    return this.appComp.isLoggedIn;
   }
 
 }

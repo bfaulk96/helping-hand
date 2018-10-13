@@ -47,3 +47,10 @@ ion-card {
   vertical-align: middle;
   display: inline-block;
 }
+
+.logout {
+  color: darkred !important;
+}
+.login {
+  color: var(--ion-color-primary) !important;
+}

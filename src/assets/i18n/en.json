@@ -45,5 +45,8 @@
   "logout": {
     "title": "Logout",
     "spaceTitle": "Log Out"
+  },
+  "vision": {
+    "title": "Vision"
   }
 }
