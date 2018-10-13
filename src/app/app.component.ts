@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 
 import {Platform} from '@ionic/angular';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
@@ -15,34 +15,40 @@ export class AppComponent {
     public isLoggedIn: boolean = false;
     public appPages = [
         {
-            title: 'home.title',
-            viewType: 'both',
-            url: '/home',
-            icon: 'home'
+            title: "home.title",
+            viewType: "both",
+            url: "/home",
+            icon: "home"
         },
         {
-            title: 'about.title',
-            viewType: 'both',
-            url: '/about',
-            icon: 'information-circle-outline'
+            title: "about.title",
+            viewType: "both",
+            url: "/about",
+            icon: "information-circle-outline"
         },
         {
-            title: 'resources.title',
-            viewType: 'both',
-            url: '/resources',
-            icon: 'link'
+            title: "resources.title",
+            viewType: "both",
+            url: "/resources",
+            icon: "link"
         },
         {
-            title: 'contact.title',
-            viewType: 'both',
-            url: '/contact',
-            icon: 'phone-portrait'
+            title: "contact.title",
+            viewType: "both",
+            url: "/contact",
+            icon: "phone-portrait"
         },
         {
-            title: 'register.title',
-            viewType: 'loggedOut',
-            url: '/register',
-            icon: 'create'
+            title: "register.title",
+            viewType: "loggedOut",
+            url: "/register",
+            icon: "create"
+        },
+        {
+            title: "vision.title",
+            viewType: "both",
+            url: "/vision",
+            icon: "camera"
         }
     ];
 
@@ -72,11 +78,11 @@ export class AppComponent {
         if (this.translate.getBrowserLang() !== undefined) {
             this.translate.use(this.translate.getBrowserLang());
         } else {
-            this.translate.use('en');
+            this.translate.use("en");
         }
     }
 
     shouldShowLink(appPage) {
-        return appPage.viewType === 'both' || (this.isLoggedIn ? appPage.viewType === 'loggedIn' : appPage.viewType === 'loggedOut');
+        return appPage.viewType === "both" || (this.isLoggedIn ? appPage.viewType === "loggedIn" : appPage.viewType === "loggedOut");
     }
 }
