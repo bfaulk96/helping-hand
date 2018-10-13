@@ -43,6 +43,28 @@ export class AuthService {
         );
     }
 
+    public verify(token: string): Observable<void> {
+        const data: any = {
+            token: token
+        };
+
+        return Observable.create(
+            (observer: Observer<any>): void => {
+                this.apiHelper.makeApiCall(
+                    this.apiCallFactory.getDefaultForVerify(data)
+                ).subscribe(
+                    (verifyResponse: any): void => {
+                        observer.next(verifyResponse);
+                        observer.complete();
+                    },
+                    (error: Error): void => {
+                        observer.error(error);
+                    }
+                );
+            }
+        );
+    }
+
     public login(email: string, password: string): Observable<User> {
         const data = {
             grant_type: "password",
