@@ -17,7 +17,7 @@ const routes: Routes = [
     {path: 'register', loadChildren: './register/register.module#RegisterPageModule'},
     {path: 'login', loadChildren: './login/login.module#LoginPageModule'},
     {path: 'vision', loadChildren: './vision/vision.module#VisionPageModule'},
-    {path: 'verify', loadChildren: './vision/vision.module#VisionPageModule'}
+    {path: 'verify', loadChildren: './verify/verify.module#VerifyPageModule'}
 ];
 
 @NgModule({

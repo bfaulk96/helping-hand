@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Router} from '@angular/router';
 import {Constants} from './constants';
 import {Observable} from 'rxjs/index';
 import {ApiCall} from '../models/apiCall';
@@ -33,12 +32,12 @@ export class ApiHelper {
     }
 
     public getAccessToken(): string {
-        this.accessToken = this.accessToken || localStorage.getItem("token");
+        this.accessToken = this.accessToken || localStorage.getItem('token');
         return this.accessToken;
     }
 
     public setAccessToken(token: string): void {
-        localStorage.setItem("token", token);
+        localStorage.setItem('token', token);
         this.accessToken = token;
     }
 
@@ -47,29 +46,44 @@ export class ApiHelper {
     }
 
     public makeApiCall<T>(apiCall: ApiCall): Observable<T> {
-        const reqOptions: any =  {
+        const reqOptions: any = {
             headers: apiCall.headers,
             body: apiCall.data,
-            params: apiCall.params
         };
         reqOptions.headers = new HttpHeaders({
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer' + this.getAccessToken()
+            "Content-Type": "application/json",
+            "Authorization": "Bearer" + this.getAccessToken()
         });
+
+        let qs: string = "";
+        if (apiCall.params) {
+            qs = apiCall.params.length > 0 ? "?" : "";
+            Object.keys(apiCall.params).forEach(
+                (param: string, i: number): void => {
+                    if (i === 0) {
+                        qs = "?";
+                    }
+                    qs += param + "=" + apiCall.params[param];
+                    if (i < apiCall.params.length - 1) {
+                        qs += "&";
+                    }
+                }
+            );
+        }
 
         const that = this;
         const obs = Observable.create(function subscribe(observer) {
-           const httpRequest = that.httpClient.request(apiCall.method, apiCall.url, reqOptions);
-           httpRequest.subscribe(
-               data => {
+            const httpRequest = that.httpClient.request(apiCall.method, apiCall.url + qs, reqOptions);
+            httpRequest.subscribe(
+                data => {
                     observer.next(data);
                     observer.complete();
-               },
-               error => {
-                   that.handleApiError(error);
-                   observer.error(error);
-               }
-           );
+                },
+                error => {
+                    that.handleApiError(error);
+                    observer.error(error);
+                }
+            );
         });
         return obs;
     }

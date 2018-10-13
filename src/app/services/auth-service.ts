@@ -44,14 +44,14 @@ export class AuthService {
     }
 
     public verify(token: string): Observable<void> {
-        const data: any = {
+        const params: any = {
             token: token
         };
 
         return Observable.create(
             (observer: Observer<any>): void => {
                 this.apiHelper.makeApiCall(
-                    this.apiCallFactory.getDefaultForVerify(data)
+                    this.apiCallFactory.getDefaultForVerify(params)
                 ).subscribe(
                     (verifyResponse: any): void => {
                         observer.next(verifyResponse);

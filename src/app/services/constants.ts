@@ -10,9 +10,10 @@ export class Constants {
             PUT: "PUT",
         },
         RESOURCES: {
-            REGISTER: "register",
-            LOGIN: "login",
             USER: "users",
+            REGISTER: "register",
+            VERIFY: "verify",
+            LOGIN: "login",
         }
     };
 }
