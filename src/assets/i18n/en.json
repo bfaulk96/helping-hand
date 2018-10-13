@@ -35,5 +35,8 @@
   },
   "logout": {
     "title": "Logout"
+  },
+  "vision": {
+    "title": "Vision"
   }
 }
