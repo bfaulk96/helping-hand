@@ -7,7 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app.component.html'
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.component.scss']
 })
 export class AppComponent {
     public isLoggedIn: boolean = false;
@@ -41,18 +42,6 @@ export class AppComponent {
             viewType: 'loggedOut',
             url: '/register',
             icon: 'create'
-        },
-        {
-            title: 'login.title',
-            viewType: 'loggedOut',
-            url: '/login',
-            icon: 'log-in'
-        },
-        {
-            title: 'logout.title',
-            viewType: 'loggedIn',
-            url: '/logout',
-            icon: 'log-out'
         }
     ];
 

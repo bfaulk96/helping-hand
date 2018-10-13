@@ -6,6 +6,9 @@
     <ion-title>
       {{ 'app.title' | translate }}
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerDirection]="'root'" [routerLink]="appComp.isLoggedIn ? ['/logout'] : ['/login']"><ion-icon name="{{ appComp.isLoggedIn ? 'log-out' : 'log-in'}}"></ion-icon></ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
