@@ -23,6 +23,14 @@ export class ApiCallFactory {
         return this.apiCall;
     }
 
+    getDefaultForRegister(data: any): ApiCall {
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + Constants.API.RESOURCES.REGISTER;
+        this.apiCall.method = Constants.API.VERBS.POST;
+        this.apiCall.data = data;
+        this.apiCall.params = null;
+        return this.apiCall;
+    }
+
     getDefaultForLogin(data: any): ApiCall {
         this.apiCall.url = this.apiHelper.getServiceEndPoint() + Constants.API.RESOURCES.LOGIN;
         this.apiCall.method = Constants.API.VERBS.POST;
