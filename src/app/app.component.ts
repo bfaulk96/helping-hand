@@ -1,13 +1,16 @@
 import {Component} from "@angular/core";
 
-import {Platform} from "@ionic/angular";
-import {SplashScreen} from "@ionic-native/splash-screen/ngx";
-import {StatusBar} from "@ionic-native/status-bar/ngx";
-import { TranslateService } from "@ngx-translate/core";
+import {Platform} from '@ionic/angular';
+import {SplashScreen} from '@ionic-native/splash-screen/ngx';
+import {StatusBar} from '@ionic-native/status-bar/ngx';
+import {TranslateService} from '@ngx-translate/core';
+import {ApiHelper} from './services/api-helper';
+import {UserDAO} from "./services/dao/user.dao";
 
 @Component({
-    selector: "app-root",
-    templateUrl: "app.component.html"
+    selector: 'app-root',
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.component.scss']
 })
 export class AppComponent {
     public isLoggedIn: boolean = false;
@@ -43,18 +46,6 @@ export class AppComponent {
             icon: "create"
         },
         {
-            title: "login.title",
-            viewType: "loggedOut",
-            url: "/login",
-            icon: "log-in"
-        },
-        {
-            title: "logout.title",
-            viewType: "loggedIn",
-            url: "/logout",
-            icon: "log-out"
-        },
-        {
             title: "vision.title",
             viewType: "both",
             url: "/vision",
@@ -62,24 +53,27 @@ export class AppComponent {
         }
     ];
 
-    constructor(
-        private platform: Platform,
-        private splashScreen: SplashScreen,
-        private statusBar: StatusBar,
-        private translate: TranslateService) {
+    constructor(private platform: Platform,
+                private splashScreen: SplashScreen,
+                private statusBar: StatusBar,
+                private translate: TranslateService,
+                private userDao: UserDAO,
+                private apiHelper: ApiHelper) {
         this.initializeApp();
     }
 
     initializeApp() {
+        this.apiHelper.setEnv('local');
         this.platform.ready().then(() => {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
             this.initTranslate();
+            this.isLoggedIn = !!this.apiHelper.getAccessToken();
         });
     }
 
-    private initTranslate(){
-        this.translate.setDefaultLang("en");
+    private initTranslate() {
+        this.translate.setDefaultLang('en');
 
         if (this.translate.getBrowserLang() !== undefined) {
             this.translate.use(this.translate.getBrowserLang());
