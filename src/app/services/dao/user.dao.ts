@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 import { BaseDAO } from './base.dao';
 import { Observable } from 'rxjs';
 import { User } from '../../models/user';
+import {tokenName} from '@angular/compiler';
+import {ApiCall} from '../../models/apiCall';
 
 @Injectable()
 export class UserDAO extends BaseDAO {
@@ -31,15 +33,39 @@ export class UserDAO extends BaseDAO {
     }
 
     public getUserId(): number {
-        const token = sessionStorage.getItem(this.USER_ID);
-        if (token) {
-            return Number(token);
-        } else {
-            return null;
-        }
+      return 99999;
+        // const token = sessionStorage.getItem(this.USER_ID);
+        // if (token) {
+        //     return Number(token);
+        // } else {
+        //     return null;
+        // }
     }
 
     public setUserId(value: number): void {
-        sessionStorage.setItem(this.USER_ID, value.toString());
+        // sessionStorage.setItem(this.USER_ID, value.toString());
+    }
+
+    public updateFcmToken(fcmToken: string): Observable<any> {
+      const apiCall = this.apiCallFactory.getDefaultApiCallForGet();
+      const url = this.apiHelper.getServiceEndPoint() + Constants.API.RESOURCES.USER + '/update-fcm';
+      const method = 'PUT';
+      const header: Headers = this.apiHelper.getDefaultHeader();
+      const data: Object = {
+        token: fcmToken
+      };
+
+      const httpRequest = this.apiHelper.makeApiCall(apiCall);
+      return Observable.create(function subscribe(observer) {
+        httpRequest.subscribe(
+          userDevice => {
+            observer.next(userDevice);
+            observer.complete();
+          },
+          error => {
+            console.log(error);
+            observer.error(error);
+          });
+      });
     }
 }

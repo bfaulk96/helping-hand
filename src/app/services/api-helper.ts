@@ -32,6 +32,15 @@ export class ApiHelper {
         }
     }
 
+  public getDefaultHeader(): Headers {
+    const headers: Headers = new Headers( {'Content-Type': 'application/json'} );
+    if (!this.getAccessToken()) {
+      return headers;
+    }
+    headers.set('Authorization', 'Bearer ' + this.getAccessToken());
+    return headers;
+  }
+
     public getAccessToken(): string {
         return 'todo';
     }

@@ -4,6 +4,8 @@ import {Platform} from '@ionic/angular';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
 import { TranslateService } from '@ngx-translate/core';
+import {ApiHelper} from './services/api-helper';
+
 
 @Component({
     selector: 'app-root',
@@ -60,6 +62,7 @@ export class AppComponent {
         private platform: Platform,
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
+        private apiHelper: ApiHelper,
         private translate: TranslateService) {
         this.initializeApp();
     }
