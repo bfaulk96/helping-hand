@@ -14,7 +14,7 @@
 
 <ion-content>
   <ion-card-header class="welcome-header">
-    <ion-img class="main-image" src="/assets/images/helping-hand-2.png"></ion-img>
+    <ion-img class="main-image" src="/assets/images/helping-hand.png"></ion-img>
     <ion-card-subtitle>{{ 'app.title' | translate }}</ion-card-subtitle>
     <ion-card-title>{{ 'home.secondaryTitle' | translate }}</ion-card-title>
   </ion-card-header>
@@ -38,13 +38,13 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-item>
+  <ion-card>
     <ion-select [(ngModel)]="language" (ionChange)="changeLanguage()">
       <ion-select-option value="en" [selected]="checkCurrentLang('en')">English</ion-select-option>
       <ion-select-option value="es" [selected]="checkCurrentLang('es')">Español</ion-select-option>
       <ion-select-option value="ar" [selected]="checkCurrentLang('ar')">عربى</ion-select-option>
     </ion-select>
-  </ion-item>
+  </ion-card>
 
 </ion-content>
 
