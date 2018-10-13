@@ -1,16 +1,17 @@
 import {Component} from "@angular/core";
 
-import {Platform} from '@ionic/angular';
-import {SplashScreen} from '@ionic-native/splash-screen/ngx';
-import {StatusBar} from '@ionic-native/status-bar/ngx';
-import {TranslateService} from '@ngx-translate/core';
-import {ApiHelper} from './services/api-helper';
+import {Platform} from "@ionic/angular";
+import {SplashScreen} from "@ionic-native/splash-screen/ngx";
+import {StatusBar} from "@ionic-native/status-bar/ngx";
+import {TranslateService} from "@ngx-translate/core";
+import {ApiHelper} from "./services/api-helper";
 import {UserDAO} from "./services/dao/user.dao";
+import {SocketService} from "./services/socket.service";
 
 @Component({
-    selector: 'app-root',
-    templateUrl: 'app.component.html',
-    styleUrls: ['app.component.scss']
+    selector: "app-root",
+    templateUrl: "app.component.html",
+    styleUrls: ["app.component.scss"]
 })
 export class AppComponent {
     public isLoggedIn: boolean = false;
@@ -58,22 +59,27 @@ export class AppComponent {
                 private statusBar: StatusBar,
                 private translate: TranslateService,
                 private userDao: UserDAO,
-                private apiHelper: ApiHelper) {
+                private apiHelper: ApiHelper,
+                private socketService: SocketService) {
         this.initializeApp();
     }
 
     initializeApp() {
-        this.apiHelper.setEnv('local');
+        this.apiHelper.setEnv("local");
         this.platform.ready().then(() => {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
             this.initTranslate();
             this.isLoggedIn = !!this.apiHelper.getAccessToken();
+
+            this.socketService.initSocket();
+            this.socketService.onConnectedCount().subscribe(number => console.log({number}));
+            this.socketService.onException().subscribe(message => console.log({message}));
         });
     }
 
     private initTranslate() {
-        this.translate.setDefaultLang('en');
+        this.translate.setDefaultLang("en");
 
         if (this.translate.getBrowserLang() !== undefined) {
             this.translate.use(this.translate.getBrowserLang());
