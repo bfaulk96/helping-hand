@@ -12,27 +12,27 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
     public appPages = [
         {
-            title: 'Home',
+            title: 'home.title',
             url: '/home',
             icon: 'home'
         },
         {
-            title: 'About',
+            title: 'about.title',
             url: '/about',
             icon: 'information-circle-outline'
         },
         {
-            title: 'Resources',
+            title: 'resources.title',
             url: '/resources',
             icon: 'link'
         },
         {
-            title: 'Contact',
+            title: 'contact.title',
             url: '/contact',
             icon: 'phone-portrait'
         },
         {
-            title: 'Register',
+            title: 'register.title',
             url: '/register',
             icon: 'create'
         }
@@ -42,8 +42,7 @@ export class AppComponent {
         private platform: Platform,
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
-        private translate: TranslateService
-    ) {
+        private translate: TranslateService) {
         this.initializeApp();
     }
 
@@ -51,22 +50,17 @@ export class AppComponent {
         this.platform.ready().then(() => {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
-            this._initTranslate();
+            this.initTranslate();
         });
     }
 
-    private _initTranslate(){
-        // Set the default language for translation strings, and the current language.
+    private initTranslate(){
         this.translate.setDefaultLang('en');
 
-
-        if (this.translate.getBrowserLang() !== undefined)
-        {
+        if (this.translate.getBrowserLang() !== undefined) {
             this.translate.use(this.translate.getBrowserLang());
-        }
-        else
-        {
-            this.translate.use('en'); // Set your language here
+        } else {
+            this.translate.use('en');
         }
     }
 }

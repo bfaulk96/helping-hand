@@ -6,10 +6,20 @@
     "title": "Menu"
   },
   "home": {
-    "title": "Home"
+    "title": "Home",
+    "secondaryTitle": "Immigration Innovation",
+    "welcome": "Welcome to the application",
+    "findOut": "Find out more",
+    "resources": "Check out resources in your community",
+    "register": "Need Help? Want to help others? Register today!",
+    "contact": "Have questions? Contact us!"
   },
   "about": {
-    "title": "About"
+    "title": "About",
+    "whatIs": "What is",
+    "description": "This is where we would tell you info about this app.",
+    "lookingForResources": "Looking for community resources?",
+    "checkOutPage": "Check out this page"
   },
   "contact": {
     "title": "Contact"

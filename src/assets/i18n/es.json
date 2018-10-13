@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "Mano Amiga"
+  },
+  "menu": {
+    "title": "Menú"
+  },
+  "home": {
+    "title": "Casa",
+    "secondaryTitle": "Innovación en la inmigración",
+    "welcome": "Bienvenido a la aplicación",
+    "findOut": "Saber más",
+    "resources": "Echa un vistazo a los recursos en tu comunidad",
+    "register": "¿Necesitas ayuda? ¿Quieres ayudar a los demás? ¡Regístrese hoy!",
+    "contact": "¿Tener preguntas? ¡Contáctenos!"
+  },
+  "about": {
+    "title": "Acerca de",
+    "whatIs": "¿Que es",
+    "description": "Aquí es donde te diríamos información sobre esta aplicación.",
+    "lookingForResources": "¿Buscando recursos comunitarios?",
+    "checkOutPage": "Echa un vistazo a esta página"
+  },
+  "contact": {
+    "title": "Contáctenos"
+  },
+  "register": {
+    "title": "Regístrate"
+  },
+  "resources": {
+    "title": "Recursos"
+  }
+}
