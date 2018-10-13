@@ -75,7 +75,7 @@ export class ApiHelper {
     }
 
     private handleApiError(apiError: any): void {
-        console.log(apiError);
+        console.error(apiError);
         switch (apiError) {
             case 401:
                 this.displayApiError({
