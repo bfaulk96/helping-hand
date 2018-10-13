@@ -1,0 +1,17 @@
+ion-footer {
+  .logout {
+    color: darkred !important;
+  }
+  .login {
+    color: var(--ion-color-primary) !important;
+  }
+
+  ion-toolbar {
+    text-align: left;
+    padding-left: 15px;
+    vertical-align: middle;
+    * {
+      vertical-align: middle;
+    }
+  }
+}

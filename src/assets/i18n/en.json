@@ -31,10 +31,12 @@
     "title": "Resources"
   },
   "login": {
-    "title": "Login"
+    "title": "Login",
+    "spaceTitle": "Log In"
   },
   "logout": {
-    "title": "Logout"
+    "title": "Logout",
+    "spaceTitle": "Log Out"
   },
   "vision": {
     "title": "Vision"
