@@ -1,32 +1,51 @@
-import {Injectable} from '@angular/core';
-import {ApiHelper} from './api-helper';
-import {ApiCallFactory} from './api-call-factory';
-import {UserDAO} from './dao/user.dao';
-import {Observable} from 'rxjs/index';
-import {User} from '../models/user';
+import {Injectable} from "@angular/core";
+import {ApiHelper} from "./api-helper";
+import {ApiCallFactory} from "./api-call-factory";
+import {UserDAO} from "./dao/user.dao";
+import {Observable, Observer} from "rxjs/index";
+import {User} from "../models/user";
 
 @Injectable()
 export class AuthService {
+    public apiHelper: ApiHelper = null;
+    public apiCallFactory: ApiCallFactory = null;
+    public userDao: UserDAO = null;
 
-    apiHelper: ApiHelper;
-    apiCallFactory: ApiCallFactory;
-    userDao: UserDAO;
-
-    constructor(
-        apiHelper: ApiHelper,
-        apiCallFactory: ApiCallFactory,
-        userDao: UserDAO,
-    ) {
+    constructor(apiHelper: ApiHelper,
+                apiCallFactory: ApiCallFactory,
+                userDao: UserDAO) {
         this.apiHelper = apiHelper;
         this.apiCallFactory = apiCallFactory;
         this.userDao = userDao;
     }
 
+    public register(email: string, password: string, isHelper: boolean): Observable<void> {
+        const data: any = {
+            email: email,
+            password: password,
+            isHelper: isHelper
+        };
+
+        return Observable.create(
+            (observer: Observer<any>): void => {
+                this.apiHelper.makeApiCall(
+                    this.apiCallFactory.getDefaultForRegister(data)
+                ).subscribe(
+                    (registerResponse: any): void => {
+                        observer.next(registerResponse);
+                        observer.complete();
+                    },
+                    (error: Error): void => {
+                        observer.error(error);
+                    }
+                );
+            }
+        );
+    }
 
     public login(email: string, password: string): Observable<User> {
-
         const data = {
-            grant_type: 'password',
+            grant_type: "password",
             email: email,
             password: password
         };
@@ -48,7 +67,8 @@ export class AuthService {
                     observer.complete();
                 },
                 error => {
-
+                    observer.error(error);
+                    observer.complete();
                 }
             );
         });
@@ -56,7 +76,4 @@ export class AuthService {
         return observable;
 
     }
-
-
-
 }
