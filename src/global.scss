@@ -1,0 +1,37 @@
+// http://ionicframework.com/docs/theming/
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+ion-footer {
+  text-align: center;
+  color: var(--ion-color-secondary);
+}
+
+a {
+  color: var(--ion-color-primary);
+}
+
+.menu-item {
+  color: var(--ion-color-primary);
+}
+
+.nice-link {
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 1em;
+  * {
+    vertical-align: middle;
+  }
+}
+
+.text-right {
+  text-align: right;
+}

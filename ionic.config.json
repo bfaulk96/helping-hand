@@ -1,0 +1,7 @@
+{
+  "name": "helping-hand",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

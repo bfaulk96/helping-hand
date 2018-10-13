@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Helping Hand
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-header class="welcome-header">
+    <ion-img class="main-image" src="/assets/images/helping-hand.png"></ion-img>
+    <ion-card-subtitle>Helping Hand</ion-card-subtitle>
+    <ion-card-title>Immigration Innovation</ion-card-title>
+  </ion-card-header>
+  <ion-card-content class="welcome-content">
+    <p class="welcome-paragraph">Welcome to the app.
+    <a [routerLink]="['/about']" class="nice-link find-out-more">Find out more <ion-icon name="arrow-forward"></ion-icon></a></p>
+  </ion-card-content>
+  <ion-card [routerLink]="['/resources']" class="card-button">
+    <ion-card-content class="home-card-content">
+      <ion-row align-items-center class="nice-link"><ion-col size="10">Check out resources in your community</ion-col><ion-col size="2" class="text-right"><ion-icon name="link" float-right></ion-icon></ion-col></ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card [routerLink]="['/register']" class="card-button">
+    <ion-card-content class="home-card-content">
+      <ion-row align-items-center class="nice-link"><ion-col size="10">Need Help? Want to help others? Register today!</ion-col><ion-col size="2" class="text-right"><ion-icon name="create" float-right></ion-icon></ion-col></ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card [routerLink]="['/contact']" class="card-button">
+    <ion-card-content class="home-card-content">
+      <ion-row align-items-center class="nice-link"><ion-col size="10">Have questions? Contact us!</ion-col><ion-col size="2" class="text-right"><ion-icon name="phone-portrait"></ion-icon></ion-col></ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>&copy;&nbsp;2018&nbsp;• Brandon Faulkner</p>
+  </ion-toolbar>
+</ion-footer>

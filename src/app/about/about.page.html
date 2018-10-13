@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>About</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home']"><ion-icon name="home"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        What is Helping Hand?
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="about-content">
+      This is where we would tell you info about this app.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content class="specifics-content">
+      <p class="specifics-paragraph">Looking for community resources?
+        <a [routerLink]="['/resources']" class="nice-link click-here">Check out this page <ion-icon name="arrow-forward"></ion-icon></a></p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>&copy;&nbsp;2018&nbsp;• Brandon Faulkner</p>
+  </ion-toolbar>
+</ion-footer>

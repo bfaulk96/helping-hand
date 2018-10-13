@@ -1,0 +1,49 @@
+ion-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-image {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.welcome-header {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.welcome-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.home-card-content {
+  padding: 5px;
+  color: var(--ion-color-primary);
+  vertical-align: middle;
+  * {
+    vertical-align: middle;
+    line-height: 1em;
+  }
+}
+
+.card-button {
+  vertical-align: middle;
+  * {
+    vertical-align: middle;
+  }
+}
+
+.welcome-paragraph {
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.find-out-more {
+  text-align: right;
+  vertical-align: middle;
+  display: inline-block;
+}

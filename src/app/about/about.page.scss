@@ -1,0 +1,46 @@
+ion-card-header {
+  padding-bottom: 10px;
+}
+
+ion-card-title {
+  color: var(--ion-color-primary);
+}
+
+ion-card-content {
+  padding-top: 10px;
+}
+
+.about-content {
+  //color: var(--ion-color-secondary);
+}
+
+ion-badge {
+  //line-height: 1em;
+  font-size: 1em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.cost-row {
+  &:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+}
+
+.specifics-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+}
+
+.specifics-paragraph {
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.click-here {
+  text-align: right;
+  vertical-align: middle;
+  display: inline-block;
+}
