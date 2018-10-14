@@ -83,7 +83,7 @@ export class AuthService {
                 loginObj => {
                     const loginResponse: any = loginObj;
                     const token = loginResponse.token;
-                    authSvc.userDao.setCurrentUser(loginResponse.user);
+                    authSvc.userDao.setCurrentUser(loginResponse.info);
                     authSvc.apiHelper.setAccessToken(token);
                     observer.next(data);
                     observer.complete();
