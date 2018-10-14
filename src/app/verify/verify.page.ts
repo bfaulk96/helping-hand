@@ -1,38 +1,70 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { AuthService } from '../services/auth-service';
+import {Component, OnInit} from "@angular/core";
+import {ActivatedRoute, ParamMap, Router} from "@angular/router";
+import {AuthService} from "../services/auth-service";
+import {HttpErrorResponse} from "@angular/common/http";
 
 @Component({
-  selector: 'app-verify',
-  templateUrl: './verify.page.html',
-  styleUrls: ['./verify.page.scss'],
+    selector: "app-verify",
+    templateUrl: "./verify.page.html",
+    styleUrls: ["./verify.page.scss"]
 })
 export class VerifyPage implements OnInit {
+    public readonly VerificationResult = VerificationResult; // For use in the template.
 
-  constructor(private route: ActivatedRoute, private authService: AuthService) {
-    this.route.queryParamMap.subscribe(
-      (params) => {
-        if(params.has("token")) {
-          let token = params.get("token")
-          this.authService.verify(token).subscribe(
-            (verifyResponse: any): void => {
-                console.log(verifyResponse);
+    public verificationResult: VerificationResult = VerificationResult.IN_PROGRESS;
+
+    constructor(private route: ActivatedRoute,
+                private authService: AuthService,
+                private router: Router) {
+        setTimeout(
+            (): void => {
+                this.route.queryParamMap.subscribe(
+                    (params: ParamMap): void => {
+                        if (params.has("token")) {
+                            const token: string = params.get("token");
+                            this.authService.verify(token).subscribe(
+                                (verifyResponse: boolean): void => {
+                                    if (verifyResponse === true) {
+                                        this.verificationResult = VerificationResult.VALID;
+                                    } else {
+                                        this.verificationResult = VerificationResult.INVALID;
+                                    }
+                                },
+                                (error: HttpErrorResponse): void => {
+                                    console.error(error);
+                                    if (error.status === 400) {
+                                        this.verificationResult = VerificationResult.INVALID;
+                                    } else {
+                                        this.verificationResult = VerificationResult.ERROR;
+                                    }
+                                }
+                            );
+                        } else {
+                            console.error("No token provided.");
+                            this.verificationResult = VerificationResult.ERROR;
+                        }
+                    },
+                    (error: Error): void => {
+                        console.error(error);
+                        this.verificationResult = VerificationResult.ERROR;
+                    }
+                );
             },
-            (error: Error): void => {
-                console.error(error);
-            }
-          );
-        } else {
-          console.error("No token")
-        }
-      },
-      (error) => {
-        console.error(error)
-      }
-    )
-  }
+            2000
+        );
+    }
 
-  ngOnInit() {
-  }
+    public ngOnInit(): void {
+    }
 
+    public goToHome(): void {
+        this.router.navigate(["home"]);
+    }
+}
+
+export enum VerificationResult {
+    IN_PROGRESS = "In Progress",
+    VALID = "Valid",
+    INVALID = "Invalid",
+    ERROR = "Error"
 }
