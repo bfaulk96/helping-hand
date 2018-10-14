@@ -26,6 +26,7 @@ export class VisionPage implements OnInit {
     public rawImage: string = "";
     public base64Image: string = "";
     public text: any;
+    public test: any;
 
     public translate: boolean = false;
 
@@ -91,6 +92,7 @@ export class VisionPage implements OnInit {
 
     public translateText(text) {
         this.sendTextToCloudTranslateHandler(text).subscribe((res) => {
+            this.test = res;
             this.text = res.data.translations[0].translatedText;
         });
     }
