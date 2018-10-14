@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Mão amiga"
+	},
+	"setup": {
+		"next": "Próximo",
+		"welcome": "Bem vinda!",
+		"choice": "Escolha o seu idioma"
+	},
+	"settings": {
+		"title": "Definições",
+		"language": "Escolha o seu idioma",
+		"apply": "Aplicar configurações"
+	},
+	"menu": {
+		"title": "Cardápio"
+	},
+	"home": {
+		"title": "Casa",
+		"secondaryTitle": "Inovação em Imigração",
+		"welcome": "Bem vindo ao aplicativo",
+		"findOut": "Descubra mais",
+		"resources": "Confira os recursos em sua comunidade",
+		"register": "Preciso de ajuda? Quer ajudar os outros? Cadastre-se hoje!",
+		"vision": "Algo próximo que você precisa traduzir ou precisa dizer em um idioma diferente? Tente 'visão'."
+	},
+	"about": {
+		"title": "Sobre",
+		"whatIs": "O que é",
+		"description": "Um aplicativo criado para imigrantes que fornece serviços para problemas de curto ou longo prazo que os imigrantes poderiam ter (idioma, cultura etc.)",
+		"lookingForResources": "Procurando por recursos da comunidade?",
+		"checkOutPage": "Confira esta página"
+	},
+	"register": {
+		"title": "registo",
+		"info": "informação de usuário",
+		"type": "Tipo de usuário",
+		"helper": "Ajudante",
+		"helpSeeker": "Ajudar Buscador",
+		"placeholder": {
+			"email": "O email",
+			"password": "Senha",
+			"confirmPassword": "Confirme a Senha"
+		},
+		"succeeded": "O registro foi bem-sucedido.",
+		"failed": "Registração falhou."
+	},
+	"resources": {
+		"title": "Recursos"
+	},
+	"login": {
+		"title": "Entrar",
+		"spaceTitle": "Entrar",
+		"placeholder": {
+			"email": "O email",
+			"password": "Senha"
+		},
+		"button": "Entrar",
+		"okay": "OK",
+		"succeeded": "Login com sucesso.",
+		"failed": "Falha na autenticação."
+	},
+	"logout": {
+		"title": "Sair",
+		"spaceTitle": "Sair",
+		"confirm": "Tem certeza de que gostaria de sair?",
+		"cancel": "Cancelar",
+		"yes": "sim"
+	},
+	"vision": {
+		"title": "Visão"
+	},
+	"verify": {
+		"title": "Verificar conta"
+	}
+}

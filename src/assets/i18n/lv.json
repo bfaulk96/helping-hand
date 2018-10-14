@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Izpalīdzīga roka"
+	},
+	"setup": {
+		"next": "Nākamais",
+		"welcome": "Esiet sveicināti!",
+		"choice": "Izvēlies savu valodu"
+	},
+	"settings": {
+		"title": "Iestatījumi",
+		"language": "Izvēlies savu valodu",
+		"apply": "Pielietot iestatījumus"
+	},
+	"menu": {
+		"title": "Izvēlne"
+	},
+	"home": {
+		"title": "Mājas",
+		"secondaryTitle": "Imigrācijas jauninājumi",
+		"welcome": "Laipni lūdzam pieteikumā",
+		"findOut": "Uzzināt vairāk",
+		"resources": "Apmeklējiet savus kopienas resursus",
+		"register": "Vajadzīga palīdzība? Vēlaties, lai palīdzētu citiem? Reģistrējies šodien!",
+		"vision": "Vai kaut kas tuvs jums nepieciešams tulkot vai arī tas jādara citā valodā? Izmēģiniet 'redzi'."
+	},
+	"about": {
+		"title": "Par",
+		"whatIs": "Kas ir",
+		"description": "Imigrantiem izstrādāts pieteikums, kas sniedz pakalpojumus imigrantu īstermiņa un ilgtermiņa problēmām (valoda, kultūra utt.)",
+		"lookingForResources": "Vai meklējat kopienas resursus?",
+		"checkOutPage": "Apskatiet šo lapu"
+	},
+	"register": {
+		"title": "Reģistrēties",
+		"info": "Lietotāja informācija",
+		"type": "Lietotāja veids",
+		"helper": "Palīgs",
+		"helpSeeker": "Palīdziet meklētājam",
+		"placeholder": {
+			"email": "E-pasts",
+			"password": "Parole",
+			"confirmPassword": "apstipriniet paroli"
+		},
+		"succeeded": "Reģistrācija ir veiksmīga.",
+		"failed": "Reģistrācija neizdevās."
+	},
+	"resources": {
+		"title": "Resursi"
+	},
+	"login": {
+		"title": "Pieslēgties",
+		"spaceTitle": "Pieslēgties",
+		"placeholder": {
+			"email": "E-pasts",
+			"password": "Parole"
+		},
+		"button": "Pieslēgties",
+		"okay": "Labi",
+		"succeeded": "Pieteikšanās notika.",
+		"failed": "Pieslēgšanās neizdevās."
+	},
+	"logout": {
+		"title": "Izlogoties",
+		"spaceTitle": "Izlogoties",
+		"confirm": "Vai tiešām vēlaties iziet no savas vietas?",
+		"cancel": "Atcelt",
+		"yes": "Jā"
+	},
+	"vision": {
+		"title": "Vīzija"
+	},
+	"verify": {
+		"title": "Verificējiet kontu"
+	}
+}

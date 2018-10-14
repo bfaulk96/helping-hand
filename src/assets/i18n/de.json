@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Helfende Hand"
+	},
+	"setup": {
+		"next": "Nächster",
+		"welcome": "Herzlich willkommen!",
+		"choice": "Wähle deine Sprache"
+	},
+	"settings": {
+		"title": "die Einstellungen",
+		"language": "Wähle deine Sprache",
+		"apply": "Einstellungen übernehmen"
+	},
+	"menu": {
+		"title": "Speisekarte"
+	},
+	"home": {
+		"title": "Zuhause",
+		"secondaryTitle": "Immigration Innovation",
+		"welcome": "Willkommen in der Anwendung",
+		"findOut": "Finde mehr heraus",
+		"resources": "Überprüfen Sie die Ressourcen in Ihrer Community",
+		"register": "Brauche Hilfe? Willst du anderen helfen? Melde dich noch heute an!",
+		"vision": "Etwas in der Nähe brauchst du übersetzt oder musst du in einer anderen Sprache sagen? Probieren Sie 'Vision'."
+	},
+	"about": {
+		"title": "Über",
+		"whatIs": "Was ist",
+		"description": "Eine Anwendung für Einwanderer, die Dienstleistungen für kurz- oder langfristige Probleme bietet, die Einwanderer haben könnten (Sprache, Kultur, etc.)",
+		"lookingForResources": "Auf der Suche nach Community-Ressourcen?",
+		"checkOutPage": "Schau dir diese Seite an"
+	},
+	"register": {
+		"title": "Registrieren",
+		"info": "Benutzerinformation",
+		"type": "Art des Benutzers",
+		"helper": "Helfer",
+		"helpSeeker": "Hilf Seeker",
+		"placeholder": {
+			"email": "Email",
+			"password": "Passwort",
+			"confirmPassword": "Passwort bestätigen"
+		},
+		"succeeded": "Registrierung erfolgreich.",
+		"failed": "Registrierung fehlgeschlagen."
+	},
+	"resources": {
+		"title": "Ressourcen"
+	},
+	"login": {
+		"title": "Anmeldung",
+		"spaceTitle": "Einloggen",
+		"placeholder": {
+			"email": "Email",
+			"password": "Passwort"
+		},
+		"button": "Einloggen",
+		"okay": "okay",
+		"succeeded": "Anmeldung erfolgreich.",
+		"failed": "Anmeldung fehlgeschlagen."
+	},
+	"logout": {
+		"title": "Ausloggen",
+		"spaceTitle": "Ausloggen",
+		"confirm": "Sind Sie sicher, dass Sie sich ausloggen möchten?",
+		"cancel": "Stornieren",
+		"yes": "Ja"
+	},
+	"vision": {
+		"title": "Vision"
+	},
+	"verify": {
+		"title": "Konto überprüfen"
+	}
+}

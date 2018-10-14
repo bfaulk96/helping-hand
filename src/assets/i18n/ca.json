@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Ajuda"
+	},
+	"setup": {
+		"next": "Pròxim",
+		"welcome": "Benvinguda!",
+		"choice": "Tria el teu idioma"
+	},
+	"settings": {
+		"title": "Configuració",
+		"language": "Tria el teu idioma",
+		"apply": "Aplica configuració"
+	},
+	"menu": {
+		"title": "Menú"
+	},
+	"home": {
+		"title": "Inici",
+		"secondaryTitle": "Immigració Innovació",
+		"welcome": "Benvingut a l'aplicació",
+		"findOut": "Descobrir més",
+		"resources": "Consulteu els recursos de la vostra comunitat",
+		"register": "Necessitar ajuda? Voleu ajudar els altres? Registreu-vos avui mateix!",
+		"vision": "Alguna cosa a prop que necessiteu traduït o haureu de dir en un idioma diferent? Intenta 'visió'."
+	},
+	"about": {
+		"title": "Quant a",
+		"whatIs": "Què és",
+		"description": "Una aplicació construïda per a immigrants que ofereix serveis per problemes a curt o llarg termini que els immigrants poden tenir (llenguatge, cultura, etc.)",
+		"lookingForResources": "A la recerca de recursos comunitaris?",
+		"checkOutPage": "Fes una ullada a aquesta pàgina"
+	},
+	"register": {
+		"title": "Registre",
+		"info": "Informació de l'usuari",
+		"type": "Tipus d'usuari",
+		"helper": "Ajudant",
+		"helpSeeker": "Ajuda al cercador",
+		"placeholder": {
+			"email": "Correu electrònic",
+			"password": "Contrasenya",
+			"confirmPassword": "Confirma la contrassenya"
+		},
+		"succeeded": "S'ha obtingut el registre.",
+		"failed": "El registre ha fallat."
+	},
+	"resources": {
+		"title": "Recursos"
+	},
+	"login": {
+		"title": "iniciar Sessió",
+		"spaceTitle": "Iniciar Sessió",
+		"placeholder": {
+			"email": "Correu electrònic",
+			"password": "Contrasenya"
+		},
+		"button": "Iniciar Sessió",
+		"okay": "Bé",
+		"succeeded": "S'ha iniciat la sessió.",
+		"failed": "Error a l'iniciar sessió."
+	},
+	"logout": {
+		"title": "Tancar sessió",
+		"spaceTitle": "Tancar sessió",
+		"confirm": "Esteu segur que voleu tancar la sessió?",
+		"cancel": "Cancel · lar",
+		"yes": "Sí"
+	},
+	"vision": {
+		"title": "Visió"
+	},
+	"verify": {
+		"title": "Verifica el compte"
+	}
+}

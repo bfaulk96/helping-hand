@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Helping Hand"
+	},
+	"setup": {
+		"next": "Next",
+		"welcome": "Welcome!",
+		"choice": "Choose your language"
+	},
+	"settings": {
+		"title": "Settings",
+		"language": "Choose your language",
+		"apply": "Apply Settings"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Home",
+		"secondaryTitle": "Immigration Innovation",
+		"welcome": "Welcome to the application",
+		"findOut": "Find out more",
+		"resources": "Check out resources in your community",
+		"register": "Need Help? Want to help others? Register today!",
+		"vision": "Something nearby you need translated or need to say in a different language? Try 'vision'."
+	},
+	"about": {
+		"title": "About",
+		"whatIs": "What is",
+		"description": "An application built for immigrants that provides services for short-term or long-term problems that immigrants could have (language, culture, etc.)",
+		"lookingForResources": "Looking for community resources?",
+		"checkOutPage": "Check out this page"
+	},
+	"register": {
+		"title": "Register",
+		"info": "User Info",
+		"type": "Type of User",
+		"helper": "Helper",
+		"helpSeeker": "Help Seeker",
+		"placeholder": {
+			"email": "Email",
+			"password": "Password",
+			"confirmPassword": "Confirm Password"
+		},
+		"succeeded": "Registration Succeeded.",
+		"failed": "Registration Failed."
+	},
+	"resources": {
+		"title": "Resources"
+	},
+	"login": {
+		"title": "Login",
+		"spaceTitle": "Log In",
+		"placeholder": {
+			"email": "Email",
+			"password": "Password"
+		},
+		"button": "Log In",
+		"okay": "Okay",
+		"succeeded": "Login Succeeded.",
+		"failed": "Login Failed."
+	},
+	"logout": {
+		"title": "Logout",
+		"spaceTitle": "Log Out",
+		"confirm": "Are you sure you would like to log out?",
+		"cancel": "Cancel",
+		"yes": "Yes"
+	},
+	"vision": {
+		"title": "Vision"
+	},
+	"verify": {
+		"title": "Verify Account"
+	}
+}

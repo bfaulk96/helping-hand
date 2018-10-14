@@ -1,80 +1,76 @@
 {
-  "app": {
-    "title": "Mano Amiga"
-  },
-  "setup": {
-    "next": "Siguiente",
-    "welcome": "Bienvenido",
-    "choice": "Eligue tu idioma"
-  },
-  "settings":{
-    "title": "Ajustes",
-    "language": "Elige tu idioma",
-    "apply": "Aplicar configuraciones"
-  },
-  "vision": {
-    "translate": "Translate Text",
-    "object": "Pronouce Object"
-  },
-  "menu": {
-    "title": "Menú"
-  },
-  "home": {
-    "title": "Casa",
-    "secondaryTitle": "Innovación en la inmigración",
-    "welcome": "Bienvenido a la aplicación",
-    "findOut": "Saber más",
-    "resources": "Echa un vistazo a los recursos en tu comunidad",
-    "register": "¿Necesitas ayuda? ¿Quieres ayudar a los demás? ¡Regístrese hoy!",
-    "vision": "¿Algo cercano que necesitas traducir o necesitas decir en otro idioma? Prueba la 'visión'."
-  },
-  "about": {
-    "title": "Acerca de",
-    "whatIs": "¿Que es",
-    "description": "Aquí es donde te diríamos información sobre esta aplicación.",
-    "lookingForResources": "¿Buscando recursos comunitarios?",
-    "checkOutPage": "Echa un vistazo a esta página"
-  },
-  "register": {
-    "title": "Regístrate",
-    "info": "Información de usuario",
-    "type": "Tipo de usuario",
-    "helper": "Ayudante",
-    "helpSeeker": "Buscador de ayuda",
-    "placeholder": {
-      "email": "Email",
-      "password": "Contraseña",
-      "confirmPassword": "Confirmar contraseña"
-    },
-    "succeeded": "Registro exitoso.",
-    "failed": "Registro fallido."
-  },
-  "resources": {
-    "title": "Recursos"
-  },
-  "login": {
-    "title": "Iniciar sesión",
-    "spaceTitle": "Iniciar sesión",
-    "placeholder": {
-      "email": "Email",
-      "password": "Contraseña"
-    },
-    "button": "Iniciar sesión",
-    "okay": "Bueno",
-    "succeeded": "Inicio de sesión exitoso.",
-    "failed": "Error de inicio de sesion."
-  },
-  "logout": {
-    "title": "Cerrar sesión",
-    "spaceTitle": "Cerrar sesión",
-    "confirm": "¿Estás seguro de que te gustaría cerrar sesión?",
-    "cancel": "Cancelar",
-    "yes": "Sí"
-  },
-  "vision": {
-    "title": "Visión"
-  },
-  "verify": {
-    "title": "Verificar Cuenta"
-  }
+	"app": {
+		"title": "Mano amiga"
+	},
+	"setup": {
+		"next": "Siguiente",
+		"welcome": "¡Bienvenido!",
+		"choice": "Elige tu idioma"
+	},
+	"settings": {
+		"title": "Ajustes",
+		"language": "Elige tu idioma",
+		"apply": "Aplicar configuraciones"
+	},
+	"menu": {
+		"title": "Menú"
+	},
+	"home": {
+		"title": "Casa",
+		"secondaryTitle": "Innovación en la inmigración",
+		"welcome": "Bienvenido a la aplicación",
+		"findOut": "Saber más",
+		"resources": "Echa un vistazo a los recursos en tu comunidad",
+		"register": "¿Necesitas ayuda? ¿Quieres ayudar a los demás? ¡Regístrese hoy!",
+		"vision": "¿Algo cercano que necesitas traducir o necesitas decir en otro idioma? Prueba la 'visión'."
+	},
+	"about": {
+		"title": "Acerca de",
+		"whatIs": "Que es",
+		"description": "Una aplicación diseñada para inmigrantes que brinda servicios para problemas a corto o largo plazo que podrían tener los inmigrantes (idioma, cultura, etc.)",
+		"lookingForResources": "¿Buscando recursos comunitarios?",
+		"checkOutPage": "Echa un vistazo a esta página"
+	},
+	"register": {
+		"title": "Registro",
+		"info": "Información de usuario",
+		"type": "Tipo de usuario",
+		"helper": "Ayudante",
+		"helpSeeker": "Buscador de ayuda",
+		"placeholder": {
+			"email": "Email",
+			"password": "Contraseña",
+			"confirmPassword": "Confirmar contraseña"
+		},
+		"succeeded": "Registro exitoso.",
+		"failed": "Registro fallido."
+	},
+	"resources": {
+		"title": "Recursos"
+	},
+	"login": {
+		"title": "Iniciar sesión",
+		"spaceTitle": "Iniciar sesión",
+		"placeholder": {
+			"email": "Email",
+			"password": "Contraseña"
+		},
+		"button": "Iniciar sesión",
+		"okay": "Bueno",
+		"succeeded": "Inicio de sesión exitoso",
+		"failed": "Error de inicio de sesion."
+	},
+	"logout": {
+		"title": "Cerrar sesión",
+		"spaceTitle": "Cerrar sesión",
+		"confirm": "¿Estás seguro de que te gustaría cerrar sesión?",
+		"cancel": "Cancelar",
+		"yes": "Sí"
+	},
+	"vision": {
+		"title": "Visión"
+	},
+	"verify": {
+		"title": "Verificar Cuenta"
+	}
 }

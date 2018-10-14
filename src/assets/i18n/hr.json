@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Ruka pomoći"
+	},
+	"setup": {
+		"next": "Sljedeći",
+		"welcome": "Dobrodošli!",
+		"choice": "Odaberite svoj jezik"
+	},
+	"settings": {
+		"title": "postavke",
+		"language": "Odaberite svoj jezik",
+		"apply": "Primijeni Postavke"
+	},
+	"menu": {
+		"title": "izbornik"
+	},
+	"home": {
+		"title": "Dom",
+		"secondaryTitle": "Inovativnost za useljenje",
+		"welcome": "Dobro došli u aplikaciju",
+		"findOut": "Saznaj više",
+		"resources": "Pogledajte resurse u vašoj zajednici",
+		"register": "Trebate li pomoć? Želite li pomoći drugima? Registrirajte se danas!",
+		"vision": "Nešto u blizini trebate prevedeni ili trebate reći na nekom drugom jeziku? Pokušajte 'viziju'."
+	},
+	"about": {
+		"title": "Oko",
+		"whatIs": "Što je",
+		"description": "Zahtjev izgrađen za imigrante koji pruža usluge kratkoročnim ili dugoročnim problemima koje imigranti mogu imati (jezik, kultura itd.)",
+		"lookingForResources": "Tražite resurse zajednice?",
+		"checkOutPage": "Pogledajte ovu stranicu"
+	},
+	"register": {
+		"title": "Registrirajte se",
+		"info": "Korisnički podaci",
+		"type": "Vrsta korisnika",
+		"helper": "pomoćnik",
+		"helpSeeker": "Pomoć tražitelja",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Zaporka",
+			"confirmPassword": "Potvrdi lozinku"
+		},
+		"succeeded": "Registracija je uspjela.",
+		"failed": "Registracija nije uspjela."
+	},
+	"resources": {
+		"title": "Resursi"
+	},
+	"login": {
+		"title": "Prijaviti se",
+		"spaceTitle": "Prijaviti se",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Zaporka"
+		},
+		"button": "Prijaviti se",
+		"okay": "u redu",
+		"succeeded": "Prijava je uspjela.",
+		"failed": "Prijava nije uspjela."
+	},
+	"logout": {
+		"title": "Odjaviti se",
+		"spaceTitle": "Odjaviti se",
+		"confirm": "Jeste li sigurni da se želite odjaviti?",
+		"cancel": "Otkazati",
+		"yes": "Da"
+	},
+	"vision": {
+		"title": "Vizija"
+	},
+	"verify": {
+		"title": "Potvrdi Račun"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Coup de main"
+	},
+	"setup": {
+		"next": "Suivant",
+		"welcome": "Bienvenue!",
+		"choice": "Choisissez votre langue"
+	},
+	"settings": {
+		"title": "Réglages",
+		"language": "Choisissez votre langue",
+		"apply": "Appliquer les paramètres"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Accueil",
+		"secondaryTitle": "Immigration Innovation",
+		"welcome": "Bienvenue sur l'application",
+		"findOut": "En savoir plus",
+		"resources": "Consultez les ressources de votre communauté",
+		"register": "Besoin d'aide pour? Voulez-vous aider les autres? Inscrivez-vous aujourd'hui!",
+		"vision": "Quelque chose à proximité dont vous avez besoin de traduire ou de dire dans une langue différente? Essayez 'vision'."
+	},
+	"about": {
+		"title": "Sur",
+		"whatIs": "Quel est",
+		"description": "Une application conçue pour les immigrants qui fournit des services pour les problèmes à court ou à long terme que les immigrants pourraient avoir (langue, culture, etc.)",
+		"lookingForResources": "Vous recherchez des ressources communautaires?",
+		"checkOutPage": "Découvrez cette page"
+	},
+	"register": {
+		"title": "registre",
+		"info": "informations utilisateur",
+		"type": "Type d'utilisateur",
+		"helper": "Assistant",
+		"helpSeeker": "Aide chercheur",
+		"placeholder": {
+			"email": "Email",
+			"password": "Mot de passe",
+			"confirmPassword": "Confirmez le mot de passe"
+		},
+		"succeeded": "Inscription réussie.",
+		"failed": "Échec de l'enregistrement."
+	},
+	"resources": {
+		"title": "Ressources"
+	},
+	"login": {
+		"title": "S'identifier",
+		"spaceTitle": "S'identifier",
+		"placeholder": {
+			"email": "Email",
+			"password": "Mot de passe"
+		},
+		"button": "S'identifier",
+		"okay": "d'accord",
+		"succeeded": "Connexion réussie.",
+		"failed": "Échec de la connexion."
+	},
+	"logout": {
+		"title": "Connectez - Out",
+		"spaceTitle": "Connectez - Out",
+		"confirm": "Êtes-vous sûr de vouloir vous déconnecter?",
+		"cancel": "Annuler",
+		"yes": "Oui"
+	},
+	"vision": {
+		"title": "Vision"
+	},
+	"verify": {
+		"title": "vérifier le compte"
+	}
+}

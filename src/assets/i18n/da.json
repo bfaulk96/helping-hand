@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Hjælpende hånd"
+	},
+	"setup": {
+		"next": "Næste",
+		"welcome": "Velkommen!",
+		"choice": "Vælg dit sprog"
+	},
+	"settings": {
+		"title": "Indstillinger",
+		"language": "Vælg dit sprog",
+		"apply": "Anvend indstillinger"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Hjem",
+		"secondaryTitle": "Indvandring Innovation",
+		"welcome": "Velkommen til ansøgningen",
+		"findOut": "Find ud af mere",
+		"resources": "Tjek ressourcerne i dit fællesskab",
+		"register": "Brug for hjælp? Vil du hjælpe andre? Tilmeld dig i dag!",
+		"vision": "Noget i nærheden har du brug for oversat eller skal du sige på et andet sprog? Prøv 'vision'."
+	},
+	"about": {
+		"title": "Om",
+		"whatIs": "Hvad er",
+		"description": "En ansøgning bygget til indvandrere, der yder tjenester til kortsigtede eller langsigtede problemer, som indvandrere kan have (sprog, kultur osv.)",
+		"lookingForResources": "Leder du efter fællesskabets ressourcer?",
+		"checkOutPage": "Tjek denne side"
+	},
+	"register": {
+		"title": "Tilmeld",
+		"info": "Brugerinfo",
+		"type": "Type Bruger",
+		"helper": "Hjælper",
+		"helpSeeker": "Hjælp Søger",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Adgangskode",
+			"confirmPassword": "Bekræft kodeord"
+		},
+		"succeeded": "Registrering lykkedes.",
+		"failed": "Registreringen fejlede."
+	},
+	"resources": {
+		"title": "Ressourcer"
+	},
+	"login": {
+		"title": "Log på",
+		"spaceTitle": "Log på",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Adgangskode"
+		},
+		"button": "Log på",
+		"okay": "okay",
+		"succeeded": "Log ind lykkedes.",
+		"failed": "Login mislykkedes."
+	},
+	"logout": {
+		"title": "Log ud",
+		"spaceTitle": "Log ud",
+		"confirm": "Er du sikker på, at du gerne vil logge ud?",
+		"cancel": "Afbestille",
+		"yes": "Ja"
+	},
+	"vision": {
+		"title": "Vision"
+	},
+	"verify": {
+		"title": "Bekræft konto"
+	}
+}

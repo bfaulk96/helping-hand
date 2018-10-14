@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Eskua laguntzen"
+	},
+	"setup": {
+		"next": "hurrengo",
+		"welcome": "Ongi etorri!",
+		"choice": "Aukeratu zure hizkuntza"
+	},
+	"settings": {
+		"title": "ezarpenak",
+		"language": "Aukeratu zure hizkuntza",
+		"apply": "Aplikatu ezarpenak"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Hasiera",
+		"secondaryTitle": "Inmigrazioaren Berrikuntza",
+		"welcome": "Ongi etorri aplikaziora",
+		"findOut": "Gehiago aurkitu",
+		"resources": "Ikusi zure komunitatean baliabideak",
+		"register": "Laguntza behar? Besteei laguntzeko? Erregistratu gaur!",
+		"vision": "Zerbait hurbil dago itzulitako edo beste hizkuntza batean esan behar duzu? Saiatu 'ikusmena'."
+	},
+	"about": {
+		"title": "About",
+		"whatIs": "Zer da",
+		"description": "Immigranteek etorkizuneko epe motz edo luzerako arazoei (hizkuntza, kultura, eta abar) izan ditzaketen zerbitzuak eskaintzen dituzten etorkinei zuzendutako aplikazio bat da.",
+		"lookingForResources": "Komunitate-baliabideen bila?",
+		"checkOutPage": "Begiratu orri hau"
+	},
+	"register": {
+		"title": "Eman izena",
+		"info": "Erabiltzailearen informazioa",
+		"type": "Erabiltzaile mota",
+		"helper": "helper",
+		"helpSeeker": "Laguntza bilatu",
+		"placeholder": {
+			"email": "Emaila",
+			"password": "Pasahitza",
+			"confirmPassword": "pasahitza baieztatu"
+		},
+		"succeeded": "Erregistroa bete da.",
+		"failed": "Matrikula huts egin du."
+	},
+	"resources": {
+		"title": "Baliabideak"
+	},
+	"login": {
+		"title": "Saioa hasi",
+		"spaceTitle": "Saioa hasi",
+		"placeholder": {
+			"email": "Emaila",
+			"password": "Pasahitza"
+		},
+		"button": "Saioa hasi",
+		"okay": "ados",
+		"succeeded": "Saioa hasi da.",
+		"failed": "Errorea saioa hastean."
+	},
+	"logout": {
+		"title": "Saioa amaitu",
+		"spaceTitle": "Saioa amaitu",
+		"confirm": "Ziur zaude saioa amaitu nahi duzula?",
+		"cancel": "Utzi",
+		"yes": "Bai"
+	},
+	"vision": {
+		"title": "Vision"
+	},
+	"verify": {
+		"title": "Egiaztatu kontua"
+	}
+}

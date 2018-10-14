@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Għajnuna Hand"
+	},
+	"setup": {
+		"next": "Sussegwentement",
+		"welcome": "Merħba!",
+		"choice": "Agħżel il-lingwa tiegħek"
+	},
+	"settings": {
+		"title": "Settings",
+		"language": "Agħżel il-lingwa tiegħek",
+		"apply": "Applika Settings"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Dar",
+		"secondaryTitle": "Immigrazzjoni Innovazzjoni",
+		"welcome": "Merħba għall-applikazzjoni",
+		"findOut": "Sir af aktar",
+		"resources": "Iċċekkja r-riżorsi fil-komunità tiegħek",
+		"register": "Need Help? Trid tgħin lill-oħrajn? Irreġistra illum!",
+		"vision": "Xi ħaġa fil-viċin ikollok bżonn traduzzjoni jew trid tgħid f'lingwa differenti? Ipprova 'viżjoni'."
+	},
+	"about": {
+		"title": "Dwar",
+		"whatIs": "X'inhi",
+		"description": "Applikazzjoni mibnija għall-immigranti li tipprovdi servizzi għal problemi fuq medda qasira jew twila ta 'żmien li l-immigranti jista' jkollhom (il-lingwa, il-kultura, eċċ)",
+		"lookingForResources": "Tfittex riżorsi tal-komunità?",
+		"checkOutPage": "Iċċekkja din il-paġna"
+	},
+	"register": {
+		"title": "Reġistru",
+		"info": "Informazzjoni tal-Utent",
+		"type": "Tip ta 'Utent",
+		"helper": "Helper",
+		"helpSeeker": "Għajnuna Seeker",
+		"placeholder": {
+			"email": "Email",
+			"password": "Password",
+			"confirmPassword": "Ikkonferma il-Password"
+		},
+		"succeeded": "Ir-Reġistrazzjoni ntlaqgħet.",
+		"failed": "Ir-Reġistrazzjoni naqset."
+	},
+	"resources": {
+		"title": "Riżorsi"
+	},
+	"login": {
+		"title": "Idħol",
+		"spaceTitle": "Idħol",
+		"placeholder": {
+			"email": "Email",
+			"password": "Password"
+		},
+		"button": "Idħol",
+		"okay": "Okay",
+		"succeeded": "Login Successed.",
+		"failed": "Login falla."
+	},
+	"logout": {
+		"title": "Oħroġ",
+		"spaceTitle": "Oħroġ",
+		"confirm": "Inti żgur li tixtieq li toħroġ?",
+		"cancel": "Ikkanċella",
+		"yes": "Iva"
+	},
+	"vision": {
+		"title": "Viżjoni"
+	},
+	"verify": {
+		"title": "Ivverifika l-Kont"
+	}
+}

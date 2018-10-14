@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Pomocná ruka"
+	},
+	"setup": {
+		"next": "další",
+		"welcome": "Vítejte!",
+		"choice": "Vyberte svůj jazyk"
+	},
+	"settings": {
+		"title": "Nastavení",
+		"language": "Vyberte svůj jazyk",
+		"apply": "Použijte Nastavení"
+	},
+	"menu": {
+		"title": "Jídelní lístek"
+	},
+	"home": {
+		"title": "Domov",
+		"secondaryTitle": "Imigrační inovace",
+		"welcome": "Vítejte v aplikaci",
+		"findOut": "Zjistit více",
+		"resources": "Podívejte se na zdroje ve vaší komunitě",
+		"register": "Potřebovat pomoc? Chcete pomoci druhým? Zaregistrujte se ještě dnes!",
+		"vision": "Něco v okolí, které potřebujete přeložit nebo potřebujete říct v jiném jazyce? Vyzkoušejte 'vizi'."
+	},
+	"about": {
+		"title": "O",
+		"whatIs": "Co je",
+		"description": "Aplikace vytvořená pro přistěhovalce, která poskytuje služby pro krátkodobé nebo dlouhodobé problémy, které mohou přistěhovalci mít (jazyk, kultura atd.).",
+		"lookingForResources": "Hledáte zdroje komunity?",
+		"checkOutPage": "Podívejte se na tuto stránku"
+	},
+	"register": {
+		"title": "Registrovat",
+		"info": "Uživatelské informace",
+		"type": "Typ uživatele",
+		"helper": "Pomocník",
+		"helpSeeker": "Nápověda Seeker",
+		"placeholder": {
+			"email": "E-mailem",
+			"password": "Heslo",
+			"confirmPassword": "Potvrďte heslo"
+		},
+		"succeeded": "Registrace uspěla.",
+		"failed": "Registrace se nezdařila."
+	},
+	"resources": {
+		"title": "Zdroje"
+	},
+	"login": {
+		"title": "Přihlásit se",
+		"spaceTitle": "Přihlásit se",
+		"placeholder": {
+			"email": "E-mailem",
+			"password": "Heslo"
+		},
+		"button": "Přihlásit se",
+		"okay": "dobře",
+		"succeeded": "Přihlášení Successfully.",
+		"failed": "Přihlášení selhalo."
+	},
+	"logout": {
+		"title": "Odhlásit se",
+		"spaceTitle": "Odhlásit se",
+		"confirm": "Opravdu se chcete odhlásit?",
+		"cancel": "zrušení",
+		"yes": "Ano"
+	},
+	"vision": {
+		"title": "Vidění"
+	},
+	"verify": {
+		"title": "Ověřte účet"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Ndihma e dorës"
+	},
+	"setup": {
+		"next": "tjetër",
+		"welcome": "Mirë se vini!",
+		"choice": "Zgjidhni gjuhën tuaj"
+	},
+	"settings": {
+		"title": "Cilësimet",
+		"language": "Zgjidhni gjuhën tuaj",
+		"apply": "Aplikoni Cilësimet"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "shtëpi",
+		"secondaryTitle": "Inovacioni i Imigracionit",
+		"welcome": "Mirë se vini në aplikacionin",
+		"findOut": "Zbulo me shume",
+		"resources": "Shikoni burimet në komunitetin tuaj",
+		"register": "Kam nevojë për ndihmë? Dëshironi të ndihmoni të tjerët? Regjistrohuni sot!",
+		"vision": "Diçka afër që keni nevojë të përktheni ose duhet të thoni në një gjuhë tjetër? Provoni 'vizion'."
+	},
+	"about": {
+		"title": "për",
+		"whatIs": "Cfare eshte",
+		"description": "Një aplikacion i ndërtuar për emigrantët që ofron shërbime për problemet afatshkurtra apo afatgjata që emigrantët mund të kenë (gjuhë, kulturë, etj)",
+		"lookingForResources": "Duke kërkuar burime të komunitetit?",
+		"checkOutPage": "Shikoni këtë faqe"
+	},
+	"register": {
+		"title": "Regjistrohu",
+		"info": "Info e përdoruesit",
+		"type": "Lloji i Përdoruesit",
+		"helper": "ndihmës",
+		"helpSeeker": "Ndihmoni kërkuesin",
+		"placeholder": {
+			"email": "Email",
+			"password": "fjalëkalim",
+			"confirmPassword": "Konfirmo fjalëkalimin"
+		},
+		"succeeded": "Regjistrimi u pasua.",
+		"failed": "Regjistrimi nuk u krye."
+	},
+	"resources": {
+		"title": "burime"
+	},
+	"login": {
+		"title": "hyrje",
+		"spaceTitle": "Identifikohu",
+		"placeholder": {
+			"email": "Email",
+			"password": "fjalëkalim"
+		},
+		"button": "Identifikohu",
+		"okay": "Mirë",
+		"succeeded": "Identifikimi është pasuar.",
+		"failed": "Identifikimi dështoi."
+	},
+	"logout": {
+		"title": "Shkyç",
+		"spaceTitle": "Shkyç",
+		"confirm": "Je i sigurt që do të donit të dilni jashtë?",
+		"cancel": "anuloj",
+		"yes": "po"
+	},
+	"vision": {
+		"title": "vizion"
+	},
+	"verify": {
+		"title": "Verifikoni llogarinë"
+	}
+}

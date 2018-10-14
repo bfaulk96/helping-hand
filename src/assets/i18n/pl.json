@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Pomocna dłoń"
+	},
+	"setup": {
+		"next": "Kolejny",
+		"welcome": "Witamy!",
+		"choice": "Wybierz swój język"
+	},
+	"settings": {
+		"title": "Ustawienia",
+		"language": "Wybierz swój język",
+		"apply": "Zastosuj ustawienia"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Dom",
+		"secondaryTitle": "Innowacje imigracyjne",
+		"welcome": "Witamy w aplikacji",
+		"findOut": "Dowiedz się więcej",
+		"resources": "Sprawdź zasoby w swojej społeczności",
+		"register": "Potrzebuję pomocy? Chcesz pomóc innym? Zarejestruj się dziś!",
+		"vision": "Coś w pobliżu, które potrzebujesz przetłumaczyć lub potrzebujesz w innym języku? Spróbuj 'wizji'."
+	},
+	"about": {
+		"title": "O",
+		"whatIs": "Co jest",
+		"description": "Aplikacja stworzona dla imigrantów, która zapewnia usługi dla krótkoterminowych lub długotrwałych problemów, które mogą mieć imigranci (język, kultura itp.)",
+		"lookingForResources": "Szukasz zasobów społecznościowych?",
+		"checkOutPage": "Sprawdź tę stronę"
+	},
+	"register": {
+		"title": "Zarejestrować",
+		"info": "Informacje użytkownika",
+		"type": "Typ użytkownika",
+		"helper": "Pomocnik",
+		"helpSeeker": "Pomóż Poszukiwaczowi",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Hasło",
+			"confirmPassword": "Potwierdź hasło"
+		},
+		"succeeded": "Rejestracja powiodła się.",
+		"failed": "Rejestracja nie powiodła się."
+	},
+	"resources": {
+		"title": "Zasoby"
+	},
+	"login": {
+		"title": "Zaloguj Się",
+		"spaceTitle": "Zaloguj Się",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Hasło"
+		},
+		"button": "Zaloguj Się",
+		"okay": "w porządku",
+		"succeeded": "Logowanie powiodło się.",
+		"failed": "Logowanie nie powiodło się."
+	},
+	"logout": {
+		"title": "Wyloguj",
+		"spaceTitle": "Wyloguj",
+		"confirm": "Czy na pewno chcesz się wylogować?",
+		"cancel": "Anuluj",
+		"yes": "tak"
+	},
+	"vision": {
+		"title": "Wizja"
+	},
+	"verify": {
+		"title": "Zweryfikuj konto"
+	}
+}

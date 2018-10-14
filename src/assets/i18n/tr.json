@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Yardım eli"
+	},
+	"setup": {
+		"next": "Sonraki",
+		"welcome": "Hoşgeldiniz!",
+		"choice": "Dilinizi seçin"
+	},
+	"settings": {
+		"title": "Ayarlar",
+		"language": "Dilinizi seçin",
+		"apply": "Ayarları uygula"
+	},
+	"menu": {
+		"title": "Menü"
+	},
+	"home": {
+		"title": "Ev",
+		"secondaryTitle": "Göçmenlik İnovasyonu",
+		"welcome": "Uygulamaya hoşgeldiniz",
+		"findOut": "Daha fazlasını bul",
+		"resources": "Topluluğunuzdaki kaynakları kontrol edin",
+		"register": "Yardıma mı ihtiyacınız var? Başkalarına yardım etmek ister misin? Bugün kayıt Ol!",
+		"vision": "Yakında bir şey tercüme veya farklı bir dilde söylemek gerekir? 'Vizyonu' dene."
+	},
+	"about": {
+		"title": "hakkında",
+		"whatIs": "Nedir",
+		"description": "Göçmenlerin sahip olabileceği kısa ve uzun vadeli sorunlara (dil, kültür vb.) Hizmet veren göçmenler için yapılmış bir uygulama.",
+		"lookingForResources": "Topluluk kaynaklarını mı arıyorsunuz?",
+		"checkOutPage": "Bu sayfaya göz atın"
+	},
+	"register": {
+		"title": "Kayıt olmak",
+		"info": "Kullanıcı bilgisi",
+		"type": "Kullanıcı Türü",
+		"helper": "Yardımcı",
+		"helpSeeker": "Arayıcıya Yardım Et",
+		"placeholder": {
+			"email": "E-posta",
+			"password": "Parola",
+			"confirmPassword": "Şifreyi Onayla"
+		},
+		"succeeded": "Kayıt Başarılı.",
+		"failed": "Kayıt başarısız."
+	},
+	"resources": {
+		"title": "kaynaklar"
+	},
+	"login": {
+		"title": "Oturum aç",
+		"spaceTitle": "Oturum aç",
+		"placeholder": {
+			"email": "E-posta",
+			"password": "Parola"
+		},
+		"button": "Oturum aç",
+		"okay": "Tamam",
+		"succeeded": "Giriş Başarılı.",
+		"failed": "Giriş başarısız."
+	},
+	"logout": {
+		"title": "Çıkış Yap",
+		"spaceTitle": "Çıkış Yap",
+		"confirm": "Çıkış yapmak istediğinizden emin misiniz?",
+		"cancel": "İptal etmek",
+		"yes": "Evet"
+	},
+	"vision": {
+		"title": "Vizyon"
+	},
+	"verify": {
+		"title": "Hesabı Doğrula"
+	}
+}

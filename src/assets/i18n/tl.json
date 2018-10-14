@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Pagtulong sa Kamay"
+	},
+	"setup": {
+		"next": "Susunod",
+		"welcome": "Maligayang pagdating!",
+		"choice": "Piliin ang iyong wika"
+	},
+	"settings": {
+		"title": "Mga Setting",
+		"language": "Piliin ang iyong wika",
+		"apply": "Ilapat ang Mga Setting"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Bahay",
+		"secondaryTitle": "Immigration Innovation",
+		"welcome": "Maligayang pagdating sa application",
+		"findOut": "Alamin ang higit pa",
+		"resources": "Tingnan ang mga mapagkukunan sa iyong komunidad",
+		"register": "Kailangan ng tulong? Nais mo bang tumulong sa iba? Magrehistro ngayon!",
+		"vision": "Isang bagay na malapit na kailangan mong isalin o kailangang sabihin sa ibang wika? Subukan ang 'paningin'."
+	},
+	"about": {
+		"title": "Tungkol sa",
+		"whatIs": "Ano ang",
+		"description": "Ang isang application na binuo para sa mga imigrante na nagbibigay ng mga serbisyo para sa panandalian o pangmatagalang problema na maaaring magkaroon ng mga imigrante (wika, kultura, atbp.)",
+		"lookingForResources": "Naghahanap ng mga mapagkukunan ng komunidad?",
+		"checkOutPage": "Tingnan ang pahinang ito"
+	},
+	"register": {
+		"title": "Magparehistro",
+		"info": "iNFORMATION NG GUMAGAMIT",
+		"type": "Uri ng Gumagamit",
+		"helper": "Helper",
+		"helpSeeker": "Tulong Seeker",
+		"placeholder": {
+			"email": "Email",
+			"password": "Password",
+			"confirmPassword": "Kumpirmahin ang Password"
+		},
+		"succeeded": "Pagpaparehistro Nagtagumpay.",
+		"failed": "Nabigo ang Pagpaparehistro."
+	},
+	"resources": {
+		"title": "Mga Mapagkukunan"
+	},
+	"login": {
+		"title": "Mag log in",
+		"spaceTitle": "Mag log in",
+		"placeholder": {
+			"email": "Email",
+			"password": "Password"
+		},
+		"button": "Mag log in",
+		"okay": "Sige",
+		"succeeded": "Nagpatuloy ang pag-login.",
+		"failed": "Hindi tagumpay ang pag-login."
+	},
+	"logout": {
+		"title": "Mag-log out",
+		"spaceTitle": "Mag-log Out",
+		"confirm": "Sigurado ka bang gusto mong mag-log out?",
+		"cancel": "Kanselahin",
+		"yes": "Oo"
+	},
+	"vision": {
+		"title": "Vision"
+	},
+	"verify": {
+		"title": "Patunayan ang Account"
+	}
+}

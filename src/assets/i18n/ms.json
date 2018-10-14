@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Membantu Tangan"
+	},
+	"setup": {
+		"next": "Seterusnya",
+		"welcome": "Selamat datang!",
+		"choice": "pilih Bahasa anda"
+	},
+	"settings": {
+		"title": "Tetapan",
+		"language": "pilih Bahasa anda",
+		"apply": "Gunakan Tetapan"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Rumah",
+		"secondaryTitle": "Inovasi Imigresen",
+		"welcome": "Selamat datang ke permohonan itu",
+		"findOut": "Ketahui lebih lanjut",
+		"resources": "Semak sumber dalam komuniti anda",
+		"register": "Perlukan bantuan? Ingin membantu orang lain? Daftar hari ini!",
+		"vision": "Sesuatu yang anda perlukan perlu diterjemahkan atau perlu diucapkan dalam bahasa yang berbeza? Cuba 'visi'."
+	},
+	"about": {
+		"title": "Mengenai",
+		"whatIs": "Apa itu",
+		"description": "Aplikasi yang dibina untuk pendatang yang menyediakan perkhidmatan untuk masalah jangka pendek atau jangka panjang yang boleh diperoleh oleh pendatang (bahasa, budaya, dll.)",
+		"lookingForResources": "Mencari sumber komuniti?",
+		"checkOutPage": "Semak halaman ini"
+	},
+	"register": {
+		"title": "Daftar",
+		"info": "Maklumat Pengguna",
+		"type": "Jenis Pengguna",
+		"helper": "Pembantu",
+		"helpSeeker": "Bantuan Pencari",
+		"placeholder": {
+			"email": "E-mel",
+			"password": "Kata laluan",
+			"confirmPassword": "Sahkan Kata Laluan"
+		},
+		"succeeded": "Pendaftaran Berjaya.",
+		"failed": "Pendaftaran gagal."
+	},
+	"resources": {
+		"title": "Sumber"
+	},
+	"login": {
+		"title": "Log masuk",
+		"spaceTitle": "Log masuk",
+		"placeholder": {
+			"email": "E-mel",
+			"password": "Kata laluan"
+		},
+		"button": "Log masuk",
+		"okay": "baik",
+		"succeeded": "Log masuk Berjaya.",
+		"failed": "Daftar masuk gagal."
+	},
+	"logout": {
+		"title": "Log keluar",
+		"spaceTitle": "Log keluar",
+		"confirm": "Adakah anda pasti anda ingin log keluar?",
+		"cancel": "Batalkan",
+		"yes": "Ya"
+	},
+	"vision": {
+		"title": "Visi"
+	},
+	"verify": {
+		"title": "Mengesahkan Akaun"
+	}
+}

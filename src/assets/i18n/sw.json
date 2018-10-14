@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Kusaidia Mkono"
+	},
+	"setup": {
+		"next": "Ifuatayo",
+		"welcome": "Karibu!",
+		"choice": "Chagua lugha yako"
+	},
+	"settings": {
+		"title": "Mipangilio",
+		"language": "Chagua lugha yako",
+		"apply": "Tumia Mipangilio"
+	},
+	"menu": {
+		"title": "Menyu"
+	},
+	"home": {
+		"title": "Nyumbani",
+		"secondaryTitle": "Uhamiaji Innovation",
+		"welcome": "Karibu kwenye programu",
+		"findOut": "Pata maelezo zaidi",
+		"resources": "Angalia rasilimali katika jumuiya yako",
+		"register": "Unahitaji Msaada? Unataka kuwasaidia wengine? Jisajili leo!",
+		"vision": "Kitu karibu na unahitaji kutafsiriwa au unahitaji kusema kwa lugha tofauti? Jaribu 'maono'."
+	},
+	"about": {
+		"title": "Kuhusu",
+		"whatIs": "Nini",
+		"description": "Programu iliyojengwa kwa wahamiaji ambayo hutoa huduma kwa matatizo ya muda mfupi au ya muda mrefu ambayo wahamiaji wanaweza kuwa (lugha, utamaduni, nk)",
+		"lookingForResources": "Inatafuta rasilimali za jamii?",
+		"checkOutPage": "Angalia ukurasa huu"
+	},
+	"register": {
+		"title": "Jisajili",
+		"info": "Maelezo ya Mtumiaji",
+		"type": "Aina ya Mtumiaji",
+		"helper": "Msaidizi",
+		"helpSeeker": "Msaidizi Msaidizi",
+		"placeholder": {
+			"email": "Barua pepe",
+			"password": "Nenosiri",
+			"confirmPassword": "Thibitisha nenosiri"
+		},
+		"succeeded": "Usajili Ulifanikiwa.",
+		"failed": "Usajili Imeshindwa."
+	},
+	"resources": {
+		"title": "Rasilimali"
+	},
+	"login": {
+		"title": "Ingia",
+		"spaceTitle": "Ingia",
+		"placeholder": {
+			"email": "Barua pepe",
+			"password": "Nenosiri"
+		},
+		"button": "Ingia",
+		"okay": "Sawa",
+		"succeeded": "Ingia Imefanikiwa.",
+		"failed": "Imeshindikana kujiandikisha kuingia."
+	},
+	"logout": {
+		"title": "Ingia",
+		"spaceTitle": "Ingia nje",
+		"confirm": "Una uhakika ungependa kuingia nje?",
+		"cancel": "Futa",
+		"yes": "Ndiyo"
+	},
+	"vision": {
+		"title": "Maono"
+	},
+	"verify": {
+		"title": "Thibitisha Akaunti"
+	}
+}

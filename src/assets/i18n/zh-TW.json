@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "幫助手"
+	},
+	"setup": {
+		"next": "下一個",
+		"welcome": "歡迎！",
+		"choice": "選擇你的語言"
+	},
+	"settings": {
+		"title": "設置",
+		"language": "選擇你的語言",
+		"apply": "應用設置"
+	},
+	"menu": {
+		"title": "菜單"
+	},
+	"home": {
+		"title": "家",
+		"secondaryTitle": "移民創新",
+		"welcome": "歡迎來到該應用程序",
+		"findOut": "了解更多",
+		"resources": "查看社區中的資源",
+		"register": "需要幫忙？想幫助別人嗎？立即註冊！",
+		"vision": "您需要翻譯附近還是需要用其他語言說些什麼？試試'願景'。"
+	},
+	"about": {
+		"title": "關於",
+		"whatIs": "什麼是",
+		"description": "為移民建立的應用程序，為移民可能擁有的短期或長期問題提供服務（語言，文化等）",
+		"lookingForResources": "尋找社區資源？",
+		"checkOutPage": "看看這個頁面"
+	},
+	"register": {
+		"title": "寄存器",
+		"info": "用戶信息",
+		"type": "用戶類型",
+		"helper": "幫手",
+		"helpSeeker": "幫助搜索者",
+		"placeholder": {
+			"email": "電子郵件",
+			"password": "密碼",
+			"confirmPassword": "確認密碼"
+		},
+		"succeeded": "註冊成功。",
+		"failed": "註冊失敗。"
+	},
+	"resources": {
+		"title": "資源"
+	},
+	"login": {
+		"title": "登錄",
+		"spaceTitle": "登錄",
+		"placeholder": {
+			"email": "電子郵件",
+			"password": "密碼"
+		},
+		"button": "登錄",
+		"okay": "好的",
+		"succeeded": "登錄成功。",
+		"failed": "登錄失敗。"
+	},
+	"logout": {
+		"title": "登出",
+		"spaceTitle": "登出",
+		"confirm": "你確定要退出嗎？",
+		"cancel": "取消",
+		"yes": "是"
+	},
+	"vision": {
+		"title": "視力"
+	},
+	"verify": {
+		"title": "驗證賬戶"
+	}
+}

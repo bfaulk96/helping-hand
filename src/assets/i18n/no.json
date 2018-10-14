@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Hjelpende hånd"
+	},
+	"setup": {
+		"next": "neste",
+		"welcome": "Velkommen!",
+		"choice": "Velg ditt språk"
+	},
+	"settings": {
+		"title": "innstillinger",
+		"language": "Velg ditt språk",
+		"apply": "Bruk Innstillinger"
+	},
+	"menu": {
+		"title": "Meny"
+	},
+	"home": {
+		"title": "Hjem",
+		"secondaryTitle": "Innvandringsinnovasjon",
+		"welcome": "Velkommen til søknaden",
+		"findOut": "Finne ut mer",
+		"resources": "Sjekk ut ressurser i samfunnet ditt",
+		"register": "Trenger hjelp? Vil du hjelpe andre? Registrer deg i dag!",
+		"vision": "Noe i nærheten trenger du oversatt eller trenger å si på et annet språk? Prøv 'visjon'."
+	},
+	"about": {
+		"title": "Handle om",
+		"whatIs": "Hva er",
+		"description": "En applikasjon bygget for innvandrere som tilbyr tjenester for kortsiktige eller langsiktige problemer som innvandrere kan ha (språk, kultur, etc.)",
+		"lookingForResources": "Leter du etter samfunnsressurser?",
+		"checkOutPage": "Sjekk ut denne siden"
+	},
+	"register": {
+		"title": "Registrere",
+		"info": "brukerinformasjon",
+		"type": "Type bruker",
+		"helper": "Hjelper",
+		"helpSeeker": "Hjelpesøker",
+		"placeholder": {
+			"email": "e-post",
+			"password": "Passord",
+			"confirmPassword": "bekreft passord"
+		},
+		"succeeded": "Registrering lyktes.",
+		"failed": "Registrering feilet."
+	},
+	"resources": {
+		"title": "ressurser"
+	},
+	"login": {
+		"title": "Logg Inn",
+		"spaceTitle": "Logg Inn",
+		"placeholder": {
+			"email": "e-post",
+			"password": "Passord"
+		},
+		"button": "Logg Inn",
+		"okay": "Greit",
+		"succeeded": "Logg inn lyktes.",
+		"failed": "Innlogging feilet."
+	},
+	"logout": {
+		"title": "Logg ut",
+		"spaceTitle": "Logg ut",
+		"confirm": "Er du sikker på at du vil logge deg ut?",
+		"cancel": "Avbryt",
+		"yes": "Ja"
+	},
+	"vision": {
+		"title": "Syn"
+	},
+	"verify": {
+		"title": "verifiser konto"
+	}
+}

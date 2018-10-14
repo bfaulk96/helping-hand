@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "יד עוזרת"
+	},
+	"setup": {
+		"next": "הבא",
+		"welcome": "ברוך הבא!",
+		"choice": "בחר את השפה שלך"
+	},
+	"settings": {
+		"title": "הגדרות",
+		"language": "בחר את השפה שלך",
+		"apply": "החל הגדרות"
+	},
+	"menu": {
+		"title": "תפריט"
+	},
+	"home": {
+		"title": "בית",
+		"secondaryTitle": "חדשנות הגירה",
+		"welcome": "ברוכים הבאים ליישום",
+		"findOut": "למידע נוסף",
+		"resources": "בדוק את המשאבים בקהילה שלך",
+		"register": "זקוק לעזרה? רוצה לעזור לאחרים? הירשם היום!",
+		"vision": "משהו הקרוב שאתה צריך לתרגם או צריך להגיד בשפה אחרת? נסה 'ראייה'."
+	},
+	"about": {
+		"title": "על אודות",
+		"whatIs": "מה זה",
+		"description": "יישום המיועד לעולים המספקים שירותים לבעיות קצרות או ארוכות טווח שעולים יכולים להיות (שפה, תרבות וכו ').",
+		"lookingForResources": "מחפש משאבים קהילתיים?",
+		"checkOutPage": "בדוק את הדף הזה"
+	},
+	"register": {
+		"title": "הירשם",
+		"info": "פרטי משתמש",
+		"type": "סוג משתמש",
+		"helper": "עוזר",
+		"helpSeeker": "מבקש עזרה",
+		"placeholder": {
+			"email": "דוא\"ל",
+			"password": "סיסמה",
+			"confirmPassword": "אשר סיסמה"
+		},
+		"succeeded": "הרשמה Succeeded.",
+		"failed": "הרשמה נכשלה."
+	},
+	"resources": {
+		"title": "משאבים"
+	},
+	"login": {
+		"title": "התחברות",
+		"spaceTitle": "התחברות",
+		"placeholder": {
+			"email": "דוא\"ל",
+			"password": "סיסמה"
+		},
+		"button": "התחברות",
+		"okay": "בסדר",
+		"succeeded": "התחברות הצליחה.",
+		"failed": "ההתחברות נכשלה."
+	},
+	"logout": {
+		"title": "להתנתק",
+		"spaceTitle": "להתנתק",
+		"confirm": "האם אתה בטוח שברצונך לצאת?",
+		"cancel": "בטל",
+		"yes": "כן"
+	},
+	"vision": {
+		"title": "חזון"
+	},
+	"verify": {
+		"title": "לאמת חשבון"
+	}
+}
