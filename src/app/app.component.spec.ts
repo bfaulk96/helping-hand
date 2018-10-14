@@ -53,7 +53,6 @@ describe('AppComponent', () => {
     expect(menuItems[0].textContent).toContain('Home');
     expect(menuItems[1].textContent).toContain('About');
     expect(menuItems[1].textContent).toContain('Resources');
-    expect(menuItems[1].textContent).toContain('Contact');
     expect(menuItems[1].textContent).toContain('Register');
   });
 
@@ -66,7 +65,6 @@ describe('AppComponent', () => {
     expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual('/home');
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/about');
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/resources');
-    expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/contact');
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/register');
   });
 

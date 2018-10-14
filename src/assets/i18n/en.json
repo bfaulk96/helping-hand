@@ -19,8 +19,7 @@
     "welcome": "Welcome to the application",
     "findOut": "Find out more",
     "resources": "Check out resources in your community",
-    "register": "Need Help? Want to help others? Register today!",
-    "contact": "Have questions? Contact us!"
+    "register": "Need Help? Want to help others? Register today!"
   },
   "about": {
     "title": "About",
@@ -28,9 +27,6 @@
     "description": "An application built for immigrants that provides services for short-term or long-term problems that immigrants could have (language, culture, etc.)",
     "lookingForResources": "Looking for community resources?",
     "checkOutPage": "Check out this page"
-  },
-  "contact": {
-    "title": "Contact"
   },
   "register": {
     "title": "Register",

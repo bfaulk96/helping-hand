@@ -38,12 +38,6 @@ export class AppComponent {
             icon: "link"
         },
         {
-            title: "contact.title",
-            viewType: "both",
-            url: "/contact",
-            icon: "phone-portrait"
-        },
-        {
             title: "register.title",
             viewType: "loggedOut",
             url: "/register",
