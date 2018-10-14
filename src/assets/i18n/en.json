@@ -8,7 +8,12 @@
     "choice": "Choose your language"
   },
   "settings": {
-    "title": "Settings"
+    "title": "Settings",
+    "language": "Choose your language",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "preferredName": "Preferred Name",
+    "apply": "Apply Settings"
   },
   "menu": {
     "title": "Menu"

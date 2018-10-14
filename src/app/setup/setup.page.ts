@@ -1,23 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import {TranslateService, TranslateModule} from '@ngx-translate/core';
-import {Router} from '@angular/router';
-import {Platform} from '@ionic/angular';
-import { Storage } from '@ionic/storage';
+import {Component, OnInit} from "@angular/core";
+import {TranslateService} from "@ngx-translate/core";
+import {Router} from "@angular/router";
+import {Platform} from "@ionic/angular";
+import {Storage} from "@ionic/storage";
 import {BehaviorSubject, Observable} from "rxjs/index";
 import {take} from "rxjs/internal/operators";
 
 @Component({
-  selector: 'app-setup',
-  templateUrl: './setup.page.html',
-  styleUrls: ['./setup.page.scss'],
+    selector: "app-setup",
+    templateUrl: "./setup.page.html",
+    styleUrls: ["./setup.page.scss"],
 })
-export class SetupPage implements OnInit{
+export class SetupPage implements OnInit {
     public choice: string;
     public welcome: string;
-    public language: string;
-    public currentLang: string = 'en';
+    public language: string = "en";
 
-    public languages: string[] = ['en', 'es', 'ar'];
+    public languages: string[] = ["en", "es", "ar"];
 
     private langSub: BehaviorSubject<any> = new BehaviorSubject<any>(null);
     langObs: Observable<string> = this.langSub.asObservable();
@@ -32,7 +31,7 @@ export class SetupPage implements OnInit{
                 .subscribe(a => {
                     this.language = a.lang;
                     this.langSub.next(a.lang);
-            });
+                });
         } else {
             this.language = this.translate.currentLang;
         }
@@ -51,17 +50,17 @@ export class SetupPage implements OnInit{
     }
 
     languageSwitcher(index: number) {
-        let lang = this.translate.currentLang;
+        const lang = this.translate.currentLang;
         this.translate.use(this.languages[index]).subscribe(() => {
-             this.welcome = this.translate.instant("setup.welcome");
-             this.choice = this.translate.instant("setup.choice");
+            this.welcome = this.translate.instant("setup.welcome");
+            this.choice = this.translate.instant("setup.choice");
             this.translate.use(lang);
         });
     }
 
     public ionViewDidLoad(): void {
         setTimeout(() => {
-            this.checkCurrentLang('en');
+            this.checkCurrentLang("en");
         }, 200);
     }
 
@@ -74,8 +73,8 @@ export class SetupPage implements OnInit{
     }
 
     private submit(): void {
-        this.storage.set('language', this.language);
-        this.router.navigate(['/home']);
+        this.storage.set("language", this.language);
+        this.router.navigate(["/home"]);
     }
 
     checkCurrentLang(language: string) {
