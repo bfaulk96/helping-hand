@@ -94,6 +94,8 @@ export class VisionPage implements OnInit {
         this.sendTextToCloudTranslateHandler(text).subscribe((res) => {
             this.test = res;
             this.text = res.data.translations[0].translatedText;
+        }, (err) => {
+            this.test = err;
         });
     }
 
