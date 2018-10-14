@@ -25,7 +25,9 @@ export class SocketService {
     }
 
     emit(event: string, data: ObjectDictionary<any>) {
-        this.socketClient.emit(event, data);
+        if (this.socketClient) {
+            this.socketClient.emit(event, data);
+        }
     }
 
     onException(): Observable<any> {
