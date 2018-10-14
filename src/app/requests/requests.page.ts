@@ -5,6 +5,7 @@ import {Request} from "../models/request";
 import {UserDAO} from "../services/dao/user.dao";
 import {User} from "../models/user";
 import {Geolocation} from "@ionic-native/geolocation/ngx";
+import {Router} from "@angular/router";
 
 @Component({
     selector: "app-requests",
@@ -19,11 +20,16 @@ export class RequestsPage implements OnInit {
     constructor(private httpClient: HttpClient,
                 private apiHelper: ApiHelper,
                 private userDAO: UserDAO,
-                private geoLocation: Geolocation) {
+                private geoLocation: Geolocation,
+                private router: Router) {
     }
 
     ngOnInit() {
-        this.isHelper = this.userDAO.currentUser.isHelper;
+        if (this.userDAO.currentUser) {
+            this.isHelper = this.userDAO.currentUser.isHelper;
+        } else {
+            this.router.navigate(['/home']);
+        }
 
         if (!this.isHelper) {
             this.apiHelper.getAccessToken().subscribe(

@@ -57,16 +57,16 @@ export class AppComponent {
             icon: "camera"
         },
         {
-            title: "settings.title",
-            viewType: "both",
-            url: "/settings",
-            icon: "settings",
-        },
-        {
             title: "connect.title",
             viewType: "loggedIn",
             url: "/connect",
             icon: "contacts",
+        },
+        {
+            title: "settings.title",
+            viewType: "both",
+            url: "/settings",
+            icon: "settings",
         }
     ];
 
@@ -89,10 +89,11 @@ export class AppComponent {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
             this.initTranslate();
+            this.userDao.getCurrentUser();
             this.apiHelper.getAccessToken().subscribe(token => {
-                AppComponent.staticIsLoggedIn = this.isLoggedIn = !!token;
+                AppComponent.staticIsLoggedIn = this.isLoggedIn = !!token || !!this.userDao.currentUser;
             }, () => {
-                AppComponent.staticIsLoggedIn = this.isLoggedIn = false;
+                AppComponent.staticIsLoggedIn = this.isLoggedIn = !!this.userDao.currentUser;
             });
             this.socketService.initSocket();
             this.socketService.onException().subscribe(message => console.log({message}));

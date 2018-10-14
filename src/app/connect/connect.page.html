@@ -3,7 +3,7 @@
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title>Connect</ion-title>
+        <ion-title>{{ 'connect.title' | translate }}</ion-title>
         <ion-buttons slot="end">
             <ion-button [routerDirection]="'root'" [routerLink]="['/home']">
                 <ion-icon name="home"></ion-icon>
@@ -14,34 +14,34 @@
 
 <ion-content padding>
     <ng-container *ngIf="!isHelper">
-        <ion-label>I want help with...</ion-label>
+        <ion-label>{{ 'connect.wantHelpWith' | translate }}</ion-label>
         <ion-select [(ngModel)]="skill">
-            <ion-select-option value="language">Language</ion-select-option>
-            <ion-select-option value="culture">Culture</ion-select-option>
-            <ion-select-option value="employment">Employment</ion-select-option>
+            <ion-select-option value="language">{{ 'connect.language' | translate }}</ion-select-option>
+            <ion-select-option value="culture">{{ 'connect.culture' | translate }}</ion-select-option>
+            <ion-select-option value="employment">{{ 'connect.employment' | translate }}</ion-select-option>
         </ion-select>
         <ion-footer position="bottom">
-            <ion-button (click)="seekHelp();">Seek Help</ion-button>
+            <ion-button (click)="seekHelp();">{{ 'connect.seekHelp' | translate }}</ion-button>
         </ion-footer>
     </ng-container>
     <ng-container *ngIf="isHelper">
-        <ion-label>I can help with...</ion-label>
+        <ion-label>{{ 'connect.wantToHelpWith' | translate }}</ion-label>
         <ion-item>
-            <ion-label>Language</ion-label>
+            <ion-label>{{ 'connect.language' | translate }}</ion-label>
             <ion-checkbox #language color="primary" checked></ion-checkbox>
         </ion-item>
         <ion-item>
-            <ion-label>Culture</ion-label>
+            <ion-label>{{ 'connect.culture' | translate }}</ion-label>
             <ion-checkbox #culture color="primary"></ion-checkbox>
         </ion-item>
         <ion-item>
-            <ion-label>Employment</ion-label>
+            <ion-label>{{ 'connect.employment' | translate }}</ion-label>
             <ion-checkbox #employment color="primary"></ion-checkbox>
         </ion-item>
         <br/>
         <br/>
         <ion-footer position="bottom">
-            <ion-button (click)="offerHelp();">Offer Help</ion-button>
+            <ion-button (click)="offerHelp();">{{ 'connect.offerHelp' | translate }}</ion-button>
         </ion-footer>
     </ng-container>
 </ion-content>

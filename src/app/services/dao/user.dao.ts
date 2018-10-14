@@ -22,10 +22,14 @@ export class UserDAO extends BaseDAO {
         super(apiHelper, apiCallFactory, Constants.API.RESOURCES.USER);
         this.apiHelper = apiHelper;
         this.apiCallFactory = apiCallFactory;
+        this.storage.get("user").then(user => {
+            this.currentUser = user;
+        })
     }
 
     public setCurrentUser(user: User): void {
         this.currentUser = user;
+        this.storage.set("user", this.currentUser);
     }
 
     public getCurrentUser(): User {

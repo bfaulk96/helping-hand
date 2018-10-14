@@ -32,7 +32,11 @@ export class ConnectPage implements OnInit {
     }
 
     public ngOnInit(): void {
-        this.isHelper = this.authService.userDao.currentUser.isHelper;
+        if (this.authService.userDao.currentUser) {
+            this.isHelper = this.authService.userDao.currentUser.isHelper;
+        } else {
+            this.router.navigate(['/home']);
+        }
     }
 
     public seekHelp(): void {
