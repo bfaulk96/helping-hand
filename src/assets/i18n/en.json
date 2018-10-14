@@ -16,7 +16,8 @@
     "title": "Vision",
     "type": "Vision Options",
     "translate": "Translate Text",
-    "object": "Pronouce Object"
+    "object": "Pronouce Object",
+    "takePicture": "Take a picture"
   },
   "menu": {
     "title": "Menu"

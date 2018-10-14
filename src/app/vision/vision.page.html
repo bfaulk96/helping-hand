@@ -44,12 +44,12 @@
             </ion-row>
             <ion-row class="buttons">
                 <ion-col center>
-                    <ion-button ion-button round color="secondary" (click)="takePicture()">Take a Picture</ion-button>
+                    <ion-button ion-button round color="secondary" (click)="takePicture()">{{'vision.takePicture' | translate}}</ion-button>
                 </ion-col>
                 <ion-col center>
                     <ion-button ion-button round id="sendPic" color="secondary" (click)="sendPicture()"
                             [disabled]="!base64Image">
-                        Submit picture
+                        {{'vision.submitPicture' | translate}}
                     </ion-button>
                 </ion-col>
             </ion-row>
