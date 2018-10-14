@@ -26,7 +26,7 @@ export class VisionPage implements OnInit {
     public rawImage: string = "";
     public base64Image: string = "";
     public text: any;
-    public test: any;
+    public test: any = "WOOHOO THIS SHOULD SHOW UP IF IT DOESNT THEN IDK";
 
     public translate: boolean = false;
 
