@@ -1,8 +1,8 @@
 export class Constants {
     public static API: any = {
         ENDPOINTS: {
-            LOCAL: "http://1cd27c83.ngrok.io",
-            PROD: "http://1cd27c83.ngrok.io"
+            LOCAL: "http://bc5eaf2e.ngrok.io",
+            PROD: "http://bc5eaf2e.ngrok.io"
         },
         VERBS: {
             GET: "GET",
@@ -10,9 +10,10 @@ export class Constants {
             PUT: "PUT",
         },
         RESOURCES: {
-            REGISTER: "register",
-            LOGIN: "login",
             USER: "users",
+            REGISTER: "register",
+            VERIFY: "verify",
+            LOGIN: "login",
         }
     };
 }

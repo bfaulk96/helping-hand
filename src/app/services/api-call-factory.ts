@@ -31,15 +31,15 @@ export class ApiCallFactory {
         return this.apiCall;
     }
 
-    getDefaultForVerify(data: any): ApiCall {
+    getDefaultForVerify(params: any): ApiCall {
         this.apiCall.url = this.apiHelper.getServiceEndPoint() + "/" + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.VERIFY;
         this.apiCall.method = Constants.API.VERBS.GET;
-        this.apiCall.params = null;
+        this.apiCall.params = params;
         return this.apiCall;
     }
 
     getDefaultForLogin(data: any): ApiCall {
-        this.apiCall.url = this.apiHelper.getServiceEndPoint() + '/users/login';
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + "/" + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.LOGIN;
         this.apiCall.method = Constants.API.VERBS.POST;
         this.apiCall.data = data;
         this.apiCall.params = null;

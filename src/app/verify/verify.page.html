@@ -1,9 +1,69 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>verify</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>{{ 'verify.title' | translate }}</ion-title>
+        <ion-buttons slot="end">
+            <ion-button [routerDirection]="'root'" [routerLink]="['/home']"><ion-icon name="home"></ion-icon></ion-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+    <ng-container *ngIf="verificationResult === VerificationResult.IN_PROGRESS">
+        <ion-row>
+            <ion-img class="result-img" src="/assets/images/in-progress.png"></ion-img>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <p class="message">Verification in progress...</p>
+            </ion-col>
+        </ion-row>
+    </ng-container>
+    <ng-container *ngIf="verificationResult === VerificationResult.VALID">
+        <ion-row>
+            <ion-img class="result-img" src="/assets/images/valid.png"></ion-img>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <p class="message">Your account has been successfully verified!</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-button (click)="goToHome();">Return</ion-button>
+            </ion-col>
+        </ion-row>
+    </ng-container>
+    <ng-container *ngIf="verificationResult === VerificationResult.INVALID">
+        <ion-row>
+            <ion-img class="result-img" src="/assets/images/invalid.png"></ion-img>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <p class="message">Invalid verification token!</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-button (click)="goToHome();">Return</ion-button>
+            </ion-col>
+        </ion-row>
+    </ng-container>
+    <ng-container *ngIf="verificationResult === VerificationResult.ERROR">
+        <ion-row>
+            <ion-img class="result-img" src="/assets/images/error.png"></ion-img>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <p class="message">An error occurred during account verification, please try again!</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-button (click)="goToHome();">Return</ion-button>
+            </ion-col>
+        </ion-row>
+    </ng-container>
 </ion-content>
