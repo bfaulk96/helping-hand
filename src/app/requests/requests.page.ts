@@ -4,6 +4,7 @@ import {ApiHelper} from "../services/api-helper";
 import {Request} from "../models/request";
 import {UserDAO} from "../services/dao/user.dao";
 import {User} from "../models/user";
+import {Geolocation} from "@ionic-native/geolocation/ngx";
 
 @Component({
     selector: "app-requests",
@@ -17,7 +18,8 @@ export class RequestsPage implements OnInit {
 
     constructor(private httpClient: HttpClient,
                 private apiHelper: ApiHelper,
-                private userDAO: UserDAO) {
+                private userDAO: UserDAO,
+                private geoLocation: Geolocation) {
     }
 
     ngOnInit() {
@@ -26,23 +28,29 @@ export class RequestsPage implements OnInit {
         if (!this.isHelper) {
             this.apiHelper.getAccessToken().subscribe(
                 (token: any): void => {
-                    this.httpClient.get(this.apiHelper.getServiceEndPoint() + "/users/", {}).subscribe(
-                        (res: any) => {
-                            const helpers = [];
-                            res.forEach(
-                                (user: User) => {
-                                    if (user.isHelper) {
-                                        helpers.push(user);
-                                    }
+                    this.geoLocation.getCurrentPosition().then(
+                        (position: any): void => {
+                            console.log(position);
+                            this.httpClient.get(this.apiHelper.getServiceEndPoint() + "/requests/current?lat=" + position.coords.latitude + "&long=" + position.coords.longitude, {}).subscribe(
+                                (res: any) => {
+                                    const helpers = [];
+                                    res.users.forEach(
+                                        (user: User) => {
+                                            if (user.isHelper) {
+                                                helpers.push(user);
+                                            }
+                                        }
+                                    );
+                                    this.helpers = helpers;
+                                    console.log(helpers);
+                                },
+                                (error) => {
+                                    console.error(error);
                                 }
                             );
-                            this.helpers = helpers;
-                            console.log(helpers);
-                        },
-                        (error) => {
-                            console.error(error);
                         }
                     );
+
                 },
                 (error): void => {
                     console.error(error);
