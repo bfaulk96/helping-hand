@@ -48,7 +48,7 @@ export class UserDAO extends BaseDAO {
 
   updateDeviceInfo(token): Observable<any> {
     const apiCall = this.apiCallFactory.getDefaultApiCallForFCM(token);
-
+    console.log(apiCall);
     const httpRequest = this.apiHelper.makeApiCall(apiCall);
     return Observable.create(function subscribe(observer) {
       httpRequest.subscribe(

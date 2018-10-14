@@ -4,6 +4,8 @@ import {Platform} from "@ionic/angular";
 import {AppComponent} from "../app.component";
 import {FcmService} from "../services/fcm-service";
 import {FCM} from "@ionic-native/fcm/ngx";
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
+import {ApiHelper} from "../services/api-helper";
 
 @Component({
   selector: 'app-home',
@@ -17,6 +19,8 @@ export class HomePage {
               private translate: TranslateService,
               private appComp: AppComponent,
               private fcmService: FcmService,
+              private apiHelper: ApiHelper,
+              private httpClient: HttpClient,
               private fcm: FCM,
   ) {
     this.fcmHandler();
@@ -26,12 +30,34 @@ export class HomePage {
     return AppComponent.staticIsLoggedIn;
   }
 
+  private makeCall(token: string): void {
+    console.log("in new makeCall method");
+
+    this.httpClient.put(this.apiHelper.getServiceEndPoint() + "/users/update-fcm", {
+      "token": token
+    }, {
+      headers: {
+        "Authorization": "Bearer " + this.apiHelper.getAccessTokenFromMem()
+      }
+    }).subscribe(
+      (res: any): void => {
+        console.log(res);
+
+      },
+      (error: HttpErrorResponse): void => {
+        console.error(error);
+      }
+    );
+  }
+
   fcmHandler(): void {
     this.fcm.getToken().then(token => {
-      this.fcmService.onTokenReceived(token);
+      console.log("getToken()");
+      this.makeCall(token);
     });
     this.fcm.onTokenRefresh().subscribe(tokenFromRefresh => {
-      this.fcmService.onTokenReceived(tokenFromRefresh);
+      console.log("onTokenRefresh()");
+      this.makeCall(tokenFromRefresh);
     });
     this.fcm.onNotification().subscribe((data) => {
 

@@ -45,6 +45,10 @@ export class ApiHelper {
         });
     }
 
+    public getAccessTokenFromMem(): string {
+      return this.accessToken;
+    }
+
     public setAccessToken(token: string): void {
         this.storage.set("token", token);
         this.accessToken = token;
@@ -79,6 +83,7 @@ export class ApiHelper {
       }
 
       httpOptions.body = apiCall.data;
+      console.log("httpOptions before call");
       console.log(httpOptions);
 
         let qs: string = "";

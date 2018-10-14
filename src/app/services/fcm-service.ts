@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {User} from '../models/user';
 import {UserDAO} from './dao/user.dao';
+import {Observable} from "rxjs/index";
 
 @Injectable()
 export class FcmService {
@@ -13,17 +14,24 @@ export class FcmService {
 
     }
 
-  onTokenReceived(tokenReceived): void {
+  onTokenReceived(tokenReceived): Observable<any> {
 
+      console.log(tokenReceived);
 
-      this.userDAO.updateDeviceInfo(tokenReceived).subscribe(
-        data => {
-          console.log(data);
-        },
-        error1 => {
-          console.log(error1);
-        }
-      );
+      const httpRequest = this.userDAO.updateDeviceInfo(tokenReceived);
+
+      return Observable.create(function subscribe(observer) {
+        httpRequest.subscribe(
+          userDevice => {
+            observer.next(userDevice);
+            observer.complete();
+          },
+          error => {
+            console.log(error);
+            observer.error(error);
+          });
+      });
+
     }
 
 
