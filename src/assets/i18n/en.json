@@ -7,7 +7,7 @@
     "welcome": "Welcome!",
     "choice": "Choose your language"
   },
-  "settings":{
+  "settings": {
     "title": "Settings"
   },
   "menu": {
@@ -19,7 +19,8 @@
     "welcome": "Welcome to the application",
     "findOut": "Find out more",
     "resources": "Check out resources in your community",
-    "register": "Need Help? Want to help others? Register today!"
+    "register": "Need Help? Want to help others? Register today!",
+    "vision": "Something nearby you need translated or need to say in a different language? Try 'vision'."
   },
   "about": {
     "title": "About",
