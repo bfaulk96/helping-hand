@@ -12,6 +12,10 @@
     "language": "Elige tu idioma",
     "apply": "Aplicar configuraciones"
   },
+  "vision": {
+    "translate": "Translate Text",
+    "object": "Pronouce Object"
+  },
   "menu": {
     "title": "Menú"
   },

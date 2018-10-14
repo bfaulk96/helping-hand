@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {CameraOptions} from "@ionic-native/camera";
 import {Camera} from "@ionic-native/camera/ngx";
 
@@ -23,6 +23,11 @@ export class VisionPage implements OnInit {
     public rawImage: string = "";
     public base64Image: string = "";
     public error: any;
+
+    public translate: boolean = false;
+
+    @ViewChild('translateRadio') translateRadio: any;
+    @ViewChild('objectRadio') objectRadio: any;
 
     public ngOnInit(): void {
 
@@ -49,7 +54,7 @@ export class VisionPage implements OnInit {
 
     public sendPicture(): void {
         this.sendImageToCloudVisionHandler(this.rawImage).subscribe((res) => {
-            console.log(res);
+            this.parseData(res);
             this.error = res;
         }, (err) => {
             console.log(err);
@@ -58,7 +63,14 @@ export class VisionPage implements OnInit {
     }
 
     public sendImageToCloudVisionHandler(content): Observable<any> {
-        const x = {
+        this.translate = !this.objectRadio.checked;
+        let type: string;
+        if (this.translate) {
+            type = "DOCUMENT_TEXT_DETECTION";
+        } else {
+            type = "LABEL_DETECTION";
+        }
+        const request = {
             "requests": [
                 {
                     "image": {
@@ -66,14 +78,27 @@ export class VisionPage implements OnInit {
                     },
                     "features": [
                         {
-                            "type": "LABEL_DETECTION",
+                            "type": type,
                             "maxResults": 1
                         }
                     ]
                 }
             ]
         };
-        return this.httpClient.post(this.url, x);
+        return this.httpClient.post(this.url, request);
+    }
+
+    public parseData(res) {
+        if (this.translate) {
+
+
+
+
+        } else {
+
+
+
+        }
     }
 
     public closePreview() {

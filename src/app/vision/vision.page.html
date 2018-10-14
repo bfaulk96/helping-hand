@@ -18,6 +18,21 @@
 
     <ion-content>
         <ion-grid>
+            <ion-row>
+                <ion-radio-group>
+                    <ion-list-header>
+                        <ion-label>{{ 'vision.type' | translate }}</ion-label>
+                    </ion-list-header>
+                    <ion-item class="register-input item-borderless" no-padding>
+                        <ion-label>{{ 'vision.translate' | translate }}</ion-label>
+                        <ion-radio #translateRadio slot="start" value="seeker" checked></ion-radio>
+                    </ion-item>
+                    <ion-item class="register-input item-borderless" no-padding>
+                        <ion-label>{{ 'vision.object' | translate }}</ion-label>
+                        <ion-radio #objectRadio slot="start" value="helper"></ion-radio>
+                    </ion-item>
+                </ion-radio-group>
+            </ion-row>
             <ion-row class="picture" center>
                 <ion-col center>
                     <div id="pic-parent">
