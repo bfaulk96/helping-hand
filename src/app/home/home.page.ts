@@ -11,14 +11,12 @@ import {AppComponent} from "../app.component";
 export class HomePage {
   public language: string;
 
-  constructor(private platform: Platform,
-              private translate: TranslateService,
-              private appComp: AppComponent) {
+  constructor() {
 
   }
 
   get isLoggedIn() {
-    return this.appComp.isLoggedIn;
+    return AppComponent.staticIsLoggedIn;
   }
 
 }
