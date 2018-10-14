@@ -10,9 +10,6 @@
   "settings": {
     "title": "Settings",
     "language": "Choose your language",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "preferredName": "Preferred Name",
     "apply": "Apply Settings"
   },
   "menu": {
@@ -36,11 +33,17 @@
   },
   "register": {
     "title": "Register",
+    "info": "User Info",
+    "type": "Type of User",
+    "helper": "Helper",
+    "helpSeeker": "Help Seeker",
     "placeholder": {
       "email": "Email",
       "password": "Password",
       "confirmPassword": "Confirm Password"
-    }
+    },
+    "succeeded": "Registration Succeeded.",
+    "failed": "Registration Failed."
   },
   "resources": {
     "title": "Resources"

@@ -1,6 +1,8 @@
 import {Component, OnInit, ViewChild} from "@angular/core";
 import {AuthService} from "../services/auth-service";
 import {Router} from "@angular/router";
+import {ToastController} from "@ionic/angular";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
     selector: 'app-register',
@@ -20,7 +22,9 @@ export class RegisterPage implements OnInit {
     loading: boolean = false;
 
     constructor(private authService: AuthService,
-                private router: Router) {
+                private router: Router,
+                private toastController: ToastController,
+                private translate: TranslateService) {
     }
 
     public ngOnInit(): void {
@@ -36,6 +40,15 @@ export class RegisterPage implements OnInit {
 
                 if (registerResponse === true) {
                     this.router.navigate(["home"]);
+                    this.toastController.create({
+                        message: this.translate.instant('register.succeeded'),
+                        duration: 4000,
+                        showCloseButton: true,
+                        cssClass: 'toast-success',
+                        closeButtonText: this.translate.instant('login.okay')
+                    }).then(toast => {
+                        toast.present();
+                    });
                 } else {
                     // TODO: Don't alert.
                     alert("Failed to register!");

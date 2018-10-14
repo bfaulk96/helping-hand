@@ -8,7 +8,9 @@
     "choice": "اختر لغتك"
   },
   "settings":{
-    "title": "الإعدادات"
+    "title": "الإعدادات",
+    "language": "اختر لغتك",
+    "apply": "تطبيق إعدادات"
   },
   "menu": {
     "title": "القائمة"
@@ -30,7 +32,18 @@
     "checkOutPage": "راجع هذه الصفحة"
   },
   "register": {
-    "title": "تسجيل"
+    "title": "تسجيل",
+    "info": "معلومات المستخدم",
+    "type": "نوع المستخدم",
+    "helper": "المساعد",
+    "helpSeeker": "باحث مساعدة",
+    "placeholder": {
+      "email": "البريد الإلكتروني",
+      "password": "كلمه السر",
+      "confirmPassword": "تأكيد كلمة المرور"
+    },
+    "succeeded": "التسجيل نجحت.",
+    "failed": "فشل التسجيل."
   },
   "resources": {
     "title": "الموارد"
