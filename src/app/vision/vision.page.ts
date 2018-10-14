@@ -35,7 +35,6 @@ export class VisionPage implements OnInit {
     @ViewChild('objectRadio') objectRadio: any;
 
     public ngOnInit(): void {
-
     }
 
     public takePicture(): void {

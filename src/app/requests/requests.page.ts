@@ -83,7 +83,7 @@ export class RequestsPage implements OnInit {
             helpCategory: user.helpCategories[0]
         }, {
             headers: {
-                "Authorization": "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbHBlckBoZWxwZXIuY29tIiwiaWF0IjoxNTM5NTAzNzUwLCJleHAiOjE1Mzk1MDczNTB9.GjNBqkpXBqQfE5cKjvlywbpo1A2ujTwjLCxzbsKhv_g"
+                "Authorization": "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbHBlckBoZWxwZXIuY29tIiwiaWF0IjoxNTM5NTA1MjE1LCJleHAiOjE1Mzk1MDg4MTV9.HOgSW3D8H3noRTTq0OeYRuZLfo06bZXnWY9idGbxo6A"
             }
         }).subscribe(
             (res: any): void => {
