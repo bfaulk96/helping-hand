@@ -48,7 +48,7 @@ export class LoginPage implements OnInit {
 
                 this.navCtrl.navigateRoot(this.redirect ? this.redirect : "/home");
                 AppComponent.staticIsLoggedIn = this.appComp.isLoggedIn = true;
-                this.socketService.initSocket(data.token);
+                this.socketService.initSocket(data);
                 this.loading = false;
                 this.toastController.create({
                     message: this.translate.instant("login.succeeded"),

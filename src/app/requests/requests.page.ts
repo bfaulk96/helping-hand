@@ -28,29 +28,29 @@ export class RequestsPage implements OnInit {
         if (this.userDAO.currentUser) {
             this.isHelper = this.userDAO.currentUser.isHelper;
         } else {
-            this.router.navigate(['/home']);
+            this.router.navigate(["/home"]);
         }
 
         if (!this.isHelper) {
             this.apiHelper.getAccessToken().subscribe(
                 (token: any): void => {
-                            this.httpClient.get(this.apiHelper.getServiceEndPoint() + "/users", {}).subscribe(
-                                (res: any) => {
-                                    const helpers = [];
-                                    res.forEach(
-                                        (user: User) => {
-                                            if (user.isHelper) {
-                                                helpers.push(user);
-                                            }
-                                        }
-                                    );
-                                    this.helpers = helpers;
-                                    console.log(helpers);
-                                },
-                                (error) => {
-                                    console.error(error);
+                    this.httpClient.get(this.apiHelper.getServiceEndPoint() + "/users", {}).subscribe(
+                        (res: any) => {
+                            const helpers = [];
+                            res.forEach(
+                                (user: User) => {
+                                    if (user.isHelper) {
+                                        helpers.push(user);
+                                    }
                                 }
                             );
+                            this.helpers = helpers;
+                            console.log(helpers);
+                        },
+                        (error) => {
+                            console.error(error);
+                        }
+                    );
                 },
                 (error): void => {
                     console.error(error);
