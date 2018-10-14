@@ -89,11 +89,11 @@ export class VisionPage implements OnInit {
     public parseData(res) {
         if (this.translate) {
             this.text = res.responses[0].textAnnotations[0].description;
-            this.text = this.text.replace("\n", " ");
+            this.text = this.text.replace("\\n", " ");
 
         } else {
             this.text = res.responses[0].labelAnnotations[0].description;
-            this.text = this.text.replace("\n", " ");
+            this.text = this.text.replace("\\n", " ");
         }
     }
 
