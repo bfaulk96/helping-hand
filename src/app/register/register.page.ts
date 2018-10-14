@@ -50,15 +50,29 @@ export class RegisterPage implements OnInit {
                         toast.present();
                     });
                 } else {
-                    // TODO: Don't alert.
-                    alert("Failed to register!");
+                    this.toastController.create({
+                        message: this.translate.instant('register.failed'),
+                        duration: 4000,
+                        showCloseButton: true,
+                        cssClass: 'toast-failure',
+                        closeButtonText: this.translate.instant('login.okay')
+                    }).then(toast => {
+                        toast.present();
+                    });
                 }
             },
             (error: Error): void => {
                 console.error(error);
 
-                // TODO: Don't alert.
-                alert("Failed to register!");
+                this.toastController.create({
+                    message: this.translate.instant('register.failed'),
+                    duration: 4000,
+                    showCloseButton: true,
+                    cssClass: 'toast-failure',
+                    closeButtonText: this.translate.instant('login.okay')
+                }).then(toast => {
+                    toast.present();
+                });
                 this.loading = false;
             },
             () => {
