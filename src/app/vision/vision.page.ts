@@ -11,6 +11,7 @@ import {Observable} from 'rxjs';
     selector: 'app-vision',
     templateUrl: './vision.page.html',
     styleUrls: ['./vision.page.scss'],
+    providers: [Camera]
 })
 export class VisionPage implements OnInit {
     constructor(private camera: Camera,
