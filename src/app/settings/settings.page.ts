@@ -1,6 +1,9 @@
 import {Component, OnInit} from "@angular/core";
 import {TranslateService} from "@ngx-translate/core";
 import {Router} from "@angular/router";
+import {BehaviorSubject, Observable} from "rxjs/index";
+import {take} from "rxjs/internal/operators";
+import {Storage} from '@ionic/storage';
 
 @Component({
     selector: "app-settings",
@@ -8,11 +11,26 @@ import {Router} from "@angular/router";
     styleUrls: ["./settings.page.scss"],
 })
 export class SettingsPage implements OnInit {
-    public language: string = this.translate.currentLang;
+    public language: string = null;
     public languages: string[] = ["en", "es", "ar"];
 
+    private langSub: BehaviorSubject<any> = new BehaviorSubject<any>(null);
+    langObs: Observable<string> = this.langSub.asObservable();
+
     constructor(private translate: TranslateService,
-                private router: Router) {
+                private router: Router,
+                private storage: Storage) {
+        if (!this.translate.currentLang) {
+            this.storage.get("language").then(lang => {
+                if (lang) {
+                    this.language = lang;
+                } else {
+                    this.language = "en";
+                }
+            })
+        } else {
+            this.language = this.translate.currentLang;
+        }
     }
 
     public ngOnInit(): void {
@@ -24,13 +42,11 @@ export class SettingsPage implements OnInit {
 
     private translateLanguage(): void {
         this.translate.use(this.language);
-    }
-
-    public checkCurrentLang(language: string) {
-        return language === this.translate.currentLang;
+        this.storage.set("language", this.language);
     }
 
     public applySettings(): void {
-        this.router.navigate(["home"]);
+        this.storage.set("language", this.language);
+        this.router.navigate(["/home"]);
     }
 }

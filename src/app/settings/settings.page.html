@@ -16,27 +16,11 @@
     <ion-label>{{ "settings.language" | translate }}</ion-label>
     <ion-card>
         <ion-select [(ngModel)]="language" (ionChange)="changeLanguage()">
-            <ion-select-option value="en" [selected]="checkCurrentLang('en')">English</ion-select-option>
-            <ion-select-option value="es" [selected]="checkCurrentLang('es')">Español</ion-select-option>
-            <ion-select-option value="ar" [selected]="checkCurrentLang('ar')">عربى</ion-select-option>
+            <ion-select-option value="en" [selected]="'en' === (langObs | async)">English</ion-select-option>
+            <ion-select-option value="es" [selected]="'es' === (langObs | async)">Español</ion-select-option>
+            <ion-select-option value="ar" [selected]="'ar' === (langObs | async)">عربى</ion-select-option>
         </ion-select>
     </ion-card>
-
-    <ion-item class="register-input" no-padding>
-        <ion-label position="floating">{{ "settings.firstName" | translate }}</ion-label>
-        <ion-input type="text"></ion-input>
-    </ion-item>
-
-    <ion-item class="register-input" no-padding>
-        <ion-label position="floating">{{ "settings.lastName" | translate }}</ion-label>
-        <ion-input type="text"></ion-input>
-    </ion-item>
-
-    <ion-item class="register-input" no-padding>
-        <ion-label position="floating">{{ "settings.preferredName" | translate }}</ion-label>
-        <ion-input type="text"></ion-input>
-    </ion-item>
-
     <br/>
     <br/>
     <ion-button (click)="applySettings();">{{ "settings.apply" | translate }}</ion-button>

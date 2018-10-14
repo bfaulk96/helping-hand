@@ -53,11 +53,16 @@
       "password": "Password"
     },
     "button": "Log In",
-    "okay": "Okay"
+    "okay": "Okay",
+    "succeeded": "Login Succeeded.",
+    "failed": "Login Failed."
   },
   "logout": {
     "title": "Logout",
-    "spaceTitle": "Log Out"
+    "spaceTitle": "Log Out",
+    "confirm": "Are you sure you would like to log out?",
+    "cancel": "Cancel",
+    "yes": "Yes"
   },
   "vision": {
     "title": "Vision"

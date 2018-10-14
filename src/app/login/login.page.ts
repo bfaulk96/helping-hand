@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../services/auth-service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {AppComponent} from '../app.component';
-import {ToastController} from "@ionic/angular";
+import {NavController, ToastController} from "@ionic/angular";
 import {TranslateService} from "@ngx-translate/core";
 import { Storage } from '@ionic/storage';
 
@@ -24,12 +24,12 @@ export class LoginPage implements OnInit {
               private route: ActivatedRoute,
               private translate: TranslateService,
               private toastController: ToastController,
-              private storage: Storage) {
-    if (this.route.snapshot.data && this.route.snapshot.data.logout) {
-      this.appComp.isLoggedIn = false;
-      this.storage.remove("token");
-      this.router.navigate(['/home']);
-    }
+              private storage: Storage,
+              private navCtrl: NavController) {
+      if (this.route.snapshot.data && this.route.snapshot.data.logout) {
+          this.appComp.isLoggedIn = false;
+          this.storage.remove("token");
+      }
   }
 
   ngOnInit() {
@@ -40,11 +40,11 @@ export class LoginPage implements OnInit {
     this.loading = true;
     this.authSvc.login(this.currentLoginCredentials.email, this.currentLoginCredentials.password).subscribe(
         (data: any) => {
-        this.router.navigate(['/home']);
+        this.navCtrl.navigateRoot('/home');
         this.appComp.isLoggedIn = true;
         this.loading = false;
         this.toastController.create({
-            message: 'Login succeeded.',
+            message: this.translate.instant('login.succeeded'),
             duration: 4000,
             showCloseButton: true,
             cssClass: 'toast-success',
@@ -57,7 +57,7 @@ export class LoginPage implements OnInit {
         this.loading = false;
         this.storage.remove("token");
         this.toastController.create({
-            message: 'Login failed.',
+            message: this.translate.instant('login.failed'),
             duration: 4000,
             showCloseButton: true,
             cssClass: 'toast-failure',

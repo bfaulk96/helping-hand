@@ -58,12 +58,6 @@ export class SetupPage implements OnInit {
         });
     }
 
-    public ionViewDidLoad(): void {
-        setTimeout(() => {
-            this.checkCurrentLang("en");
-        }, 200);
-    }
-
     public changeLanguage(): void {
         this.translateLanguage();
     }
@@ -75,9 +69,5 @@ export class SetupPage implements OnInit {
     private submit(): void {
         this.storage.set("language", this.language);
         this.router.navigate(["/home"]);
-    }
-
-    checkCurrentLang(language: string) {
-        return language === this.translate.currentLang;
     }
 }
