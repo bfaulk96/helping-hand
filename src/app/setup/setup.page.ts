@@ -16,7 +16,7 @@ export class SetupPage implements OnInit {
     public welcome: string;
     public language: string = "en";
 
-    public languages: string[] = ["bg", "en", "es", "ar"];
+    public languages: string[] = ["ar", "bg", "en", "es"];
 
     private langSub: BehaviorSubject<any> = new BehaviorSubject<any>(null);
     langObs: Observable<string> = this.langSub.asObservable();

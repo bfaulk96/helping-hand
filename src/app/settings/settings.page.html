@@ -16,10 +16,10 @@
     <ion-label>{{ "settings.language" | translate }}</ion-label>
     <ion-card>
         <ion-select [(ngModel)]="language" (ionChange)="changeLanguage()">
+            <ion-select-option value="ar" [selected]="'ar' === (langObs | async)">عربى</ion-select-option>
             <ion-select-option value="bg" [selected]="'bg' === (langObs | async)">български</ion-select-option>
             <ion-select-option value="en" [selected]="'en' === (langObs | async)">English</ion-select-option>
             <ion-select-option value="es" [selected]="'es' === (langObs | async)">Español</ion-select-option>
-            <ion-select-option value="ar" [selected]="'ar' === (langObs | async)">عربى</ion-select-option>
         </ion-select>
     </ion-card>
     <br/>
