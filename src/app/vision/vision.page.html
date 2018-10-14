@@ -13,6 +13,31 @@
 </ion-header>
 
 <ion-content padding>
-    <p>Vision</p>
-    <ion-button (click)="openCamera();">Take a picture</ion-button>
+    <!--<p>Vision</p>-->
+    <!--<ion-button (click)="openCamera();">Take a picture</ion-button>-->
+
+    <ion-content>
+        <ion-grid>
+            <ion-row class="picture" center>
+                <ion-col center>
+                    <div id="pic-parent">
+                        <ion-icon *ngIf="base64Image" class="closeBtn icon ion-close" (tap)="closePreview()"></ion-icon>
+                        <img *ngIf="base64Image" id="picture" [src]="_DomSanitizationService.bypassSecurityTrustUrl(base64Image)"/>
+                        <ion-icon *ngIf="!base64Image" class="large icon ion-help"></ion-icon>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row class="buttons">
+                <ion-col center>
+                    <ion-button ion-button round color="secondary" (click)="takePicture()">Take a Picture</ion-button>
+                </ion-col>
+                <ion-col center>
+                    <ion-button ion-button round id="sendPic" color="secondary" (click)="sendPicture(base64Image)"
+                            [disabled]="!base64Image">
+                        Submit picture
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-content>
 </ion-content>
