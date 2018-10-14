@@ -26,7 +26,7 @@ export class ConnectPage implements OnInit {
 
     constructor(private authService: AuthService,
                 private httpClient: HttpClient,
-                private userService: UserDAO,
+                private userDAO: UserDAO,
                 private apiHelper: ApiHelper,
                 private router: Router) {
     }
@@ -36,7 +36,26 @@ export class ConnectPage implements OnInit {
     }
 
     public seekHelp(): void {
-        // TODO
+        this.apiHelper.getAccessToken().subscribe(
+            (token: string): void => {
+                this.httpClient.put(this.apiHelper.getServiceEndPoint() + "/users/update-profile", {
+                    "helpCategories": [this.skill]
+                }, {
+                    headers: {
+                        "Authorization": "Bearer " + token
+                    }
+                }).subscribe(
+                    (res: any): void => {
+                        console.log(res);
+                        this.userDAO.setCurrentUser(res);
+                        this.router.navigate(["requests"]);
+                    },
+                    (error: HttpErrorResponse): void => {
+                        console.error(error);
+                    }
+                );
+            }
+        );
     }
 
     public offerHelp(): void {
@@ -63,7 +82,7 @@ export class ConnectPage implements OnInit {
                 }).subscribe(
                     (res: User) => {
                         console.log(res);
-                        this.userService.setCurrentUser(res);
+                        this.userDAO.setCurrentUser(res);
                         this.router.navigate(["requests"]);
                     },
                     (error: HttpErrorResponse): void => {

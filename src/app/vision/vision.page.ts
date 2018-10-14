@@ -22,7 +22,8 @@ export class VisionPage implements OnInit {
                 private translateService: TranslateService) {
     }
 
-    public url: string = "https://vision.googleapis.com/v1/images:annotate?key=";
+    // TODO: REMOVE ME
+    public url: string = "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBnk7RwWycxst__c_VO1GtC6e9-jyQoNSs";
     public url_translate: string = "https://translation.googleapis.com/language/translate/v2";
     public rawImage: string = "";
     public base64Image: string = "";
