@@ -16,7 +16,7 @@ export class SocketService {
     }
 
     initSocket(): void {
-        this.socketClient = io.connect("http://bc5eaf2e.ngrok.io", {
+        this.socketClient = io.connect("http://378f2e56.ngrok.io", {
             query: {
                 token: "Test token"
             }
