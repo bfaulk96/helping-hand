@@ -28,6 +28,7 @@ export class LoginPage implements OnInit {
     if (this.route.snapshot.data && this.route.snapshot.data.logout) {
       this.appComp.isLoggedIn = false;
       this.storage.remove("token");
+      this.router.navigate(['/home']);
     }
   }
 
