@@ -103,6 +103,7 @@ export class VisionPage implements OnInit {
 
     public sendTextToCloudTranslateHandler(text): Observable<any> {
         const currentLanguage = this.translateService.currentLang;
+        const request = {};
         return this.httpClient.post(this.url_translate + "?q=" + text + "&target=" + currentLanguage, request);
     }
 
