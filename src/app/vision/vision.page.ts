@@ -2,6 +2,7 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {CameraOptions} from "@ionic-native/camera";
 import {Camera} from "@ionic-native/camera/ngx";
 import {TranslateService} from "@ngx-translate/core";
+import { CommonModule } from '@angular/common';
 
 import {DomSanitizer} from "@angular/platform-browser";
 import {HttpClient} from "@angular/common/http";
