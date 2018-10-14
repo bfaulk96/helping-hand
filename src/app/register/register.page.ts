@@ -1,5 +1,6 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
-import {AuthService} from '../services/auth-service';
+import {Component, OnInit, ViewChild} from "@angular/core";
+import {AuthService} from "../services/auth-service";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-register',
@@ -18,7 +19,8 @@ export class RegisterPage implements OnInit {
     public isHelper: boolean = false;
     loading: boolean = false;
 
-    constructor(private authService: AuthService) {
+    constructor(private authService: AuthService,
+                private router: Router) {
     }
 
     public ngOnInit(): void {
@@ -28,15 +30,27 @@ export class RegisterPage implements OnInit {
         this.isHelper = !this.seekerRadio.checked;
         this.loading = true;
         this.authService.register(this.email, this.password, this.isHelper).subscribe(
-            (registerResponse: any): void => {
+            (registerResponse: boolean): void => {
                 console.log(registerResponse);
-                this.loading = false;
+                if (registerResponse === true) {
+                    // TODO: Don't alert.
+                    alert("Successfully registered!");
+                    this.loading = false;
+                    this.router.navigate(["home"]);
+                } else {
+                    // TODO: Don't alert.
+                    alert("Failed to register!");
+                }
             },
             (error: Error): void => {
                 console.error(error);
+
+                // TODO: Don't alert.
+                alert("Failed to register!");
                 this.loading = false;
-            }, () => {
-                this.loading = true;
+            },
+            () => {
+                this.loading = false;
             }
         );
     }
