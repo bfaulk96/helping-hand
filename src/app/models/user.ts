@@ -2,6 +2,7 @@ import {Injectable} from "@angular/core";
 
 @Injectable()
 export class User {
+    _id: string;
     createdAt: string;
     email: string;
     isHelper: boolean;
