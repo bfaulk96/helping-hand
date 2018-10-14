@@ -85,7 +85,7 @@ export class AuthService {
                     const token = loginResponse.token;
                     authSvc.userDao.setCurrentUser(loginResponse.info);
                     authSvc.apiHelper.setAccessToken(token);
-                    observer.next(data);
+                    observer.next(token);
                     observer.complete();
                 },
                 error => {
