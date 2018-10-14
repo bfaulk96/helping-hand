@@ -18,6 +18,7 @@ import {UserDAO} from "./services/dao/user.dao";
 import {Camera} from "@ionic-native/camera/ngx";
 import { IonicStorageModule } from '@ionic/storage';
 import {SocketService} from "./services/socket.service";
+import {LogoutGuard} from "./services/route-guards/logout.guard";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -50,7 +51,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         ApiHelper,
         ApiCallFactory,
         UserDAO,
-        SocketService
+        SocketService,
+        LogoutGuard
     ],
     bootstrap: [AppComponent]
 })
