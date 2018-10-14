@@ -13,45 +13,47 @@
 </ion-header>
 
 <ion-content padding>
+    <ion-row>
+        <ion-img class="hand-img" src="{{ loading ? '/assets/images/hand-fade.gif?' : '/assets/images/hand.png?'}}"></ion-img>
+    </ion-row>
     <form (submit)="register();" #registerForm="ngForm">
         <ion-row>
             <ion-col>
-                <ion-list inset>
-                    <ion-list-header>
-                        <ion-label>User Info</ion-label>
-                    </ion-list-header>
-                    <ion-item>
-                        <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="email" required clearInput [clearOnEdit]="false"></ion-input>
-                    </ion-item>
-                    <ion-item>
-                        <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password" required clearInput [clearOnEdit]="false"></ion-input>
-                    </ion-item>
-                    <ion-item>
-                        <ion-input type="password" placeholder="Confirm Password" name="confirm-password" [(ngModel)]="confirmPassword" required clearInput [clearOnEdit]="false"></ion-input>
-                    </ion-item>
-                </ion-list>
+                <ion-list-header>
+                    <ion-label>User Info</ion-label>
+                </ion-list-header>
+                <ion-item class="register-input" no-padding>
+                    <ion-label position="floating">{{'register.placeholder.email' | translate}}</ion-label>
+                    <ion-input type="text" name="email" [(ngModel)]="email" required clearInput [clearOnEdit]="false"></ion-input>
+                </ion-item>
+                <ion-item class="register-input" no-padding>
+                    <ion-label position="floating">{{'register.placeholder.password' | translate}}</ion-label>
+                    <ion-input type="password" name="password" [(ngModel)]="password" required clearInput [clearOnEdit]="false"></ion-input>
+                </ion-item>
+                <ion-item class="register-input" no-padding>
+                    <ion-label position="floating">{{'register.placeholder.confirmPassword' | translate}}</ion-label>
+                    <ion-input type="password" name="confirm-password" [(ngModel)]="confirmPassword" required clearInput [clearOnEdit]="false"></ion-input>
+                </ion-item>
             </ion-col>
         </ion-row>
-        <ion-row>
+        <ion-row class="type-of-user-row">
             <ion-col>
-                <ion-list inset>
-                    <ion-radio-group>
-                        <ion-list-header>
-                            <ion-label>Type of User</ion-label>
-                        </ion-list-header>
-                        <ion-item>
-                            <ion-label>Help Seeker</ion-label>
-                            <ion-radio #seekerRadio slot="start" value="seeker" checked></ion-radio>
-                        </ion-item>
-                        <ion-item>
-                            <ion-label>Helper</ion-label>
-                            <ion-radio #helperRadio slot="start" value="helper"></ion-radio>
-                        </ion-item>
-                    </ion-radio-group>
-                </ion-list>
+                <ion-radio-group>
+                    <ion-list-header>
+                        <ion-label>Type of User</ion-label>
+                    </ion-list-header>
+                    <ion-item class="register-input item-borderless" no-padding>
+                        <ion-label>Help Seeker</ion-label>
+                        <ion-radio #seekerRadio slot="start" value="seeker" checked></ion-radio>
+                    </ion-item>
+                    <ion-item class="register-input item-borderless" no-padding>
+                        <ion-label>Helper</ion-label>
+                        <ion-radio #helperRadio slot="start" value="helper"></ion-radio>
+                    </ion-item>
+                </ion-radio-group>
             </ion-col>
         </ion-row>
-        <ion-row>
+        <ion-row class="submit-row">
             <ion-col>
                 <ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid || !validRegistration">Register</ion-button>
             </ion-col>

@@ -16,6 +16,7 @@ import {ApiHelper} from "./services/api-helper";
 import {ApiCallFactory} from "./services/api-call-factory";
 import {UserDAO} from "./services/dao/user.dao";
 import {Camera} from "@ionic-native/camera/ngx";
+import { IonicStorageModule } from '@ionic/storage';
 import {SocketService} from "./services/socket.service";
 
 // AoT requires an exported function for factories
@@ -37,6 +38,7 @@ export function HttpLoaderFactory(http: HttpClient) {
             }
         }),
         IonicModule.forRoot(),
+        IonicStorageModule.forRoot(),
         AppRoutingModule
     ],
     providers: [

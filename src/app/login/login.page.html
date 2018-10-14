@@ -18,11 +18,11 @@
   <form (submit)="login()" #loginForm="ngForm" class="login-form">
     <ion-row>
       <ion-col>
-        <ion-item class="login-input">
+        <ion-item class="login-input" no-padding>
           <ion-label position="floating">{{'login.placeholder.email' | translate}}</ion-label>
           <ion-input type="text" name="email" [(ngModel)]="currentLoginCredentials.email" required clearInput></ion-input>
         </ion-item>
-        <ion-item class="login-input">
+        <ion-item class="login-input" no-padding>
           <ion-label position="floating">{{'login.placeholder.password' | translate}}</ion-label>
           <ion-input type="password" name="password" [(ngModel)]="currentLoginCredentials.password" required clearInput></ion-input>
         </ion-item>

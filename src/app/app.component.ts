@@ -8,6 +8,8 @@ import {ApiHelper} from "./services/api-helper";
 import {UserDAO} from "./services/dao/user.dao";
 import {Router} from "@angular/router";
 import {SocketService} from "./services/socket.service";
+import { Storage } from '@ionic/storage';
+import {fromPromise} from "rxjs/internal/observable/fromPromise";
 
 @Component({
     selector: "app-root",
@@ -68,7 +70,8 @@ export class AppComponent {
                 private userDao: UserDAO,
                 private apiHelper: ApiHelper,
                 private router: Router,
-                private socketService: SocketService) {
+                private socketService: SocketService,
+                private storage: Storage) {
         this.initializeApp();
     }
 
@@ -78,8 +81,11 @@ export class AppComponent {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
             this.initTranslate();
-            this.isLoggedIn = !!this.apiHelper.getAccessToken();
-
+            this.apiHelper.getAccessToken().subscribe(token => {
+                this.isLoggedIn = !!token;
+            }, () => {
+                this.isLoggedIn = false;
+            });
             this.socketService.initSocket();
 
             this.socketService.onConnectedCount().subscribe(number => console.log({number}));
@@ -88,19 +94,18 @@ export class AppComponent {
     }
 
     private initTranslate() {
-
-        const lang = localStorage.getItem("language");
-        if (lang) {
-            this.translate.setDefaultLang(lang);
-        } else {
-            if (this.translate.getBrowserLang() !== undefined) {
-                this.translate.use(this.translate.getBrowserLang());
+        fromPromise(this.storage.get("language")).subscribe(lang => {
+            if (lang) {
+                this.translate.setDefaultLang(lang);
             } else {
-                this.translate.use("en");
+                if (this.translate.getBrowserLang() !== undefined) {
+                    this.translate.use(this.translate.getBrowserLang());
+                } else {
+                    this.translate.use("en");
+                }
+                this.router.navigate(['setup']);
             }
-            this.router.navigate(["setup"]);
-        }
-
+        });
     }
 
     shouldShowLink(appPage) {

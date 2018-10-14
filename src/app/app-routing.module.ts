@@ -16,6 +16,7 @@ const routes: Routes = [
     {path: "resources", loadChildren: "./resources/resources.module#ResourcesPageModule"},
     {path: "register", loadChildren: "./register/register.module#RegisterPageModule"},
     {path: "login", loadChildren: "./login/login.module#LoginPageModule"},
+    {path: "logout", loadChildren: "./login/login.module#LoginPageModule", data: {logout: true}},
     {path: "vision", loadChildren: "./vision/vision.module#VisionPageModule"},
     {path: "settings", loadChildren: "./settings/settings.module#SettingsPageModule" },
     {path: "setup", loadChildren: "./setup/setup.module#SetupPageModule" },

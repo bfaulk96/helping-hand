@@ -2,19 +2,21 @@
 
     <ion-card-header class="welcome-header">
         <ion-img class="main-image" src="/assets/images/helping-hand.png"></ion-img>
-        <ion-card-subtitle>{{ 'setup.welcome' | translate }}</ion-card-subtitle>
-        <ion-card-title>{{ 'setup.choice' | translate }}</ion-card-title>
+        <ion-card-subtitle>{{ welcome }}</ion-card-subtitle>
+        <ion-card-title>{{ choice }}</ion-card-title>
     </ion-card-header>
 
     <ion-card>
         <ion-select [(ngModel)]="language" (ionChange)="changeLanguage()">
-            <ion-select-option value="en" [selected]="checkCurrentLang('en')">English</ion-select-option>
-            <ion-select-option value="es" [selected]="checkCurrentLang('es')">Español</ion-select-option>
-            <ion-select-option value="ar" [selected]="checkCurrentLang('ar')">عربى</ion-select-option>
+            <ion-select-option value="en" [selected]="'en' === (langObs | async)">English</ion-select-option>
+            <ion-select-option value="es" [selected]="'es' === (langObs | async)">Español</ion-select-option>
+            <ion-select-option value="ar" [selected]="'ar' === (langObs | async)">عربى</ion-select-option>
         </ion-select>
     </ion-card>
+    <ion-row>
+        <ion-button class="selection-btn" color="secondary" (click)="submit()">{{'setup.next' | translate}}</ion-button>
+    </ion-row>
 
-    <ion-button class="selection-btn" color="secondary" (click)="submit()">{{'setup.next' | translate}}</ion-button>
 </ion-content>
 
 <ion-footer>

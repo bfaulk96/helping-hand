@@ -16,6 +16,7 @@ export class RegisterPage implements OnInit {
     public password: string = '';
     public confirmPassword: string = '';
     public isHelper: boolean = false;
+    loading: boolean = false;
 
     constructor(private authService: AuthService) {
     }
@@ -25,13 +26,17 @@ export class RegisterPage implements OnInit {
 
     public register(): void {
         this.isHelper = !this.seekerRadio.checked;
-
+        this.loading = true;
         this.authService.register(this.email, this.password, this.isHelper).subscribe(
             (registerResponse: any): void => {
                 console.log(registerResponse);
+                this.loading = false;
             },
             (error: Error): void => {
                 console.error(error);
+                this.loading = false;
+            }, () => {
+                this.loading = true;
             }
         );
     }

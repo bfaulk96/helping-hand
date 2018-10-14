@@ -33,7 +33,12 @@
     "title": "Contact"
   },
   "register": {
-    "title": "Register"
+    "title": "Register",
+    "placeholder": {
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password"
+    }
   },
   "resources": {
     "title": "Resources"
@@ -45,7 +50,8 @@
       "email": "Email",
       "password": "Password"
     },
-    "button": "Log In"
+    "button": "Log In",
+    "okay": "Okay"
   },
   "logout": {
     "title": "Logout",

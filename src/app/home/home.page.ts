@@ -9,8 +9,6 @@ import {AppComponent} from "../app.component";
   styleUrls: ['home.page.scss']
 })
 export class HomePage {
-  public pageTitle: string;
-  public appTitle: string;
   public language: string;
 
   constructor(private platform: Platform,

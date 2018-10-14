@@ -3,6 +3,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Constants} from './constants';
 import {Observable} from 'rxjs/index';
 import {ApiCall} from '../models/apiCall';
+import { Storage } from '@ionic/storage';
+import {fromPromise} from "rxjs/internal/observable/fromPromise";
 
 @Injectable()
 export class ApiHelper {
@@ -13,6 +15,7 @@ export class ApiHelper {
 
     constructor(
         private httpClient: HttpClient,
+        private storage: Storage
         // private router: Router, //use ionic's router
         // private dialog: MatDialog, //use ionic's
     ) {
@@ -31,13 +34,19 @@ export class ApiHelper {
         }
     }
 
-    public getAccessToken(): string {
-        this.accessToken = this.accessToken || localStorage.getItem('token');
-        return this.accessToken;
+    public getAccessToken(): Observable<string> {
+        return new Observable<string>(observer => {
+            fromPromise(this.storage.get("token")).subscribe(token => {
+                this.accessToken = token;
+                observer.next(token);
+            }, (err) => {
+                observer.error(err);
+            });
+        });
     }
 
     public setAccessToken(token: string): void {
-        localStorage.setItem('token', token);
+        this.storage.set("token", token);
         this.accessToken = token;
     }
 

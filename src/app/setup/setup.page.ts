@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {TranslateService, TranslateModule} from '@ngx-translate/core';
 import {Router} from '@angular/router';
 import {Platform} from '@ionic/angular';
+import { Storage } from '@ionic/storage';
+import {BehaviorSubject, Observable} from "rxjs/index";
+import {take} from "rxjs/internal/operators";
 
 @Component({
   selector: 'app-setup',
@@ -9,31 +12,57 @@ import {Platform} from '@ionic/angular';
   styleUrls: ['./setup.page.scss'],
 })
 export class SetupPage implements OnInit{
-    public pageTitle: string;
-    public appTitle: string;
+    public choice: string;
+    public welcome: string;
     public language: string;
+    public currentLang: string = 'en';
 
     public languages: string[] = ['en', 'es', 'ar'];
 
+    private langSub: BehaviorSubject<any> = new BehaviorSubject<any>(null);
+    langObs: Observable<string> = this.langSub.asObservable();
+
     constructor(private platform: Platform,
                 private translate: TranslateService,
-                private router: Router) {
+                private router: Router,
+                private storage: Storage) {
+        if (!this.translate.currentLang) {
+            this.translate.onLangChange
+                .pipe(take(1))
+                .subscribe(a => {
+                    this.language = a.lang;
+                    this.langSub.next(a.lang);
+            });
+        } else {
+            this.language = this.translate.currentLang;
+        }
     }
 
     ngOnInit() {
-        // let i = 0;
-        // setInterval(() => {
-        //     if (i === this.languages.length) {
-        //         i = 0;
-        //     }
-        //     this.languageSwitcher(i);
-        //     i++;
-        //
-        // }, 2000);
+        let i = 0;
+        setInterval(() => {
+            if (i === this.languages.length) {
+                i = 0;
+            }
+            this.languageSwitcher(i);
+            i++;
+
+        }, 2000);
+    }
+
+    languageSwitcher(index: number) {
+        let lang = this.translate.currentLang;
+        this.translate.use(this.languages[index]).subscribe(() => {
+             this.welcome = this.translate.instant("setup.welcome");
+             this.choice = this.translate.instant("setup.choice");
+            this.translate.use(lang);
+        });
     }
 
     public ionViewDidLoad(): void {
-        this.initialiseTranslation();
+        setTimeout(() => {
+            this.checkCurrentLang('en');
+        }, 200);
     }
 
     public changeLanguage(): void {
@@ -42,19 +71,11 @@ export class SetupPage implements OnInit{
 
     private translateLanguage(): void {
         this.translate.use(this.language);
-        this.initialiseTranslation();
-    }
-
-    private initialiseTranslation(): void {
-        setTimeout(() => {
-            this.appTitle = this.translate.instant('app.title');
-            this.pageTitle = this.translate.instant('home.title');
-        }, 250);
     }
 
     private submit(): void {
-        localStorage.setItem('language', this.language);
-        this.router.navigate(['home']);
+        this.storage.set('language', this.language);
+        this.router.navigate(['/home']);
     }
 
     checkCurrentLang(language: string) {

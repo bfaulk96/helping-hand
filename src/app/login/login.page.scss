@@ -8,11 +8,8 @@ ion-button {
 }
 
 .login-input {
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 2px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .submit-row {
@@ -22,12 +19,4 @@ ion-button {
 .hand-img {
   max-width: 100px;
   margin: 2em auto;
-}
-
-ion-item {
-  padding-left: 0 !important;
-}
-
-.item-native {
-  padding-left: 0 !important;
 }

@@ -4,6 +4,9 @@ import { ApiCallFactory } from '../api-call-factory';
 import { Injectable } from '@angular/core';
 import { BaseDAO } from './base.dao';
 import { User } from '../../models/user';
+import {Observable} from "rxjs/index";
+import { Storage } from '@ionic/storage';
+import {fromPromise} from "rxjs/internal/observable/fromPromise";
 
 @Injectable()
 export class UserDAO extends BaseDAO {
@@ -14,7 +17,7 @@ export class UserDAO extends BaseDAO {
     currentUser: User;
     USER_ID = 'userId';
 
-    constructor(apiHelper: ApiHelper, apiCallFactory: ApiCallFactory) {
+    constructor(apiHelper: ApiHelper, apiCallFactory: ApiCallFactory, private storage: Storage) {
         super(apiHelper, apiCallFactory, Constants.API.RESOURCES.USER);
         this.apiHelper = apiHelper;
         this.apiCallFactory = apiCallFactory;
@@ -28,12 +31,17 @@ export class UserDAO extends BaseDAO {
         return this.currentUser;
     }
 
-    public getUserId(): number {
-        const token = window.localStorage.getItem(this.USER_ID);
-        if (token) {
-            return Number(token);
-        } else {
-            return null;
-        }
+    public getUserId(): Observable<number> {
+        return new Observable<number>(observer => {
+            fromPromise(this.storage.get(this.USER_ID)).subscribe(token => {
+                if (token) {
+                    observer.next(Number(token));
+                } else {
+                    observer.next(null);
+                }
+            }, (err) => {
+                observer.error(err);
+            });
+        });
     }
 }

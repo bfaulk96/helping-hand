@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../services/auth-service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {AppComponent} from '../app.component';
+import {ToastController} from "@ionic/angular";
+import {TranslateService} from "@ngx-translate/core";
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-login',
@@ -18,11 +21,14 @@ export class LoginPage implements OnInit {
   constructor(private appComp: AppComponent,
               private router: Router,
               private authSvc: AuthService,
-              private route: ActivatedRoute) {
+              private route: ActivatedRoute,
+              private translate: TranslateService,
+              private toastController: ToastController,
+              private storage: Storage) {
     console.log(this.route.snapshot.data);
     if (this.route.snapshot.data && this.route.snapshot.data.logout) {
       this.appComp.isLoggedIn = false;
-      localStorage.removeItem("token");
+      this.storage.remove("token");
     }
   }
 
@@ -42,7 +48,15 @@ export class LoginPage implements OnInit {
       error => {
         console.log('stuff happens');
         this.loading = false;
-        localStorage.removeItem("token");
+        this.storage.remove("token");
+        this.toastController.create({
+            message: 'Login failed.',
+            duration: 4000,
+            showCloseButton: true,
+            closeButtonText: this.translate.instant('login.okay')
+        }).then(toast => {
+          toast.present();
+        });
       }, () => {
         this.loading = false;
       }
