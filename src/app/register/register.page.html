@@ -20,7 +20,7 @@
         <ion-row>
             <ion-col>
                 <ion-list-header>
-                    <ion-label>User Info</ion-label>
+                    <ion-label>{{ 'register.info' | translate }}</ion-label>
                 </ion-list-header>
                 <ion-item class="register-input" no-padding>
                     <ion-label position="floating">{{'register.placeholder.email' | translate}}</ion-label>
@@ -40,14 +40,14 @@
             <ion-col>
                 <ion-radio-group>
                     <ion-list-header>
-                        <ion-label>Type of User</ion-label>
+                        <ion-label>{{ 'register.type' | translate }}</ion-label>
                     </ion-list-header>
                     <ion-item class="register-input item-borderless" no-padding>
-                        <ion-label>Help Seeker</ion-label>
+                        <ion-label>{{ 'register.helpSeeker' | translate }}</ion-label>
                         <ion-radio #seekerRadio slot="start" value="seeker" checked></ion-radio>
                     </ion-item>
                     <ion-item class="register-input item-borderless" no-padding>
-                        <ion-label>Helper</ion-label>
+                        <ion-label>{{ 'register.helper' | translate }}</ion-label>
                         <ion-radio #helperRadio slot="start" value="helper"></ion-radio>
                     </ion-item>
                 </ion-radio-group>
@@ -55,7 +55,7 @@
         </ion-row>
         <ion-row class="submit-row">
             <ion-col>
-                <ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid || !validRegistration">Register</ion-button>
+                <ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid || !validRegistration">{{ 'register.title' | translate }}</ion-button>
             </ion-col>
         </ion-row>
     </form>
