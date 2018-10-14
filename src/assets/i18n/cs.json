@@ -12,6 +12,13 @@
 		"language": "Vyberte svůj jazyk",
 		"apply": "Použijte Nastavení"
 	},
+	"vision": {
+		"title": "Vidění",
+		"type": "Možnosti vidění",
+		"translate": "Přeložit text",
+		"object": "Namluvit Object",
+		"takePicture": "Vyfotit"
+	},
 	"menu": {
 		"title": "Jídelní lístek"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "zrušení",
 		"yes": "Ano"
 	},
-	"vision": {
-		"title": "Vidění"
-	},
 	"verify": {
 		"title": "Ověřte účet"
+	},
+	"connect": {
+		"title": "Připojit",
+		"wantHelpWith": "Chci pomoc s ...",
+		"wantToHelpWith": "Chci vám pomoci ...",
+		"language": "Jazyk",
+		"culture": "Kultura",
+		"employment": "Zaměstnanost",
+		"seekHelp": "Vyhledat pomoc",
+		"offerHelp": "Nabídnout pomoc"
+	},
+	"requests": {
+		"title": "Žádosti",
+		"request": "Žádost",
+		"accept": "Akceptovat",
+		"reject": "Odmítnout",
+		"noHelpers": "V současné době nejsou ve vaší oblasti pomocníci. Zůstaňte naladěni!",
+		"noReqs": "V současné době nejsou žádné žádosti o pomoc. Zkuste to prosím později!"
 	}
 }

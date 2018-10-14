@@ -12,6 +12,13 @@
 		"language": "Velg ditt språk",
 		"apply": "Bruk Innstillinger"
 	},
+	"vision": {
+		"title": "Syn",
+		"type": "Visjonsalternativer",
+		"translate": "Oversett tekst",
+		"object": "Utsett objekt",
+		"takePicture": "Ta et bilde"
+	},
 	"menu": {
 		"title": "Meny"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Avbryt",
 		"yes": "Ja"
 	},
-	"vision": {
-		"title": "Syn"
-	},
 	"verify": {
 		"title": "verifiser konto"
+	},
+	"connect": {
+		"title": "Koble",
+		"wantHelpWith": "Jeg vil ha hjelp med ...",
+		"wantToHelpWith": "Jeg vil hjelpe med ...",
+		"language": "Språk",
+		"culture": "Kultur",
+		"employment": "Arbeid",
+		"seekHelp": "Søk hjelp",
+		"offerHelp": "Tilby hjelp"
+	},
+	"requests": {
+		"title": "Forespørsler",
+		"request": "Be om",
+		"accept": "Aksepterer",
+		"reject": "Avvis",
+		"noHelpers": "Det er for øyeblikket ingen hjelpere i ditt område. Følg med!",
+		"noReqs": "Det er for øyeblikket ingen forespørsler om hjelp. Vennligst sjekk tilbake senere!"
 	}
 }

@@ -12,6 +12,13 @@
 		"language": "Tria el teu idioma",
 		"apply": "Aplica configuració"
 	},
+	"vision": {
+		"title": "Visió",
+		"type": "Opcions de visió",
+		"translate": "Tradueix el text",
+		"object": "Pronunciar objecte",
+		"takePicture": "Fer una foto"
+	},
 	"menu": {
 		"title": "Menú"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Cancel · lar",
 		"yes": "Sí"
 	},
-	"vision": {
-		"title": "Visió"
-	},
 	"verify": {
 		"title": "Verifica el compte"
+	},
+	"connect": {
+		"title": "Connecta",
+		"wantHelpWith": "Vull ajuda amb ...",
+		"wantToHelpWith": "Vull ajudar amb ...",
+		"language": "Llenguatge",
+		"culture": "Cultura",
+		"employment": "Ocupació",
+		"seekHelp": "Cerqueu ajuda",
+		"offerHelp": "Oferta Ajuda"
+	},
+	"requests": {
+		"title": "Sol·licituds",
+		"request": "Sol·licitud",
+		"accept": "Accepta",
+		"reject": "Rebutjar",
+		"noHelpers": "Actualment no hi ha cap ajudant a la vostra zona. Estigueu atent.",
+		"noReqs": "Actualment no hi ha cap sol·licitud d'ajuda. Torneu-ho a consultar més tard!"
 	}
 }

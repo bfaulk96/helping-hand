@@ -12,6 +12,13 @@
 		"language": "בחר את השפה שלך",
 		"apply": "החל הגדרות"
 	},
+	"vision": {
+		"title": "חזון",
+		"type": "אפשרויות חזון",
+		"translate": "תרגם טקסט",
+		"object": "אובייקט לבטא",
+		"takePicture": "לצלם תמונה"
+	},
 	"menu": {
 		"title": "תפריט"
 	},
@@ -38,7 +45,7 @@
 		"helper": "עוזר",
 		"helpSeeker": "מבקש עזרה",
 		"placeholder": {
-			"email": "דוא\"ל",
+			"email": "דוא"ל",
 			"password": "סיסמה",
 			"confirmPassword": "אשר סיסמה"
 		},
@@ -52,7 +59,7 @@
 		"title": "התחברות",
 		"spaceTitle": "התחברות",
 		"placeholder": {
-			"email": "דוא\"ל",
+			"email": "דוא"ל",
 			"password": "סיסמה"
 		},
 		"button": "התחברות",
@@ -67,10 +74,25 @@
 		"cancel": "בטל",
 		"yes": "כן"
 	},
-	"vision": {
-		"title": "חזון"
-	},
 	"verify": {
 		"title": "לאמת חשבון"
+	},
+	"connect": {
+		"title": "התחבר",
+		"wantHelpWith": "אני רוצה עזרה עם ...",
+		"wantToHelpWith": "אני רוצה לעזור עם ...",
+		"language": "שפה",
+		"culture": "תרבות",
+		"employment": "תעסוקה",
+		"seekHelp": "לבקש עזרה",
+		"offerHelp": "עזרה להציע"
+	},
+	"requests": {
+		"title": "בקשות",
+		"request": "בקשה",
+		"accept": "קבל",
+		"reject": "דחה",
+		"noHelpers": "כרגע אין עוזרים באזור שלך. המשך לעקוב!",
+		"noReqs": "אין כרגע בקשות לעזרה. בדוק שוב מאוחר יותר!"
 	}
 }

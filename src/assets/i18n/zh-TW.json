@@ -12,6 +12,13 @@
 		"language": "選擇你的語言",
 		"apply": "應用設置"
 	},
+	"vision": {
+		"title": "視力",
+		"type": "視力選擇",
+		"translate": "翻譯文本",
+		"object": "發音Object",
+		"takePicture": "拍張照片"
+	},
 	"menu": {
 		"title": "菜單"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "取消",
 		"yes": "是"
 	},
-	"vision": {
-		"title": "視力"
-	},
 	"verify": {
 		"title": "驗證賬戶"
+	},
+	"connect": {
+		"title": "連",
+		"wantHelpWith": "我想要幫助......",
+		"wantToHelpWith": "我想幫忙......",
+		"language": "語言",
+		"culture": "文化",
+		"employment": "僱用",
+		"seekHelp": "尋求幫助",
+		"offerHelp": "提供幫忙"
+	},
+	"requests": {
+		"title": "要求",
+		"request": "請求",
+		"accept": "接受",
+		"reject": "拒絕",
+		"noHelpers": "您所在地區目前沒有幫助者。敬請關注！",
+		"noReqs": "目前沒有請求幫助。請稍後再回來查看！"
 	}
 }

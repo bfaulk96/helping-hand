@@ -12,6 +12,13 @@
 		"language": "言語を選んでください",
 		"apply": "設定を適用"
 	},
+	"vision": {
+		"title": "ビジョン",
+		"type": "ビジョンオプション",
+		"translate": "テキストの翻訳",
+		"object": "オブジェクトを発音する",
+		"takePicture": "写真を撮る"
+	},
 	"menu": {
 		"title": "メニュー"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "キャンセル",
 		"yes": "はい"
 	},
-	"vision": {
-		"title": "ビジョン"
-	},
 	"verify": {
 		"title": "アカウントを確認します"
+	},
+	"connect": {
+		"title": "接続する",
+		"wantHelpWith": "私は助けが必要です...",
+		"wantToHelpWith": "私は助けたいと思っています...",
+		"language": "言語",
+		"culture": "文化",
+		"employment": "雇用",
+		"seekHelp": "助けを求める",
+		"offerHelp": "オファーのヘルプ"
+	},
+	"requests": {
+		"title": "リクエスト",
+		"request": "要求",
+		"accept": "同意する",
+		"reject": "拒否",
+		"noHelpers": "現在、あなたの地域にはヘルパーはいません。乞うご期待！",
+		"noReqs": "現在、ヘルプのリクエストはありません。後で確認してください！"
 	}
 }

@@ -12,6 +12,13 @@
 		"language": "Chwazi lang ou",
 		"apply": "Aplike Anviwònman"
 	},
+	"vision": {
+		"title": "Vizyon",
+		"type": "Vizyon Opsyon",
+		"translate": "Tradwi tèks",
+		"object": "Pwononse objè",
+		"takePicture": "Pran yon foto"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Anile",
 		"yes": "Wi"
 	},
-	"vision": {
-		"title": "Vizyon"
-	},
 	"verify": {
 		"title": "Verifye Kont"
+	},
+	"connect": {
+		"title": "Konekte",
+		"wantHelpWith": "Mwen vle èd ak ...",
+		"wantToHelpWith": "Mwen vle ede ...",
+		"language": "Lang",
+		"culture": "Kilti",
+		"employment": "Travay",
+		"seekHelp": "Chèche Èd",
+		"offerHelp": "Ofri èd"
+	},
+	"requests": {
+		"title": "Demann",
+		"request": "Mande",
+		"accept": "Aksepte",
+		"reject": "Rejte",
+		"noHelpers": "Gen kounye a pa gen okenn èd nan zòn ou an. Rete branche!",
+		"noReqs": "Gen kounye a pa gen okenn demann pou èd. Tanpri tcheke tounen pita!"
 	}
 }

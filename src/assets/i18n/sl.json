@@ -12,6 +12,13 @@
 		"language": "Izberite svoj jezik",
 		"apply": "Uporabite Nastavitve"
 	},
+	"vision": {
+		"title": "Vizija",
+		"type": "Možnosti vizije",
+		"translate": "Prevedi besedilo",
+		"object": "Izgovorite predmet",
+		"takePicture": "Posnemite fotografijo"
+	},
 	"menu": {
 		"title": "Meni"
 	},
@@ -22,7 +29,7 @@
 		"findOut": "Izvedi več",
 		"resources": "Oglejte si vire v vaši skupnosti",
 		"register": "Rabim pomoč? Želite pomagati drugim? Registriraj se danes!",
-		"vision": "Nekaj ​​v bližini, ki ga potrebujete prevedeno ali morate govoriti v drugem jeziku? Poskusite 'vizijo'."
+		"vision": "Nekaj ​​v bližini, ki ga potrebujete prevedeno ali morate govoriti v drugem jeziku? Poskusite \"vizijo\"."
 	},
 	"about": {
 		"title": "O podjetju",
@@ -67,10 +74,25 @@
 		"cancel": "Prekliči",
 		"yes": "Ja"
 	},
-	"vision": {
-		"title": "Vizija"
-	},
 	"verify": {
 		"title": "Preverite račun"
+	},
+	"connect": {
+		"title": "Poveži se",
+		"wantHelpWith": "Želim pomoč pri ...",
+		"wantToHelpWith": "Želim pomagati pri ...",
+		"language": "Jezik",
+		"culture": "Kultura",
+		"employment": "Zaposlovanje",
+		"seekHelp": "Poiščite pomoč",
+		"offerHelp": "Pomoč za ponudbo"
+	},
+	"requests": {
+		"title": "Zahteve",
+		"request": "Prošnja",
+		"accept": "Sprejmi",
+		"reject": "Zavrni",
+		"noHelpers": "Na vašem območju trenutno ni pomočnikov. Ostani na vezi!",
+		"noReqs": "Trenutno ni nobenih zahtev za pomoč. Prosimo, preverite kasneje!"
 	}
 }

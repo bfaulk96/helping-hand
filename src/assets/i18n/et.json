@@ -12,6 +12,13 @@
 		"language": "Vali oma keel",
 		"apply": "Rakenda seadeid"
 	},
+	"vision": {
+		"title": "Visioon",
+		"type": "Nägemisvõimalused",
+		"translate": "Tõlgi tekst",
+		"object": "Räägi Objekti",
+		"takePicture": "Tee pilti"
+	},
 	"menu": {
 		"title": "Menüü"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Loobu",
 		"yes": "Jah"
 	},
-	"vision": {
-		"title": "Visioon"
-	},
 	"verify": {
 		"title": "Kontrollige kontot"
+	},
+	"connect": {
+		"title": "Ühenda",
+		"wantHelpWith": "Ma tahan abi ...",
+		"wantToHelpWith": "Ma tahan aidata ...",
+		"language": "Keel",
+		"culture": "Kultuur",
+		"employment": "Tööhõive",
+		"seekHelp": "Abi otsima",
+		"offerHelp": "Paku abi"
+	},
+	"requests": {
+		"title": "Taotlused",
+		"request": "Päring",
+		"accept": "Nõustun",
+		"reject": "Keelduge",
+		"noHelpers": "Teie piirkonnas pole praegu abistajaid. Jääge häälestatult!",
+		"noReqs": "Praegu pole abi taotlusi. Palun kontrolli hiljem!"
 	}
 }

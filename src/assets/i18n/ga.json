@@ -12,6 +12,13 @@
 		"language": "Roghnaigh do theanga",
 		"apply": "Cuir Socruithe i bhfeidhm"
 	},
+	"vision": {
+		"title": "Fís",
+		"type": "Roghanna Fís",
+		"translate": "Aistrigh Téacs",
+		"object": "Pronounce Object",
+		"takePicture": "Tóg pictiúr"
+	},
 	"menu": {
 		"title": "Roghchlár"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Cealaigh",
 		"yes": "Tá"
 	},
-	"vision": {
-		"title": "Fís"
-	},
 	"verify": {
 		"title": "Cuntas Fíoraigh"
+	},
+	"connect": {
+		"title": "Ceangal",
+		"wantHelpWith": "Ba mhaith liom cuidiú le ...",
+		"wantToHelpWith": "Ba mhaith liom cabhrú le ...",
+		"language": "Teanga",
+		"culture": "Cultúr",
+		"employment": "Fostaíocht",
+		"seekHelp": "Cabhair Lorg",
+		"offerHelp": "Cabhair Tairisceana"
+	},
+	"requests": {
+		"title": "Iarratais",
+		"request": "Iarratas",
+		"accept": "Glac leis",
+		"reject": "Diúltaigh",
+		"noHelpers": "Níl aon lucht cabhrach i do cheantar faoi láthair. Fanacht tiúnta!",
+		"noReqs": "Níl aon iarratais ar chabhair faoi láthair. Seiceáil siar níos déanaí!"
 	}
 }

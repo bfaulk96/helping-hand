@@ -12,6 +12,13 @@
 		"language": "Alegeți limba dvs.",
 		"apply": "Aplicați setările"
 	},
+	"vision": {
+		"title": "Viziune",
+		"type": "Viziune Opțiuni",
+		"translate": "Traduceți textul",
+		"object": "Pronunță Object",
+		"takePicture": "Fa o fotografie"
+	},
 	"menu": {
 		"title": "Meniul"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Anulare",
 		"yes": "da"
 	},
-	"vision": {
-		"title": "Viziune"
-	},
 	"verify": {
 		"title": "Verifica contul"
+	},
+	"connect": {
+		"title": "Conectați",
+		"wantHelpWith": "Vreau ajutor cu ...",
+		"wantToHelpWith": "Vreau să ajut cu ...",
+		"language": "Limba",
+		"culture": "Cultură",
+		"employment": "Ocuparea forței de muncă",
+		"seekHelp": "Caută ajutor",
+		"offerHelp": "Oferă ajutor"
+	},
+	"requests": {
+		"title": "Cereri",
+		"request": "Cerere",
+		"accept": "Accept",
+		"reject": "Respinge",
+		"noHelpers": "În prezent nu există nici un ajutor în zona dvs. Rămâneți aproape!",
+		"noReqs": "În prezent nu există solicitări de ajutor. Vă rugăm să verificați mai târziu!"
 	}
 }

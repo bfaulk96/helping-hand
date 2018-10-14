@@ -12,6 +12,13 @@
 		"language": "Wybierz swój język",
 		"apply": "Zastosuj ustawienia"
 	},
+	"vision": {
+		"title": "Wizja",
+		"type": "Opcje Vision",
+		"translate": "Przetłumacz tekst",
+		"object": "Wymowa Object",
+		"takePicture": "Zrobić zdjęcie"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Anuluj",
 		"yes": "tak"
 	},
-	"vision": {
-		"title": "Wizja"
-	},
 	"verify": {
 		"title": "Zweryfikuj konto"
+	},
+	"connect": {
+		"title": "Połączyć",
+		"wantHelpWith": "Chcę pomocy z ...",
+		"wantToHelpWith": "Chcę pomóc z ...",
+		"language": "Język",
+		"culture": "Kultura",
+		"employment": "Zatrudnienie",
+		"seekHelp": "Szukaj pomocy",
+		"offerHelp": "Oferować pomoc"
+	},
+	"requests": {
+		"title": "Upraszanie",
+		"request": "Żądanie",
+		"accept": "Zaakceptować",
+		"reject": "Odrzucać",
+		"noHelpers": "W tej chwili nie ma żadnych pomocników. Bądźcie czujni!",
+		"noReqs": "Obecnie nie ma próśb o pomoc. Sprawdź później!"
 	}
 }

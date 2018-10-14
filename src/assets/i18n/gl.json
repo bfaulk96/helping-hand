@@ -12,6 +12,13 @@
 		"language": "Elixe o teu idioma",
 		"apply": "Aplicar configuracións"
 	},
+	"vision": {
+		"title": "Visión",
+		"type": "Opcións de visión",
+		"translate": "Traducir texto",
+		"object": "Pronunciar obxecto",
+		"takePicture": "Sacar unha foto"
+	},
 	"menu": {
 		"title": "Menú"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Cancelar",
 		"yes": "Si"
 	},
-	"vision": {
-		"title": "Visión"
-	},
 	"verify": {
 		"title": "Verificar a conta"
+	},
+	"connect": {
+		"title": "Conectar",
+		"wantHelpWith": "Quero axuda con ...",
+		"wantToHelpWith": "Quero axudar ...",
+		"language": "Lingua",
+		"culture": "Cultura",
+		"employment": "Emprego",
+		"seekHelp": "Busque axuda",
+		"offerHelp": "Axuda da oferta"
+	},
+	"requests": {
+		"title": "Solicitudes",
+		"request": "Solicitude",
+		"accept": "Aceptar",
+		"reject": "Rexeitar",
+		"noHelpers": "Actualmente non hai axudantes na túa área. Sexa atento!",
+		"noReqs": "Actualmente non hai solicitudes de axuda. Verifique máis tarde."
 	}
 }

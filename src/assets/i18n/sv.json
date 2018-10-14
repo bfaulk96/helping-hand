@@ -12,6 +12,13 @@
 		"language": "Välj ditt språk",
 		"apply": "Använd Inställningar"
 	},
+	"vision": {
+		"title": "Syn",
+		"type": "Visionsalternativ",
+		"translate": "Översätt text",
+		"object": "Uttala Objekt",
+		"takePicture": "Ta en bild"
+	},
 	"menu": {
 		"title": "Meny"
 	},
@@ -22,7 +29,7 @@
 		"findOut": "Få reda på mer",
 		"resources": "Kolla in resurser i ditt samhälle",
 		"register": "Behövs hjälp? Vill du hjälpa andra? Registrera idag!",
-		"vision": "Något i närheten behöver du översatt eller behöver säga på ett annat språk? Försök 'vision'."
+		"vision": "Något i närheten behöver du översatt eller behöver säga på ett annat språk? Försök \"vision\"."
 	},
 	"about": {
 		"title": "Handla om",
@@ -67,10 +74,25 @@
 		"cancel": "Annullera",
 		"yes": "Ja"
 	},
-	"vision": {
-		"title": "Syn"
-	},
 	"verify": {
 		"title": "Verifiera konto"
+	},
+	"connect": {
+		"title": "Ansluta",
+		"wantHelpWith": "Jag vill ha hjälp med ...",
+		"wantToHelpWith": "Jag vill hjälpa till med ...",
+		"language": "Språk",
+		"culture": "Kultur",
+		"employment": "Sysselsättning",
+		"seekHelp": "Sök hjälp",
+		"offerHelp": "Erbjuda hjälp"
+	},
+	"requests": {
+		"title": "Begäran",
+		"request": "Begäran",
+		"accept": "Acceptera",
+		"reject": "Avvisa",
+		"noHelpers": "Det finns för närvarande inga hjälpare i ditt område. Håll dig igång!",
+		"noReqs": "Det finns för närvarande inga förfrågningar om hjälp. Vänligen återkom senare!"
 	}
 }

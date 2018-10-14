@@ -12,6 +12,13 @@
 		"language": "Piliin ang iyong wika",
 		"apply": "Ilapat ang Mga Setting"
 	},
+	"vision": {
+		"title": "Vision",
+		"type": "Mga Pagpipilian sa Vision",
+		"translate": "Isalin ang Teksto",
+		"object": "Ipahayag ang Bagay",
+		"takePicture": "Kumuha ng litrato"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Kanselahin",
 		"yes": "Oo"
 	},
-	"vision": {
-		"title": "Vision"
-	},
 	"verify": {
 		"title": "Patunayan ang Account"
+	},
+	"connect": {
+		"title": "Ikonekta",
+		"wantHelpWith": "Gusto ko ng tulong sa ...",
+		"wantToHelpWith": "Gusto kong tumulong sa ...",
+		"language": "Wika",
+		"culture": "Kultura",
+		"employment": "Pagtatrabaho",
+		"seekHelp": "Humingi ng tulong",
+		"offerHelp": "Mag-alok ng Tulong"
+	},
+	"requests": {
+		"title": "Mga Hiling",
+		"request": "Kahilingan",
+		"accept": "Tanggapin",
+		"reject": "Tanggihan",
+		"noHelpers": "Sa kasalukuyan walang mga katulong sa iyong lugar. Manatiling nakatutok!",
+		"noReqs": "Kasalukuyang walang mga kahilingan para sa tulong. Mangyaring suriin muli mamaya!"
 	}
 }

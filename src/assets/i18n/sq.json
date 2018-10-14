@@ -12,6 +12,13 @@
 		"language": "Zgjidhni gjuhën tuaj",
 		"apply": "Aplikoni Cilësimet"
 	},
+	"vision": {
+		"title": "vizion",
+		"type": "Opsionet e Vizionit",
+		"translate": "Përkthe tekstin",
+		"object": "Pronon objektin",
+		"takePicture": "Merrni një pamje"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "anuloj",
 		"yes": "po"
 	},
-	"vision": {
-		"title": "vizion"
-	},
 	"verify": {
 		"title": "Verifikoni llogarinë"
+	},
+	"connect": {
+		"title": "lidh",
+		"wantHelpWith": "Dua ndihme me ...",
+		"wantToHelpWith": "Dua të ndihmoj me ...",
+		"language": "Gjuhe",
+		"culture": "kulturë",
+		"employment": "Punësimi",
+		"seekHelp": "Kërkoni ndihmë",
+		"offerHelp": "Ofro Ndihmë"
+	},
+	"requests": {
+		"title": "kërkesat",
+		"request": "Kërkesë",
+		"accept": "pranoj",
+		"reject": "hedh poshtë",
+		"noHelpers": "Aktualisht nuk ka ndihmëtarë në zonën tuaj. Qëndroni të akorduar!",
+		"noReqs": "Aktualisht nuk ka kërkesa për ndihmë. Ju lutem kontrolloni përsëri më vonë!"
 	}
 }

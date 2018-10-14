@@ -12,6 +12,13 @@
 		"language": "Veldu tungumálið þitt",
 		"apply": "Notaðu Stillingar"
 	},
+	"vision": {
+		"title": "Sýn",
+		"type": "Vision Options",
+		"translate": "Þýða texta",
+		"object": "Framkalla hlut",
+		"takePicture": "Taktu mynd"
+	},
 	"menu": {
 		"title": "Valmynd"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Hætta við",
 		"yes": "Já"
 	},
-	"vision": {
-		"title": "Sýn"
-	},
 	"verify": {
 		"title": "Staðfestu reikning"
+	},
+	"connect": {
+		"title": "Tengdu",
+		"wantHelpWith": "Ég vil hjálpa með ...",
+		"wantToHelpWith": "Ég vil hjálpa með ...",
+		"language": "Tungumál",
+		"culture": "Menning",
+		"employment": "Atvinna",
+		"seekHelp": "Leitaðu hjálp",
+		"offerHelp": "Tilboð Hjálp"
+	},
+	"requests": {
+		"title": "Beiðnir",
+		"request": "Beiðni",
+		"accept": "Samþykkja",
+		"reject": "Hafna",
+		"noHelpers": "Það eru engir aðstoðarmenn á þínu svæði. Haltu áfram!",
+		"noReqs": "Það eru engar beiðnir um hjálp. Vinsamlegast athugaðu aftur seinna!"
 	}
 }

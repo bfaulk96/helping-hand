@@ -12,6 +12,13 @@
 		"language": "Vyberte si svoj jazyk",
 		"apply": "Použiť nastavenia"
 	},
+	"vision": {
+		"title": "videnie",
+		"type": "Možnosti videnia",
+		"translate": "Preložiť text",
+		"object": "Nahráť Object",
+		"takePicture": "Urobte si fotku"
+	},
 	"menu": {
 		"title": "Ponuka"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Zrušiť",
 		"yes": "Áno"
 	},
-	"vision": {
-		"title": "videnie"
-	},
 	"verify": {
 		"title": "Overte účet"
+	},
+	"connect": {
+		"title": "pripojiť",
+		"wantHelpWith": "Chcem pomôcť s ...",
+		"wantToHelpWith": "Chcem pomôcť s ...",
+		"language": "Jazyk",
+		"culture": "Kultúra",
+		"employment": "zamestnanosť",
+		"seekHelp": "Hľadaj pomoc",
+		"offerHelp": "Ponuka Pomocníka"
+	},
+	"requests": {
+		"title": "žiadosti",
+		"request": "žiadosť",
+		"accept": "súhlasiť",
+		"reject": "Odmietnuť",
+		"noHelpers": "V súčasnosti nie sú vo vašej oblasti žiadni pomocníci. Zostaňte naladení!",
+		"noReqs": "V súčasnosti nie sú žiadosti o pomoc. Pozrite sa neskôr!"
 	}
 }

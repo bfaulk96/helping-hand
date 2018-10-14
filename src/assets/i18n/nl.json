@@ -12,6 +12,13 @@
 		"language": "Kies je taal",
 		"apply": "Instellingen toepassen"
 	},
+	"vision": {
+		"title": "Visie",
+		"type": "Visie-opties",
+		"translate": "Tekst vertalen",
+		"object": "Spreek Object uit",
+		"takePicture": "Maak een foto"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "annuleren",
 		"yes": "Ja"
 	},
-	"vision": {
-		"title": "Visie"
-	},
 	"verify": {
 		"title": "Account verifiëren"
+	},
+	"connect": {
+		"title": "Aansluiten",
+		"wantHelpWith": "Ik wil hulp bij ...",
+		"wantToHelpWith": "Ik wil helpen met ...",
+		"language": "Taal",
+		"culture": "Cultuur",
+		"employment": "werk",
+		"seekHelp": "Zoek hulp",
+		"offerHelp": "Hulp bieden"
+	},
+	"requests": {
+		"title": "verzoeken",
+		"request": "Verzoek",
+		"accept": "Aanvaarden",
+		"reject": "afwijzen",
+		"noHelpers": "Er zijn momenteel geen helpers in uw regio. Blijf kijken!",
+		"noReqs": "Er zijn momenteel geen verzoeken om hulp. Kom later nog eens terug!"
 	}
 }

@@ -12,6 +12,13 @@
 		"language": "Dilinizi seçin",
 		"apply": "Ayarlar tətbiq edin"
 	},
+	"vision": {
+		"title": "Vizyon",
+		"type": "Vizyon Seçimləri",
+		"translate": "Mətn tərcümə",
+		"object": "Obyektə tələsməyin",
+		"takePicture": "Şəkil çək"
+	},
 	"menu": {
 		"title": "Menyu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Ləğv et",
 		"yes": "Bəli"
 	},
-	"vision": {
-		"title": "Vizyon"
-	},
 	"verify": {
 		"title": "Hesabı doğrulayın"
+	},
+	"connect": {
+		"title": "Bağlayın",
+		"wantHelpWith": "Mən kömək istəyirəm ...",
+		"wantToHelpWith": "Mən kömək istəyirəm ...",
+		"language": "Dil",
+		"culture": "Mədəniyyət",
+		"employment": "Məşğulluq",
+		"seekHelp": "Yardım axtarın",
+		"offerHelp": "Kömək təklif edin"
+	},
+	"requests": {
+		"title": "İstək",
+		"request": "İstək",
+		"accept": "Qəbul edin",
+		"reject": "Rədd et",
+		"noHelpers": "Bölgənizdə heç bir yardımçı yoxdur. Ayıq qalaq!",
+		"noReqs": "Hal-hazırda kömək istəmirik. Xahiş edirik daha sonra yoxlayın!"
 	}
 }

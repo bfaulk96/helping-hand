@@ -12,6 +12,13 @@
 		"language": "Kies jou taal",
 		"apply": "Pas instellings toe"
 	},
+	"vision": {
+		"title": "visie",
+		"type": "Visie Opsies",
+		"translate": "Vertaal teks",
+		"object": "Voorwerp uit te spreek",
+		"takePicture": "Neem 'n foto"
+	},
 	"menu": {
 		"title": "Spyskaart"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "kanselleer",
 		"yes": "Ja"
 	},
-	"vision": {
-		"title": "visie"
-	},
 	"verify": {
 		"title": "Verifieer rekening"
+	},
+	"connect": {
+		"title": "verbind",
+		"wantHelpWith": "Ek wil hulp met ...",
+		"wantToHelpWith": "Ek wil help met ...",
+		"language": "Taal",
+		"culture": "kultuur",
+		"employment": "indiensneming",
+		"seekHelp": "Soek hulp",
+		"offerHelp": "Bied hulp"
+	},
+	"requests": {
+		"title": "Versoeke",
+		"request": "versoek",
+		"accept": "aanvaar",
+		"reject": "verwerp",
+		"noHelpers": "Daar is tans geen helpers in jou omgewing nie. Bly ingeskakel!",
+		"noReqs": "Daar is tans geen versoeke om hulp nie. Kyk asseblief later terug!"
 	}
 }

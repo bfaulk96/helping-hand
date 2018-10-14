@@ -12,6 +12,13 @@
 		"language": "pilih Bahasa anda",
 		"apply": "Gunakan Tetapan"
 	},
+	"vision": {
+		"title": "Visi",
+		"type": "Pilihan Visi",
+		"translate": "Teks Terjemah",
+		"object": "Mengucapkan Objek",
+		"takePicture": "Ambil gambar"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Batalkan",
 		"yes": "Ya"
 	},
-	"vision": {
-		"title": "Visi"
-	},
 	"verify": {
 		"title": "Mengesahkan Akaun"
+	},
+	"connect": {
+		"title": "Sambungkan",
+		"wantHelpWith": "Saya mahukan bantuan dengan ...",
+		"wantToHelpWith": "Saya mahu membantu dengan ...",
+		"language": "Bahasa",
+		"culture": "Budaya",
+		"employment": "Penggajian",
+		"seekHelp": "Mencari pertolongan",
+		"offerHelp": "Bantuan Tawaran"
+	},
+	"requests": {
+		"title": "Permintaan",
+		"request": "Permintaan",
+		"accept": "Terima",
+		"reject": "Tolak",
+		"noHelpers": "Pada masa ini tiada pembantu di kawasan anda. Tinggal!",
+		"noReqs": "Saat ini tiada permintaan untuk bantuan. Sila semak semula kemudian!"
 	}
 }

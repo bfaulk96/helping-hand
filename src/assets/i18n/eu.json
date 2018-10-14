@@ -12,6 +12,13 @@
 		"language": "Aukeratu zure hizkuntza",
 		"apply": "Aplikatu ezarpenak"
 	},
+	"vision": {
+		"title": "Vision",
+		"type": "Ikusizko aukerak",
+		"translate": "Itzuli Testua",
+		"object": "Ahoskatu Object",
+		"takePicture": "Argazki bat atera"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Utzi",
 		"yes": "Bai"
 	},
-	"vision": {
-		"title": "Vision"
-	},
 	"verify": {
 		"title": "Egiaztatu kontua"
+	},
+	"connect": {
+		"title": "Lotu",
+		"wantHelpWith": "Lagundu nahi dut ...",
+		"wantToHelpWith": "Lagundu nahi dut ...",
+		"language": "Hizkuntza",
+		"culture": "Kultura",
+		"employment": "Enplegu",
+		"seekHelp": "Bilatu laguntza",
+		"offerHelp": "Eskaintzaren laguntza"
+	},
+	"requests": {
+		"title": "eskaerak",
+		"request": "Eskaera",
+		"accept": "Onartu",
+		"reject": "Ukatu",
+		"noHelpers": "Une honetan ez dago zure inguruko laguntzaileak. Stay tuned!",
+		"noReqs": "Une honetan ez dago laguntza eskaerarik. Egiaztatu beranduago!"
 	}
 }

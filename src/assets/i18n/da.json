@@ -12,6 +12,13 @@
 		"language": "Vælg dit sprog",
 		"apply": "Anvend indstillinger"
 	},
+	"vision": {
+		"title": "Vision",
+		"type": "Vision Valg",
+		"translate": "Oversæt tekst",
+		"object": "Udtal Object",
+		"takePicture": "Tag et billede"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Afbestille",
 		"yes": "Ja"
 	},
-	"vision": {
-		"title": "Vision"
-	},
 	"verify": {
 		"title": "Bekræft konto"
+	},
+	"connect": {
+		"title": "Opret forbindelse",
+		"wantHelpWith": "Jeg vil gerne have hjælp med ...",
+		"wantToHelpWith": "Jeg vil gerne hjælpe med ...",
+		"language": "Sprog",
+		"culture": "Kultur",
+		"employment": "Beskæftigelse",
+		"seekHelp": "Søg hjælp",
+		"offerHelp": "Tilbudshjælp"
+	},
+	"requests": {
+		"title": "Anmodning",
+		"request": "Anmodning",
+		"accept": "Acceptere",
+		"reject": "Afvise",
+		"noHelpers": "Der er i øjeblikket ingen hjælpere i dit område. Bliv hængende!",
+		"noReqs": "Der er i øjeblikket ingen anmodninger om hjælp. Venligst check tilbage senere!"
 	}
 }

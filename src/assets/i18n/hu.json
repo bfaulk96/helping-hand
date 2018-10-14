@@ -12,6 +12,13 @@
 		"language": "Válasszon nyelvet",
 		"apply": "Beállítások alkalmazása"
 	},
+	"vision": {
+		"title": "Látomás",
+		"type": "Vision opciók",
+		"translate": "Szövegfordítás",
+		"object": ""Object" kiejtése",
+		"takePicture": "Fotózni"
+	},
 	"menu": {
 		"title": "Menü"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Megszünteti",
 		"yes": "Igen"
 	},
-	"vision": {
-		"title": "Látomás"
-	},
 	"verify": {
 		"title": "Fiók megerősítése"
+	},
+	"connect": {
+		"title": "Csatlakozás",
+		"wantHelpWith": "Segítségre van szükségem ...",
+		"wantToHelpWith": "Szeretnék segíteni ...",
+		"language": "Nyelv",
+		"culture": "Kultúra",
+		"employment": "Foglalkoztatás",
+		"seekHelp": "Segítséget keres",
+		"offerHelp": "Nyújts segítséget"
+	},
+	"requests": {
+		"title": "kéri",
+		"request": "Kérés",
+		"accept": "Elfogad",
+		"reject": "Elutasít",
+		"noHelpers": "Jelenleg nincsenek segítők az Ön területén. Maradjon velünk!",
+		"noReqs": "Jelenleg nincs segítségkérés. Kérjük, ellenőrizze később!"
 	}
 }

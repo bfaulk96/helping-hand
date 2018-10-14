@@ -12,6 +12,13 @@
 		"language": "Agħżel il-lingwa tiegħek",
 		"apply": "Applika Settings"
 	},
+	"vision": {
+		"title": "Viżjoni",
+		"type": "Għażliet ta 'Viżjoni",
+		"translate": "Ittraduċi Test",
+		"object": "Agħżel l-Għan",
+		"takePicture": "Ħu ritratt"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Ikkanċella",
 		"yes": "Iva"
 	},
-	"vision": {
-		"title": "Viżjoni"
-	},
 	"verify": {
 		"title": "Ivverifika l-Kont"
+	},
+	"connect": {
+		"title": "Qabbad",
+		"wantHelpWith": "Irrid għajnuna ma '...",
+		"wantToHelpWith": "Irrid ngħin ...",
+		"language": "Lingwa",
+		"culture": "Kultura",
+		"employment": "Impjieg",
+		"seekHelp": "Fittex Għajnuna",
+		"offerHelp": "Għajnuna għall-Offerta"
+	},
+	"requests": {
+		"title": "Talbiet",
+		"request": "Talba",
+		"accept": "Aċċetta",
+		"reject": "Rifjut",
+		"noHelpers": "Bħalissa m'hemm l-ebda helpers fiż-żona tiegħek. Soġġorn sintonizzat!",
+		"noReqs": "Bħalissa m'hemmx talbiet għal għajnuna. Jekk jogħġbok iċċekkja aktar tard!"
 	}
 }

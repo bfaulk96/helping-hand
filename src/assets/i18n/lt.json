@@ -12,6 +12,13 @@
 		"language": "Pasirinkite kalbą",
 		"apply": "Taikyti nustatymus"
 	},
+	"vision": {
+		"title": "Vizija",
+		"type": "Vizijos parinktys",
+		"translate": "Išversti tekstą",
+		"object": "Išreikšti objektą",
+		"takePicture": "Nufotografuok"
+	},
 	"menu": {
 		"title": "Meniu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Atšaukti",
 		"yes": "Taip"
 	},
-	"vision": {
-		"title": "Vizija"
-	},
 	"verify": {
 		"title": "Patvirtinkite paskyrą"
+	},
+	"connect": {
+		"title": "Prisijungti",
+		"wantHelpWith": "Noriu pagalbos su ...",
+		"wantToHelpWith": "Aš noriu padėti ...",
+		"language": "Kalba",
+		"culture": "Kultūra",
+		"employment": "Užimtumas",
+		"seekHelp": "Ieškoti pagalbos",
+		"offerHelp": "Pasiūlykite pagalbos"
+	},
+	"requests": {
+		"title": "Prašymai",
+		"request": "Prašymas",
+		"accept": "Priimti",
+		"reject": "Atmesti",
+		"noHelpers": "Šiuo metu jūsų vietovėje nėra pagalbininkų. Palaikykite!",
+		"noReqs": "Šiuo metu nėra pagalbos užklausų. Prašome patikrinti vėliau!"
 	}
 }

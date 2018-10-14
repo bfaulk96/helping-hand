@@ -12,6 +12,13 @@
 		"language": "Pilih bahasamu",
 		"apply": "Terapkan pengaturan"
 	},
+	"vision": {
+		"title": "Penglihatan",
+		"type": "Opsi Vision",
+		"translate": "Menerjemahkan Teks",
+		"object": "Ucapkan Object",
+		"takePicture": "Mengambil gambar"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Membatalkan",
 		"yes": "iya nih"
 	},
-	"vision": {
-		"title": "Penglihatan"
-	},
 	"verify": {
 		"title": "verifikasi akun"
+	},
+	"connect": {
+		"title": "Menghubungkan",
+		"wantHelpWith": "Saya ingin bantuan dengan ...",
+		"wantToHelpWith": "Saya ingin membantu dengan ...",
+		"language": "Bahasa",
+		"culture": "Budaya",
+		"employment": "Pekerjaan",
+		"seekHelp": "Mencari pertolongan",
+		"offerHelp": "Menawarkan bantuan"
+	},
+	"requests": {
+		"title": "Permintaan",
+		"request": "Permintaan",
+		"accept": "Menerima",
+		"reject": "Menolak",
+		"noHelpers": "Saat ini tidak ada pembantu di daerah Anda. Tetap disini!",
+		"noReqs": "Saat ini tidak ada permintaan bantuan. Silakan periksa lagi nanti!"
 	}
 }

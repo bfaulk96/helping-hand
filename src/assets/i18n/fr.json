@@ -12,6 +12,13 @@
 		"language": "Choisissez votre langue",
 		"apply": "Appliquer les paramètres"
 	},
+	"vision": {
+		"title": "Vision",
+		"type": "Options de vision",
+		"translate": "Traduire le texte",
+		"object": "Prononcez Objet",
+		"takePicture": "Prendre une photo"
+	},
 	"menu": {
 		"title": "Menu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Annuler",
 		"yes": "Oui"
 	},
-	"vision": {
-		"title": "Vision"
-	},
 	"verify": {
 		"title": "vérifier le compte"
+	},
+	"connect": {
+		"title": "Relier",
+		"wantHelpWith": "Je veux de l'aide pour ...",
+		"wantToHelpWith": "Je veux aider avec ...",
+		"language": "La langue",
+		"culture": "Culture",
+		"employment": "Emploi",
+		"seekHelp": "Demander de l'aide",
+		"offerHelp": "Offrir de l'aide"
+	},
+	"requests": {
+		"title": "Demandes",
+		"request": "Demande",
+		"accept": "Acceptez",
+		"reject": "Rejeter",
+		"noHelpers": "Il n'y a actuellement aucune aide dans votre région. Restez à l'écoute!",
+		"noReqs": "Il n'y a actuellement aucune demande d'aide. S'il vous plaît revenez plus tard!"
 	}
 }

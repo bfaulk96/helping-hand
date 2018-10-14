@@ -12,6 +12,13 @@
 		"language": "Odaberite svoj jezik",
 		"apply": "Primijeni Postavke"
 	},
+	"vision": {
+		"title": "Vizija",
+		"type": "Opcije vida",
+		"translate": "Prevedi Tekst",
+		"object": "Izgovoriti objekt",
+		"takePicture": "Uslikaj"
+	},
 	"menu": {
 		"title": "izbornik"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Otkazati",
 		"yes": "Da"
 	},
-	"vision": {
-		"title": "Vizija"
-	},
 	"verify": {
 		"title": "Potvrdi Račun"
+	},
+	"connect": {
+		"title": "Spojiti",
+		"wantHelpWith": "Želim pomoć ...",
+		"wantToHelpWith": "Želim pomoći ...",
+		"language": "Jezik",
+		"culture": "Kultura",
+		"employment": "zapošljavanje",
+		"seekHelp": "Tražiti pomoć",
+		"offerHelp": "Ponuditi pomoć"
+	},
+	"requests": {
+		"title": "Zahtjevi",
+		"request": "Zahtjev",
+		"accept": "Prihvatiti",
+		"reject": "Odbiti",
+		"noHelpers": "Trenutno nema pomoćnika u vašem području. Ostani u tunelu!",
+		"noReqs": "Trenutačno nema zahtjeva za pomoć. Provjerite kasnije!"
 	}
 }

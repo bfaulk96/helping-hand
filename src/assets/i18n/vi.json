@@ -12,6 +12,13 @@
 		"language": "Chọn ngôn ngữ của bạn",
 		"apply": "Áp dụng cài đặt"
 	},
+	"vision": {
+		"title": "Tầm nhìn",
+		"type": "Tùy chọn tầm nhìn",
+		"translate": "Dịch văn bản",
+		"object": "Phát âm Object",
+		"takePicture": "Chụp ảnh"
+	},
 	"menu": {
 		"title": "Thực đơn"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Hủy bỏ",
 		"yes": "Vâng"
 	},
-	"vision": {
-		"title": "Tầm nhìn"
-	},
 	"verify": {
 		"title": "Xác nhận tài khoản"
+	},
+	"connect": {
+		"title": "Kết nối",
+		"wantHelpWith": "Tôi muốn được giúp đỡ ...",
+		"wantToHelpWith": "Tôi muốn giúp ...",
+		"language": "Ngôn ngữ",
+		"culture": "Văn hóa",
+		"employment": "Việc làm",
+		"seekHelp": "Tìm kiếm trợ giúp",
+		"offerHelp": "Đề nghị giúp đỡ"
+	},
+	"requests": {
+		"title": "Yêu cầu",
+		"request": "Yêu cầu",
+		"accept": "Chấp nhận",
+		"reject": "Từ chối",
+		"noHelpers": "Hiện tại không có người trợ giúp nào trong khu vực của bạn. Hãy theo dõi!",
+		"noReqs": "Hiện tại không có yêu cầu trợ giúp nào. Vui lòng kiểm tra lại sau!"
 	}
 }

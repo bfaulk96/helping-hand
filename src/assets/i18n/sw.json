@@ -12,6 +12,13 @@
 		"language": "Chagua lugha yako",
 		"apply": "Tumia Mipangilio"
 	},
+	"vision": {
+		"title": "Maono",
+		"type": "Chaguzi za Maono",
+		"translate": "Tafsiri Nakala",
+		"object": "Tangaza kitu",
+		"takePicture": "Piga picha"
+	},
 	"menu": {
 		"title": "Menyu"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Futa",
 		"yes": "Ndiyo"
 	},
-	"vision": {
-		"title": "Maono"
-	},
 	"verify": {
 		"title": "Thibitisha Akaunti"
+	},
+	"connect": {
+		"title": "Unganisha",
+		"wantHelpWith": "Ninataka msaada na ...",
+		"wantToHelpWith": "Nataka kusaidia na ...",
+		"language": "Lugha",
+		"culture": "Utamaduni",
+		"employment": "Ajira",
+		"seekHelp": "Tafuta msaada",
+		"offerHelp": "Msaada wa Kutoa"
+	},
+	"requests": {
+		"title": "Maombi",
+		"request": "Omba",
+		"accept": "Kukubali",
+		"reject": "Kataa",
+		"noHelpers": "Huko sasa hakuna wasaidizi katika eneo lako. Endelea!",
+		"noReqs": "Hivi sasa hakuna maombi ya msaada. Tafadhali angalia nyuma baadaye!"
 	}
 }

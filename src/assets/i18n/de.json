@@ -12,6 +12,13 @@
 		"language": "Wähle deine Sprache",
 		"apply": "Einstellungen übernehmen"
 	},
+	"vision": {
+		"title": "Vision",
+		"type": "Vision Optionen",
+		"translate": "Text übersetzen",
+		"object": "Objekt aussprechen",
+		"takePicture": "Machen Sie ein Foto"
+	},
 	"menu": {
 		"title": "Speisekarte"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Stornieren",
 		"yes": "Ja"
 	},
-	"vision": {
-		"title": "Vision"
-	},
 	"verify": {
 		"title": "Konto überprüfen"
+	},
+	"connect": {
+		"title": "Verbinden",
+		"wantHelpWith": "Ich möchte Hilfe mit ...",
+		"wantToHelpWith": "Ich möchte helfen mit ...",
+		"language": "Sprache",
+		"culture": "Kultur",
+		"employment": "Beschäftigung",
+		"seekHelp": "Hilfe suchen",
+		"offerHelp": "Hilfe anbieten"
+	},
+	"requests": {
+		"title": "Anfragen",
+		"request": "Anfordern",
+		"accept": "Akzeptieren",
+		"reject": "Ablehnen",
+		"noHelpers": "Es gibt derzeit keine Helfer in Ihrer Nähe. Bleib dran!",
+		"noReqs": "Derzeit gibt es keine Hilfeanfragen. Bitte schau später nochmal vorbei!"
 	}
 }

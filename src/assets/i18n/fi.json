@@ -12,6 +12,13 @@
 		"language": "Valitse kielesi",
 		"apply": "Käytä asetuksia"
 	},
+	"vision": {
+		"title": "Näkemys",
+		"type": "Vision asetukset",
+		"translate": "Käännä teksti",
+		"object": "Äännä Object kielellä Englanti",
+		"takePicture": "Ota kuva"
+	},
 	"menu": {
 		"title": "valikko"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Peruuttaa",
 		"yes": "Joo"
 	},
-	"vision": {
-		"title": "Näkemys"
-	},
 	"verify": {
 		"title": "Vahvista tili"
+	},
+	"connect": {
+		"title": "Kytkeä",
+		"wantHelpWith": "Haluan apua ...",
+		"wantToHelpWith": "Haluan auttaa ...",
+		"language": "Kieli",
+		"culture": "Kulttuuri",
+		"employment": "työllisyys",
+		"seekHelp": "Etsi apua",
+		"offerHelp": "Tarjoa apua"
+	},
+	"requests": {
+		"title": "Pyynnöt",
+		"request": "Pyyntö",
+		"accept": "Hyväksyä",
+		"reject": "Hylätä",
+		"noHelpers": "Tällä hetkellä ei ole avustajia alueellasi. Pysy kanavalla!",
+		"noReqs": "Tällä hetkellä ei ole apua. Tarkista myöhemmin myöhemmin!"
 	}
 }

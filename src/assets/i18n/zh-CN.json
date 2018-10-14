@@ -12,6 +12,13 @@
 		"language": "选择你的语言",
 		"apply": "应用设置"
 	},
+	"vision": {
+		"title": "视力",
+		"type": "视力选择",
+		"translate": "翻译文本",
+		"object": "发音Object",
+		"takePicture": "拍张照片"
+	},
 	"menu": {
 		"title": "菜单"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "取消",
 		"yes": "是"
 	},
-	"vision": {
-		"title": "视力"
-	},
 	"verify": {
 		"title": "验证账户"
+	},
+	"connect": {
+		"title": "连",
+		"wantHelpWith": "我想要帮助......",
+		"wantToHelpWith": "我想帮忙......",
+		"language": "语言",
+		"culture": "文化",
+		"employment": "雇用",
+		"seekHelp": "寻求帮助",
+		"offerHelp": "提供帮忙"
+	},
+	"requests": {
+		"title": "要求",
+		"request": "请求",
+		"accept": "接受",
+		"reject": "拒绝",
+		"noHelpers": "您所在地区目前没有帮助者。敬请关注！",
+		"noReqs": "目前没有请求帮助。请稍后再回来查看！"
 	}
 }

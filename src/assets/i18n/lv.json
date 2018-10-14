@@ -12,6 +12,13 @@
 		"language": "Izvēlies savu valodu",
 		"apply": "Pielietot iestatījumus"
 	},
+	"vision": {
+		"title": "Vīzija",
+		"type": "Vision iespējas",
+		"translate": "Tulkot tekstu",
+		"object": "Atsaukt objektu",
+		"takePicture": "Nofotogrāfē"
+	},
 	"menu": {
 		"title": "Izvēlne"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Atcelt",
 		"yes": "Jā"
 	},
-	"vision": {
-		"title": "Vīzija"
-	},
 	"verify": {
 		"title": "Verificējiet kontu"
+	},
+	"connect": {
+		"title": "Pieslēgties",
+		"wantHelpWith": "Es gribu palīdzību ar ...",
+		"wantToHelpWith": "Es gribu palīdzēt ...",
+		"language": "Valoda",
+		"culture": "Kultūra",
+		"employment": "Nodarbinātība",
+		"seekHelp": "Meklējiet palīdzību",
+		"offerHelp": "Piedāvāt palīdzību"
+	},
+	"requests": {
+		"title": "Pieprasījumi",
+		"request": "Pieprasījums",
+		"accept": "Pieņemt",
+		"reject": "Noraidīt",
+		"noHelpers": "Pašlaik jūsu reģionā nav palīgu. Sekojiet līdzi!",
+		"noReqs": "Pašlaik nav palīdzības lūgumu. Lūdzu, pārbaudiet vēlāk!"
 	}
 }

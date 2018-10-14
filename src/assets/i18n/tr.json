@@ -12,6 +12,13 @@
 		"language": "Dilinizi seçin",
 		"apply": "Ayarları uygula"
 	},
+	"vision": {
+		"title": "Vizyon",
+		"type": "Vizyon Seçenekleri",
+		"translate": "Metni Çevir",
+		"object": "Nesne Bul",
+		"takePicture": "Bir fotoğraf çek"
+	},
 	"menu": {
 		"title": "Menü"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "İptal etmek",
 		"yes": "Evet"
 	},
-	"vision": {
-		"title": "Vizyon"
-	},
 	"verify": {
 		"title": "Hesabı Doğrula"
+	},
+	"connect": {
+		"title": "bağlamak",
+		"wantHelpWith": "Ben yardım etmek istiyorum ...",
+		"wantToHelpWith": "Yardım etmek istiyorum ...",
+		"language": "Dil",
+		"culture": "Kültür",
+		"employment": "İş",
+		"seekHelp": "Yardım aramak",
+		"offerHelp": "Yardım öner"
+	},
+	"requests": {
+		"title": "İstekler",
+		"request": "İstek",
+		"accept": "Kabul etmek",
+		"reject": "reddetmek",
+		"noHelpers": "Şu anda bulunduğunuz bölgede hiç yardımcı yok. Bizi izlemeye devam edin!",
+		"noReqs": "Şu anda yardım talebi yok. Lütfen daha sonra tekrar kontrol edin!"
 	}
 }

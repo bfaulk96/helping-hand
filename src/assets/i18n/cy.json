@@ -12,6 +12,13 @@
 		"language": "Dewiswch eich iaith",
 		"apply": "Cymhwyso Gosodiadau"
 	},
+	"vision": {
+		"title": "Gweledigaeth",
+		"type": "Dewisiadau Gweledigaeth",
+		"translate": "Cyfieithu Testun",
+		"object": "Cyhoeddwch Gwrthrychau",
+		"takePicture": "Cymerwch lun"
+	},
 	"menu": {
 		"title": "Dewislen"
 	},
@@ -67,10 +74,25 @@
 		"cancel": "Diddymu",
 		"yes": "Ydw"
 	},
-	"vision": {
-		"title": "Gweledigaeth"
-	},
 	"verify": {
 		"title": "Gwirio Cyfrif"
+	},
+	"connect": {
+		"title": "Cyswllt",
+		"wantHelpWith": "Rwyf am help gyda ...",
+		"wantToHelpWith": "Rwyf am helpu gyda ...",
+		"language": "Iaith",
+		"culture": "Diwylliant",
+		"employment": "Cyflogaeth",
+		"seekHelp": "Chwiliwch am Help",
+		"offerHelp": "Cynnig Help"
+	},
+	"requests": {
+		"title": "Ceisiadau",
+		"request": "Cais",
+		"accept": "Derbyn",
+		"reject": "Gwrthod",
+		"noHelpers": "Ar hyn o bryd nid oes unrhyw gynorthwywyr yn eich ardal chi. Aros tiwn!",
+		"noReqs": "Ar hyn o bryd nid oes unrhyw geisiadau am gymorth. Gwiriwch yn ôl yn ddiweddarach!"
 	}
 }
