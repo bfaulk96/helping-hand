@@ -16,7 +16,7 @@ import {ApiHelper} from "./services/api-helper";
 import {ApiCallFactory} from "./services/api-call-factory";
 import {UserDAO} from "./services/dao/user.dao";
 import {Camera} from "@ionic-native/camera/ngx";
-import { IonicStorageModule } from '@ionic/storage';
+import {IonicStorageModule} from "@ionic/storage";
 import {SocketService} from "./services/socket.service";
 import {LogoutGuard} from "./services/route-guards/logout.guard";
 import {Geolocation} from "@ionic-native/geolocation/ngx";
@@ -54,7 +54,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         ApiCallFactory,
         UserDAO,
         SocketService,
-        LogoutGuard
+        LogoutGuard,
         Geolocation,
         GeoLocationService
     ],
