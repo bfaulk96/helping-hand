@@ -17,6 +17,7 @@ export class LoginPage implements OnInit {
     password: ""
   };
   loading: boolean = false;
+  redirect: string = "";
 
   constructor(private appComp: AppComponent,
               private router: Router,
@@ -27,8 +28,10 @@ export class LoginPage implements OnInit {
               private storage: Storage,
               private navCtrl: NavController) {
       if (this.route.snapshot.data && this.route.snapshot.data.logout) {
-          this.appComp.isLoggedIn = false;
+          AppComponent.staticIsLoggedIn = this.appComp.isLoggedIn = false;
           this.storage.remove("token");
+      } else if (this.route.snapshot.queryParamMap.get('redirect')) {
+          this.redirect = this.route.snapshot.queryParamMap.get('redirect');
       }
   }
 
@@ -40,8 +43,9 @@ export class LoginPage implements OnInit {
     this.loading = true;
     this.authSvc.login(this.currentLoginCredentials.email, this.currentLoginCredentials.password).subscribe(
         (data: any) => {
-        this.navCtrl.navigateRoot('/home');
-        this.appComp.isLoggedIn = true;
+
+        this.navCtrl.navigateRoot(this.redirect ? this.redirect : '/home');
+        AppComponent.staticIsLoggedIn = this.appComp.isLoggedIn = true;
         this.loading = false;
         this.toastController.create({
             message: this.translate.instant('login.succeeded'),

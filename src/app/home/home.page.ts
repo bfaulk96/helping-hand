@@ -23,7 +23,7 @@ export class HomePage {
   }
 
   get isLoggedIn() {
-    return this.appComp.isLoggedIn;
+    return AppComponent.staticIsLoggedIn;
   }
 
   fcmHandler(): void {

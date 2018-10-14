@@ -1,16 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import {CameraOptions} from '@ionic-native/camera';
-import {Camera} from '@ionic-native/camera/ngx';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {CameraOptions} from "@ionic-native/camera";
+import {Camera} from "@ionic-native/camera/ngx";
 
-import {DomSanitizer} from '@angular/platform-browser';
-import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {DomSanitizer} from "@angular/platform-browser";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
 
 
 @Component({
-    selector: 'app-vision',
-    templateUrl: './vision.page.html',
-    styleUrls: ['./vision.page.scss'],
+    selector: "app-vision",
+    templateUrl: "./vision.page.html",
+    styleUrls: ["./vision.page.scss"],
     providers: [Camera]
 })
 export class VisionPage implements OnInit {
@@ -19,8 +19,15 @@ export class VisionPage implements OnInit {
                 public _DomSanitizationService: DomSanitizer) {
     }
 
-    public url: string = "https://vision.googleapis.com/v1/images:annotate?key=YOUR_API";
+    public url: string = "https://vision.googleapis.com/v1/images:annotate?key=";
+    public rawImage: string = "";
     public base64Image: string = "";
+    public error: any;
+
+    public translate: boolean = false;
+
+    @ViewChild('translateRadio') translateRadio: any;
+    @ViewChild('objectRadio') objectRadio: any;
 
     public ngOnInit(): void {
 
@@ -36,6 +43,7 @@ export class VisionPage implements OnInit {
 
         this.camera.getPicture(options).then(
             (imageData: string): void => {
+                this.rawImage = imageData;
                 this.base64Image = "data:image/jpeg;base64," + imageData;
             },
             (error: Error): void => {
@@ -44,19 +52,50 @@ export class VisionPage implements OnInit {
         );
     }
 
-    sendPicture() {
-        this.sendImageToCloudVisionHandler(this.base64Image).subscribe((res) => {
-            console.log(res);
+    public sendPicture(): void {
+        this.sendImageToCloudVisionHandler(this.rawImage).subscribe((res) => {
+            this.parseData(res);
+            this.error = res;
         }, (err) => {
-            console.log(err);
         });
     }
 
     public sendImageToCloudVisionHandler(content): Observable<any> {
-        return this.httpClient.post(this.url, content);
+        this.translate = !this.objectRadio.checked;
+        let type: string;
+        if (this.translate) {
+            type = "DOCUMENT_TEXT_DETECTION";
+        } else {
+            type = "LABEL_DETECTION";
+        }
+        const request = {
+            "requests": [
+                {
+                    "image": {
+                        "content": content
+                    },
+                    "features": [
+                        {
+                            "type": type,
+                            "maxResults": 1
+                        }
+                    ]
+                }
+            ]
+        };
+        return this.httpClient.post(this.url, request);
     }
 
-    closePreview() {
+    public parseData(res) {
+        if (this.translate) {
+            this.error = res.responses[0].textAnnotations[0].description;
+
+        } else {
+            // this.error = res[0].description;
+        }
+    }
+
+    public closePreview() {
         this.base64Image = "";
     }
 

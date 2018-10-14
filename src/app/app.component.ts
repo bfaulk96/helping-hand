@@ -20,7 +20,8 @@ import {GeoLocationService} from "./services/geo-location.service";
     templateUrl: "app.component.html",
     styleUrls: ["app.component.scss"]
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent {
+    public static staticIsLoggedIn: boolean = false;
     private destroy$: Subject<null> = new Subject<null>();
 
     public isLoggedIn: boolean = false;
@@ -89,9 +90,9 @@ export class AppComponent implements OnInit, OnDestroy {
             this.splashScreen.hide();
             this.initTranslate();
             this.apiHelper.getAccessToken().subscribe(token => {
-                this.isLoggedIn = !!token;
+                AppComponent.staticIsLoggedIn = this.isLoggedIn = !!token;
             }, () => {
-                this.isLoggedIn = false;
+                AppComponent.staticIsLoggedIn = this.isLoggedIn = false;
             });
             this.socketService.initSocket();
             this.socketService.onException().subscribe(message => console.log({message}));

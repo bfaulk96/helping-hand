@@ -8,7 +8,13 @@
     "choice": "Eligue tu idioma"
   },
   "settings":{
-    "title": "Ajustes"
+    "title": "Ajustes",
+    "language": "Elige tu idioma",
+    "apply": "Aplicar configuraciones"
+  },
+  "vision": {
+    "translate": "Translate Text",
+    "object": "Pronouce Object"
   },
   "menu": {
     "title": "Menú"
@@ -30,7 +36,18 @@
     "checkOutPage": "Echa un vistazo a esta página"
   },
   "register": {
-    "title": "Regístrate"
+    "title": "Regístrate",
+    "info": "Información de usuario",
+    "type": "Tipo de usuario",
+    "helper": "Ayudante",
+    "helpSeeker": "Buscador de ayuda",
+    "placeholder": {
+      "email": "Email",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña"
+    },
+    "succeeded": "Registro exitoso.",
+    "failed": "Registro fallido."
   },
   "resources": {
     "title": "Recursos"
