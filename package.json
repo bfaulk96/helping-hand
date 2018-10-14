@@ -90,11 +90,8 @@
         "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
       },
       "cordova-sqlite-storage": {},
-<<<<<<< HEAD
-      "cordova-plugin-fcm-with-dependecy-updated": {}
-=======
+      "cordova-plugin-fcm-with-dependecy-updated": {},
       "cordova-plugin-camera": {}
->>>>>>> ac85a2af593eb9a2dae0d4a0a284cd571f1ff98b
     },
     "platforms": [
       "android",
