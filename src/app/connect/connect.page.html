@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>connect</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ng-container *ngIf="!isHelper">
+        seeker
+    </ng-container>
+    <ng-container *ngIf="isHelper">
+        helper
+    </ng-container>
+</ion-content>

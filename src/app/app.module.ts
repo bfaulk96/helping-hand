@@ -19,6 +19,8 @@ import {Camera} from "@ionic-native/camera/ngx";
 import { IonicStorageModule } from '@ionic/storage';
 import {SocketService} from "./services/socket.service";
 import {LogoutGuard} from "./services/route-guards/logout.guard";
+import {Geolocation} from "@ionic-native/geolocation/ngx";
+import {GeoLocationService} from "./services/geo-location.service";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -53,6 +55,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         UserDAO,
         SocketService,
         LogoutGuard
+        Geolocation,
+        GeoLocationService
     ],
     bootstrap: [AppComponent]
 })
