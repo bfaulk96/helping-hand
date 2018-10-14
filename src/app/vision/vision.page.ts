@@ -44,7 +44,8 @@ export class VisionPage implements OnInit {
         );
     }
 
-    sendPicture() {
+    public sendPicture(): void {
+        console.log(this.base64Image);
         this.sendImageToCloudVisionHandler(this.base64Image).subscribe((res) => {
             console.log(res);
         }, (err) => {
@@ -56,7 +57,7 @@ export class VisionPage implements OnInit {
         return this.httpClient.post(this.url, content);
     }
 
-    closePreview() {
+    public closePreview() {
         this.base64Image = "";
     }
 
