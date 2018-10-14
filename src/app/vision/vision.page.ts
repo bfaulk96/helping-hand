@@ -55,7 +55,7 @@ export class VisionPage implements OnInit {
     public sendPicture(): void {
         this.sendImageToCloudVisionHandler(this.rawImage).subscribe((res) => {
             this.parseData(res);
-            this.error = res;
+            // this.error = res;
         }, (err) => {
         });
     }
@@ -91,7 +91,7 @@ export class VisionPage implements OnInit {
             this.error = res.responses[0].textAnnotations[0].description;
 
         } else {
-            // this.error = res[0].description;
+            this.error = res.responses[0].labelAnnotations[0].description;
         }
     }
 
