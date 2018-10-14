@@ -57,8 +57,6 @@ export class VisionPage implements OnInit {
             this.parseData(res);
             this.error = res;
         }, (err) => {
-            console.log(err);
-            this.error = err;
         });
     }
 
@@ -90,14 +88,10 @@ export class VisionPage implements OnInit {
 
     public parseData(res) {
         if (this.translate) {
-
-
-
+            this.error = res.responses[0].textAnnotations[0].description;
 
         } else {
-
-
-
+            // this.error = res[0].description;
         }
     }
 
