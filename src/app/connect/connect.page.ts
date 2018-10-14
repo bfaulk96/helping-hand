@@ -8,11 +8,16 @@ import {AuthService} from "../services/auth-service";
 })
 export class ConnectPage implements OnInit {
     public isHelper: boolean = false;
+    public skill: string = "";
 
     constructor(private authService: AuthService) {
     }
 
     public ngOnInit(): void {
         this.isHelper = this.authService.userDao.currentUser.isHelper;
+    }
+
+    public changeSkill(): void {
+
     }
 }

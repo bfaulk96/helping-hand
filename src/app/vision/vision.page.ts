@@ -1,16 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import {CameraOptions} from '@ionic-native/camera';
-import {Camera} from '@ionic-native/camera/ngx';
+import {Component, OnInit} from "@angular/core";
+import {CameraOptions} from "@ionic-native/camera";
+import {Camera} from "@ionic-native/camera/ngx";
 
-import {DomSanitizer} from '@angular/platform-browser';
-import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {DomSanitizer} from "@angular/platform-browser";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
 
 
 @Component({
-    selector: 'app-vision',
-    templateUrl: './vision.page.html',
-    styleUrls: ['./vision.page.scss'],
+    selector: "app-vision",
+    templateUrl: "./vision.page.html",
+    styleUrls: ["./vision.page.scss"],
     providers: [Camera]
 })
 export class VisionPage implements OnInit {

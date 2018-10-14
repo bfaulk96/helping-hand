@@ -1,6 +1,7 @@
 import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
 import {LogoutGuard} from "./services/route-guards/logout.guard";
+import {AuthGuard} from "./services/route-guards/auth-guard";
 
 const routes: Routes = [
     {
@@ -41,6 +42,7 @@ const routes: Routes = [
         loadChildren: "./verify/verify.module#VerifyPageModule"
     }, {
         path: "connect",
+        canActivate: [AuthGuard],
         loadChildren: "./connect/connect.module#ConnectPageModule"
     }
 ];

@@ -1,14 +1,24 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>connect</ion-title>
+        <ion-title>Connect</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
     <ng-container *ngIf="!isHelper">
-        seeker
+        <ion-label>I want help with...</ion-label>
+        <ion-select [(ngModel)]="skill" (ionChange)="changeSkill()">
+            <ion-select-option value="translation">Translation</ion-select-option>
+            <ion-select-option value="culture">Culture</ion-select-option>
+            <ion-select-option value="employment">Employment</ion-select-option>
+        </ion-select>
+        <ion-button>Seek Help</ion-button>
     </ng-container>
     <ng-container *ngIf="isHelper">
-        helper
+        <ion-label>I can help with...</ion-label>
+        <ion-checkbox color="primary" checked>Translation</ion-checkbox>
+        <ion-checkbox color="primary">Culture</ion-checkbox>
+        <ion-checkbox color="primary" checked>Employment</ion-checkbox>
+        <ion-button>Offer Help</ion-button>
     </ng-container>
 </ion-content>
