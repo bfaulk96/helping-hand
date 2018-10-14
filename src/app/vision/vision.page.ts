@@ -22,7 +22,7 @@ export class VisionPage implements OnInit {
     public url: string = "https://vision.googleapis.com/v1/images:annotate?key=";
     public rawImage: string = "";
     public base64Image: string = "";
-    public error: any;
+    public text: any;
 
     public translate: boolean = false;
 
@@ -88,10 +88,12 @@ export class VisionPage implements OnInit {
 
     public parseData(res) {
         if (this.translate) {
-            this.error = res.responses[0].textAnnotations[0].description;
+            this.text = res.responses[0].textAnnotations[0].description;
+            this.text = this.text.replace("\n", " ");
 
         } else {
-            this.error = res.responses[0].labelAnnotations[0].description;
+            this.text = res.responses[0].labelAnnotations[0].description;
+            this.text = this.text.replace("\n", " ");
         }
     }
 
