@@ -21,6 +21,7 @@ export class VisionPage implements OnInit {
 
     public url: string = "https://vision.googleapis.com/v1/images:annotate?key=YOUR_API";
     public base64Image: string = "";
+    public error: any;
 
     public ngOnInit(): void {
 
@@ -45,11 +46,12 @@ export class VisionPage implements OnInit {
     }
 
     public sendPicture(): void {
-        console.log(this.base64Image);
         this.sendImageToCloudVisionHandler(this.base64Image).subscribe((res) => {
             console.log(res);
+            this.error = res;
         }, (err) => {
             console.log(err);
+            this.error = err;
         });
     }
 
