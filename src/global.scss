@@ -39,3 +39,26 @@ a {
 .text-center {
   text-align: center;
 }
+
+
+.toast-failure {
+  .toast-container {
+    background-color: var(--ion-color-danger);
+    border-radius: 5px;
+    color: var(--ion-color-danger-contrast);
+    * {
+      color: var(--ion-color-danger-contrast);
+    }
+  }
+}
+
+.toast-success {
+  .toast-container {
+    background-color: var(--ion-color-success);
+    border-radius: 5px;
+    color: var(--ion-color-success-contrast);
+    * {
+      color: var(--ion-color-success-contrast);
+    }
+  }
+}

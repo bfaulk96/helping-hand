@@ -25,7 +25,6 @@ export class LoginPage implements OnInit {
               private translate: TranslateService,
               private toastController: ToastController,
               private storage: Storage) {
-    console.log(this.route.snapshot.data);
     if (this.route.snapshot.data && this.route.snapshot.data.logout) {
       this.appComp.isLoggedIn = false;
       this.storage.remove("token");
@@ -40,19 +39,27 @@ export class LoginPage implements OnInit {
     this.loading = true;
     this.authSvc.login(this.currentLoginCredentials.email, this.currentLoginCredentials.password).subscribe(
         (data: any) => {
-        console.log(data);
         this.router.navigate(['/home']);
         this.appComp.isLoggedIn = true;
         this.loading = false;
+        this.toastController.create({
+            message: 'Login succeeded.',
+            duration: 4000,
+            showCloseButton: true,
+            cssClass: 'toast-success',
+            closeButtonText: this.translate.instant('login.okay')
+        }).then(toast => {
+            toast.present();
+        });
       },
       error => {
-        console.log('stuff happens');
         this.loading = false;
         this.storage.remove("token");
         this.toastController.create({
             message: 'Login failed.',
             duration: 4000,
             showCloseButton: true,
+            cssClass: 'toast-failure',
             closeButtonText: this.translate.instant('login.okay')
         }).then(toast => {
           toast.present();
