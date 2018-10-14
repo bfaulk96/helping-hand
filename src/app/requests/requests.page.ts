@@ -34,15 +34,12 @@ export class RequestsPage implements OnInit {
         if (!this.isHelper) {
             this.apiHelper.getAccessToken().subscribe(
                 (token: any): void => {
-                    this.geoLocation.getCurrentPosition().then(
-                        (position: any): void => {
-                            console.log(position);
-                            this.httpClient.get(this.apiHelper.getServiceEndPoint() + "/requests/current?lat=" + position.coords.latitude + "&long=" + position.coords.longitude, {}).subscribe(
+                            this.httpClient.get(this.apiHelper.getServiceEndPoint() + "/users", {}).subscribe(
                                 (res: any) => {
                                     const helpers = [];
-                                    res.users.forEach(
+                                    res.forEach(
                                         (user: User) => {
-                                            if (user.isHelper && this.relevantHelper(user, this.userDAO.currentUser.helpCategories[0])) {
+                                            if (user.isHelper) {
                                                 helpers.push(user);
                                             }
                                         }
@@ -54,9 +51,6 @@ export class RequestsPage implements OnInit {
                                     console.error(error);
                                 }
                             );
-                        }
-                    );
-
                 },
                 (error): void => {
                     console.error(error);
