@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Hjälpande hand"
+	},
+	"setup": {
+		"next": "Nästa",
+		"welcome": "Välkommen!",
+		"choice": "Välj ditt språk"
+	},
+	"settings": {
+		"title": "inställningar",
+		"language": "Välj ditt språk",
+		"apply": "Använd Inställningar"
+	},
+	"menu": {
+		"title": "Meny"
+	},
+	"home": {
+		"title": "Hem",
+		"secondaryTitle": "Invandrings Innovation",
+		"welcome": "Välkommen till ansökan",
+		"findOut": "Få reda på mer",
+		"resources": "Kolla in resurser i ditt samhälle",
+		"register": "Behövs hjälp? Vill du hjälpa andra? Registrera idag!",
+		"vision": "Något i närheten behöver du översatt eller behöver säga på ett annat språk? Försök 'vision'."
+	},
+	"about": {
+		"title": "Handla om",
+		"whatIs": "Vad är",
+		"description": "En ansökan byggd för invandrare som tillhandahåller tjänster för kort- eller långsiktiga problem som invandrare kan ha (språk, kultur etc.)",
+		"lookingForResources": "Letar du efter samhällsresurser?",
+		"checkOutPage": "Kolla in den här sidan"
+	},
+	"register": {
+		"title": "Registrera",
+		"info": "användarinformation",
+		"type": "Typ av användare",
+		"helper": "Hjälpare",
+		"helpSeeker": "Hjälp sökare",
+		"placeholder": {
+			"email": "E-post",
+			"password": "Lösenord",
+			"confirmPassword": "Bekräfta lösenord"
+		},
+		"succeeded": "Registrering lyckades.",
+		"failed": "Registreringen misslyckades."
+	},
+	"resources": {
+		"title": "Medel"
+	},
+	"login": {
+		"title": "Logga in",
+		"spaceTitle": "Logga in",
+		"placeholder": {
+			"email": "E-post",
+			"password": "Lösenord"
+		},
+		"button": "Logga in",
+		"okay": "Okej",
+		"succeeded": "Logga in lyckades.",
+		"failed": "Inloggningen misslyckades."
+	},
+	"logout": {
+		"title": "Logga ut",
+		"spaceTitle": "Logga ut",
+		"confirm": "Är du säker på att du vill logga ut?",
+		"cancel": "Annullera",
+		"yes": "Ja"
+	},
+	"vision": {
+		"title": "Syn"
+	},
+	"verify": {
+		"title": "Verifiera konto"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Padėti rankai"
+	},
+	"setup": {
+		"next": "Kitas",
+		"welcome": "Sveiki!",
+		"choice": "Pasirinkite kalbą"
+	},
+	"settings": {
+		"title": "Nustatymai",
+		"language": "Pasirinkite kalbą",
+		"apply": "Taikyti nustatymus"
+	},
+	"menu": {
+		"title": "Meniu"
+	},
+	"home": {
+		"title": "Namai",
+		"secondaryTitle": "Imigracijos inovacijos",
+		"welcome": "Sveiki atvykę į paraišką",
+		"findOut": "Sužinoti daugiau",
+		"resources": "Patikrinkite savo bendruomenės resursus",
+		"register": "Reikia pagalbos? Norite padėti kitiems? Registruotis šiandien!",
+		"vision": "Kažką artimą jums reikia išversti arba reikia pasakyti kita kalba? Pabandykite 'viziją'."
+	},
+	"about": {
+		"title": "Apie",
+		"whatIs": "Kas yra",
+		"description": "Paraiška sukurta imigrantams, teikiantiems trumpalaikes ar ilgalaikes imigrantų problemas (kalba, kultūra ir tt)",
+		"lookingForResources": "Ieškote bendruomenės išteklių?",
+		"checkOutPage": "Patikrinkite šį puslapį"
+	},
+	"register": {
+		"title": "Registruotis",
+		"info": "Vartotojo informacija",
+		"type": "Vartotojo tipas",
+		"helper": "Pagalbininkas",
+		"helpSeeker": "Pagalbos ieškotojas",
+		"placeholder": {
+			"email": "El. Paštas",
+			"password": "Slaptažodis",
+			"confirmPassword": "Patvirtinti slaptažodį"
+		},
+		"succeeded": "Registracija pavyko.",
+		"failed": "Registracija nepavyko."
+	},
+	"resources": {
+		"title": "Ištekliai"
+	},
+	"login": {
+		"title": "Prisijungti",
+		"spaceTitle": "Prisijungti",
+		"placeholder": {
+			"email": "El. Paštas",
+			"password": "Slaptažodis"
+		},
+		"button": "Prisijungti",
+		"okay": "Gerai",
+		"succeeded": "Prisijungimas pasiektas.",
+		"failed": "Prisijungimas nepavyko."
+	},
+	"logout": {
+		"title": "Atsijungti",
+		"spaceTitle": "Atsijungti",
+		"confirm": "Ar tikrai norite atsijungti?",
+		"cancel": "Atšaukti",
+		"yes": "Taip"
+	},
+	"vision": {
+		"title": "Vizija"
+	},
+	"verify": {
+		"title": "Patvirtinkite paskyrą"
+	}
+}

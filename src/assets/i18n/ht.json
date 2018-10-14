@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Ede men"
+	},
+	"setup": {
+		"next": "Apre sa",
+		"welcome": "Byenveni!",
+		"choice": "Chwazi lang ou"
+	},
+	"settings": {
+		"title": "Anviwònman",
+		"language": "Chwazi lang ou",
+		"apply": "Aplike Anviwònman"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Kay",
+		"secondaryTitle": "Imigrasyon Inovasyon",
+		"welcome": "Byenveni nan aplikasyon an",
+		"findOut": "Chèche konnen plis",
+		"resources": "Tcheke resous nan kominote w la",
+		"register": "Bezwen èd? Vle ede lòt moun? Enskri jodi a!",
+		"vision": "Yon bagay ki tou pre ou bezwen tradui oswa bezwen di nan yon lòt lang? Eseye 'vizyon'."
+	},
+	"about": {
+		"title": "Sou",
+		"whatIs": "Ki sa ki",
+		"description": "Yon aplikasyon konstwi pou imigran ki bay sèvis pou pwoblèm kout tèm oswa alontèm ki imigran yo ka genyen (lang, kilti, elatriye)",
+		"lookingForResources": "Looking for resous kominote a?",
+		"checkOutPage": "Tcheke paj sa a"
+	},
+	"register": {
+		"title": "Enskri",
+		"info": "Itilizatè Info",
+		"type": "Kalite Itilizatè",
+		"helper": "Èd",
+		"helpSeeker": "Ede Moun k ap Chèche",
+		"placeholder": {
+			"email": "Imèl",
+			"password": "Modpas",
+			"confirmPassword": "Konfime modpas"
+		},
+		"succeeded": "Enskripsyon Siksede.",
+		"failed": "Enskripsyon pa t 'kapab."
+	},
+	"resources": {
+		"title": "Resous"
+	},
+	"login": {
+		"title": "Ouvri sesyon an",
+		"spaceTitle": "Ouvri sesyon an",
+		"placeholder": {
+			"email": "Imèl",
+			"password": "Modpas"
+		},
+		"button": "Ouvri sesyon an",
+		"okay": "Dakò",
+		"succeeded": "Login Siksede.",
+		"failed": "Login Echèk."
+	},
+	"logout": {
+		"title": "Dekonekte",
+		"spaceTitle": "Dekonekte",
+		"confirm": "Èske ou sèten ou ta renmen soti?",
+		"cancel": "Anile",
+		"yes": "Wi"
+	},
+	"vision": {
+		"title": "Vizyon"
+	},
+	"verify": {
+		"title": "Verifye Kont"
+	}
+}

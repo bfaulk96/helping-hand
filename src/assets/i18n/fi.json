@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Auttava käsi"
+	},
+	"setup": {
+		"next": "Seuraava",
+		"welcome": "Tervetuloa!",
+		"choice": "Valitse kielesi"
+	},
+	"settings": {
+		"title": "asetukset",
+		"language": "Valitse kielesi",
+		"apply": "Käytä asetuksia"
+	},
+	"menu": {
+		"title": "valikko"
+	},
+	"home": {
+		"title": "Koti",
+		"secondaryTitle": "Maahanmuuttoinnovaatio",
+		"welcome": "Tervetuloa hakemukseen",
+		"findOut": "Lue lisää",
+		"resources": "Tarkista resurssit yhteisössä",
+		"register": "Tarvitsetko apua? Haluatko auttaa muita? Rekisteröidy tänään!",
+		"vision": "Jotain lähistöllä tarvitset käännöksen tai sinun täytyy sanoa toisella kielellä? Yritä 'näkemystä'."
+	},
+	"about": {
+		"title": "Noin",
+		"whatIs": "Mikä on",
+		"description": "Maahanmuuttajille rakennettu sovellus, joka tarjoaa palveluja lyhytaikaisille tai pitkäaikaisille ongelmille, joita maahanmuuttajilla voi olla (kieli, kulttuuri jne.)",
+		"lookingForResources": "Etsitkö yhteisön resursseja?",
+		"checkOutPage": "Tarkista tämä sivu"
+	},
+	"register": {
+		"title": "Rekisteröidy",
+		"info": "käyttäjätiedot",
+		"type": "Käyttäjän tyyppi",
+		"helper": "Auttaja",
+		"helpSeeker": "Auta hakijaa",
+		"placeholder": {
+			"email": "Sähköposti",
+			"password": "Salasana",
+			"confirmPassword": "Vahvista salasana"
+		},
+		"succeeded": "Rekisteröinti onnistui.",
+		"failed": "Rekisteröityminen epäonnistui."
+	},
+	"resources": {
+		"title": "voimavarat"
+	},
+	"login": {
+		"title": "Kirjaudu sisään",
+		"spaceTitle": "Kirjaudu sisään",
+		"placeholder": {
+			"email": "Sähköposti",
+			"password": "Salasana"
+		},
+		"button": "Kirjaudu sisään",
+		"okay": "Okei",
+		"succeeded": "Kirjautuminen onnistui.",
+		"failed": "Kirjautuminen epäonnistui."
+	},
+	"logout": {
+		"title": "Kirjautua ulos",
+		"spaceTitle": "Kirjautua ulos",
+		"confirm": "Haluatko varmasti kirjautua ulos?",
+		"cancel": "Peruuttaa",
+		"yes": "Joo"
+	},
+	"vision": {
+		"title": "Näkemys"
+	},
+	"verify": {
+		"title": "Vahvista tili"
+	}
+}

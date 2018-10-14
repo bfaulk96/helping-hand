@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Helpende Hand"
+	},
+	"setup": {
+		"next": "volgende",
+		"welcome": "Welkom!",
+		"choice": "Kies jou taal"
+	},
+	"settings": {
+		"title": "instellings",
+		"language": "Kies jou taal",
+		"apply": "Pas instellings toe"
+	},
+	"menu": {
+		"title": "Spyskaart"
+	},
+	"home": {
+		"title": "huis",
+		"secondaryTitle": "Immigrasie Innovasie",
+		"welcome": "Welkom by die aansoek",
+		"findOut": "Vind meer uit",
+		"resources": "Kyk na hulpbronne in jou gemeenskap",
+		"register": "Hulp nodig? Wil jy ander help? Registreer vandag!",
+		"vision": "Iets wat jy nodig het, moet vertaal word of in 'n ander taal moet sê? Probeer 'visie'."
+	},
+	"about": {
+		"title": "oor",
+		"whatIs": "Wat is",
+		"description": "'N Aansoek gebou vir immigrante wat dienste vir kort- of langtermynprobleme bied wat immigrante kan hê (taal, kultuur, ens.).",
+		"lookingForResources": "Op soek na gemeenskapsbronne?",
+		"checkOutPage": "Kyk na hierdie bladsy"
+	},
+	"register": {
+		"title": "registreer",
+		"info": "Gebruikerinligting",
+		"type": "Tipe gebruiker",
+		"helper": "helper",
+		"helpSeeker": "Help Soeker",
+		"placeholder": {
+			"email": "e-pos",
+			"password": "wagwoord",
+			"confirmPassword": "Bevestig Wagwoord"
+		},
+		"succeeded": "Registrasie Suksesvol.",
+		"failed": "Registrasie misluk."
+	},
+	"resources": {
+		"title": "hulpbronne"
+	},
+	"login": {
+		"title": "Teken aan",
+		"spaceTitle": "Teken aan",
+		"placeholder": {
+			"email": "e-pos",
+			"password": "wagwoord"
+		},
+		"button": "Teken aan",
+		"okay": "Goed",
+		"succeeded": "Inteken suksesvol.",
+		"failed": "Inloggen misluk."
+	},
+	"logout": {
+		"title": "Teken uit",
+		"spaceTitle": "Teken uit",
+		"confirm": "Is jy seker jy wil graag uitteken?",
+		"cancel": "kanselleer",
+		"yes": "Ja"
+	},
+	"vision": {
+		"title": "visie"
+	},
+	"verify": {
+		"title": "Verifieer rekening"
+	}
+}

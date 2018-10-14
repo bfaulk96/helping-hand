@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Mano amica"
+	},
+	"setup": {
+		"next": "Il prossimo",
+		"welcome": "Benvenuto!",
+		"choice": "scegli la tua LINGUA"
+	},
+	"settings": {
+		"title": "impostazioni",
+		"language": "scegli la tua LINGUA",
+		"apply": "Applica le impostazioni"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Casa",
+		"secondaryTitle": "Immigrazione Innovazione",
+		"welcome": "Benvenuto nell'applicazione",
+		"findOut": "Scopri di più",
+		"resources": "Controlla le risorse nella tua comunità",
+		"register": "Ho bisogno di aiuto? Vuoi aiutare gli altri? Registrati oggi!",
+		"vision": "Qualcosa nelle vicinanze devi tradurre o devi dire in un'altra lingua? Prova 'visione'."
+	},
+	"about": {
+		"title": "Di",
+		"whatIs": "Cosa è",
+		"description": "Un'applicazione creata per gli immigrati che fornisce servizi per problemi a breve o lungo termine che gli immigrati potrebbero avere (lingua, cultura, ecc.)",
+		"lookingForResources": "Alla ricerca di risorse comunitarie?",
+		"checkOutPage": "Dai un'occhiata a questa pagina"
+	},
+	"register": {
+		"title": "Registrare",
+		"info": "Informazioni utente",
+		"type": "Tipo di utente",
+		"helper": "aiutante",
+		"helpSeeker": "Aiuta il Cercatore",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Parola d'ordine",
+			"confirmPassword": "conferma password"
+		},
+		"succeeded": "Registrazione riuscita.",
+		"failed": "Registrazione fallita."
+	},
+	"resources": {
+		"title": "risorse"
+	},
+	"login": {
+		"title": "Accesso",
+		"spaceTitle": "Accesso",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Parola d'ordine"
+		},
+		"button": "Accesso",
+		"okay": "Va bene",
+		"succeeded": "Login riuscito.",
+		"failed": "Accesso fallito."
+	},
+	"logout": {
+		"title": "Disconnettersi",
+		"spaceTitle": "Disconnettersi",
+		"confirm": "Sei sicuro di voler uscire?",
+		"cancel": "Annulla",
+		"yes": "sì"
+	},
+	"vision": {
+		"title": "Visione"
+	},
+	"verify": {
+		"title": "Verifica Account"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Helping Hand"
+	},
+	"setup": {
+		"next": "Nesaf",
+		"welcome": "Croeso!",
+		"choice": "Dewiswch eich iaith"
+	},
+	"settings": {
+		"title": "Gosodiadau",
+		"language": "Dewiswch eich iaith",
+		"apply": "Cymhwyso Gosodiadau"
+	},
+	"menu": {
+		"title": "Dewislen"
+	},
+	"home": {
+		"title": "Cartref",
+		"secondaryTitle": "Arloesi Mewnfudo",
+		"welcome": "Croeso i'r cais",
+		"findOut": "Darganfyddwch fwy",
+		"resources": "Edrychwch ar adnoddau yn eich cymuned",
+		"register": "Angen cymorth? Eisiau helpu eraill? Cofrestrwch heddiw!",
+		"vision": "Ydych chi'n rhywbeth cyfagos sydd angen ei gyfieithu neu mae angen i chi ei ddweud mewn iaith wahanol? Rhowch gynnig ar 'weledigaeth'."
+	},
+	"about": {
+		"title": "Amdanom ni",
+		"whatIs": "Beth yw",
+		"description": "Mae cais wedi'i adeiladu ar gyfer mewnfudwyr sy'n darparu gwasanaethau ar gyfer problemau tymor byr neu hirdymor y gallai mewnfudwyr eu cael (iaith, diwylliant, ac ati)",
+		"lookingForResources": "Chwilio am adnoddau cymunedol?",
+		"checkOutPage": "Edrychwch ar y dudalen hon"
+	},
+	"register": {
+		"title": "Cofrestrwch",
+		"info": "Gwybodaeth Defnyddiwr",
+		"type": "Math o Defnyddiwr",
+		"helper": "Helper",
+		"helpSeeker": "Cymorth Chwilio",
+		"placeholder": {
+			"email": "E-bost",
+			"password": "Cyfrinair",
+			"confirmPassword": "Cadarnhau Cyfrinair"
+		},
+		"succeeded": "Llwyddwyd i gofrestru.",
+		"failed": "Methwyd Cofrestru."
+	},
+	"resources": {
+		"title": "Adnoddau"
+	},
+	"login": {
+		"title": "Mewngofnodi",
+		"spaceTitle": "Mewngofnodi",
+		"placeholder": {
+			"email": "E-bost",
+			"password": "Cyfrinair"
+		},
+		"button": "Mewngofnodi",
+		"okay": "iawn",
+		"succeeded": "Mewngofnodi Mewngofnodi.",
+		"failed": "Methwyd Mewngofnodi."
+	},
+	"logout": {
+		"title": "Allgofnodi",
+		"spaceTitle": "Allgofnodi",
+		"confirm": "Ydych chi'n siŵr yr hoffech chi logio allan?",
+		"cancel": "Diddymu",
+		"yes": "Ydw"
+	},
+	"vision": {
+		"title": "Gweledigaeth"
+	},
+	"verify": {
+		"title": "Gwirio Cyfrif"
+	}
+}

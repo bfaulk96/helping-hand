@@ -16,11 +16,70 @@
     <ion-label>{{ "settings.language" | translate }}</ion-label>
     <ion-card>
         <ion-select [(ngModel)]="language" (ionChange)="changeLanguage()">
+            <ion-select-option value="af" [selected]="'af' === (langObs | async)">Afrikaans</ion-select-option>
+            <ion-select-option value="sq" [selected]="'sq' === (langObs | async)">shqiptar</ion-select-option>
             <ion-select-option value="ar" [selected]="'ar' === (langObs | async)">عربى</ion-select-option>
+            <ion-select-option value="az" [selected]="'az' === (langObs | async)">Azərbaycan</ion-select-option>
+            <ion-select-option value="eu" [selected]="'eu' === (langObs | async)">Euskal</ion-select-option>
+            <ion-select-option value="bn" [selected]="'bn' === (langObs | async)">বাঙালি</ion-select-option>
+            <ion-select-option value="be" [selected]="'be' === (langObs | async)">беларускі</ion-select-option>
             <ion-select-option value="bg" [selected]="'bg' === (langObs | async)">български</ion-select-option>
+            <ion-select-option value="ca" [selected]="'ca' === (langObs | async)">Català</ion-select-option>
+            <ion-select-option value="zh-CN" [selected]="'zh-CN' === (langObs | async)">简体中文</ion-select-option>
+            <ion-select-option value="zh-TW" [selected]="'zh-TW' === (langObs | async)">中國傳統的</ion-select-option>
+            <ion-select-option value="hr" [selected]="'hr' === (langObs | async)">Hrvatski</ion-select-option>
+            <ion-select-option value="cs" [selected]="'cs' === (langObs | async)">čeština</ion-select-option>
+            <ion-select-option value="da" [selected]="'da' === (langObs | async)">dansk</ion-select-option>
+            <ion-select-option value="nl" [selected]="'nl' === (langObs | async)">Nederlands</ion-select-option>
             <ion-select-option value="en" [selected]="'en' === (langObs | async)">English</ion-select-option>
-            <ion-select-option value="es" [selected]="'es' === (langObs | async)">Español</ion-select-option>
+            <ion-select-option value="eo" [selected]="'eo' === (langObs | async)">Esperanto</ion-select-option>
+            <ion-select-option value="et" [selected]="'et' === (langObs | async)">Eesti keel</ion-select-option>
+            <ion-select-option value="tl" [selected]="'tl' === (langObs | async)">Filipino</ion-select-option>
+            <ion-select-option value="fi" [selected]="'fi' === (langObs | async)">Suomalainen</ion-select-option>
+            <ion-select-option value="fr" [selected]="'fr' === (langObs | async)">français</ion-select-option>
+            <ion-select-option value="gl" [selected]="'gl' === (langObs | async)">Galego</ion-select-option>
+            <ion-select-option value="ka" [selected]="'ka' === (langObs | async)">ქართული</ion-select-option>
+            <ion-select-option value="de" [selected]="'de' === (langObs | async)">Deutsche</ion-select-option>
+            <ion-select-option value="el" [selected]="'el' === (langObs | async)">Ελληνικά</ion-select-option>
+            <ion-select-option value="gu" [selected]="'gu' === (langObs | async)">ગુજરાતી</ion-select-option>
+            <ion-select-option value="ht" [selected]="'ht' === (langObs | async)">Kreyòl Ayisyen</ion-select-option>
+            <ion-select-option value="iw" [selected]="'iw' === (langObs | async)">עברית</ion-select-option>
+            <ion-select-option value="hi" [selected]="'hi' === (langObs | async)">हिंदी</ion-select-option>
+            <ion-select-option value="hu" [selected]="'hu' === (langObs | async)">Magyar</ion-select-option>
+            <ion-select-option value="is" [selected]="'is' === (langObs | async)">Íslensku</ion-select-option>
+            <ion-select-option value="id" [selected]="'id' === (langObs | async)">bahasa Indonesia</ion-select-option>
             <ion-select-option value="ga" [selected]="'ga' === (langObs | async)">Gaeilge</ion-select-option>
+            <ion-select-option value="it" [selected]="'it' === (langObs | async)">italiano</ion-select-option>
+            <ion-select-option value="ja" [selected]="'ja' === (langObs | async)">日本人</ion-select-option>
+            <ion-select-option value="kn" [selected]="'kn' === (langObs | async)">ಕನ್ನಡ</ion-select-option>
+            <ion-select-option value="ko" [selected]="'ko' === (langObs | async)">한국어</ion-select-option>
+            <ion-select-option value="la" [selected]="'la' === (langObs | async)">Latin</ion-select-option>
+            <ion-select-option value="lv" [selected]="'lv' === (langObs | async)">Latviešu</ion-select-option>
+            <ion-select-option value="lt" [selected]="'lt' === (langObs | async)">Lietuviškai</ion-select-option>
+            <ion-select-option value="mk" [selected]="'mk' === (langObs | async)">Македонски</ion-select-option>
+            <ion-select-option value="ms" [selected]="'ms' === (langObs | async)">Melayu</ion-select-option>
+            <ion-select-option value="mt" [selected]="'mt' === (langObs | async)">Malti</ion-select-option>
+            <ion-select-option value="no" [selected]="'no' === (langObs | async)">norsk</ion-select-option>
+            <ion-select-option value="fa" [selected]="'fa' === (langObs | async)">فارسی</ion-select-option>
+            <ion-select-option value="pl" [selected]="'pl' === (langObs | async)">Polskie</ion-select-option>
+            <ion-select-option value="pt" [selected]="'pt' === (langObs | async)">Português</ion-select-option>
+            <ion-select-option value="ro" [selected]="'ro' === (langObs | async)">Română</ion-select-option>
+            <ion-select-option value="ru" [selected]="'ru' === (langObs | async)">русский</ion-select-option>
+            <ion-select-option value="sr" [selected]="'sr' === (langObs | async)">Српски</ion-select-option>
+            <ion-select-option value="sk" [selected]="'sk' === (langObs | async)">slovenský</ion-select-option>
+            <ion-select-option value="sl" [selected]="'sl' === (langObs | async)">Slovenščina</ion-select-option>
+            <ion-select-option value="es" [selected]="'es' === (langObs | async)">Español</ion-select-option>
+            <ion-select-option value="sw" [selected]="'sw' === (langObs | async)">Kiswahili</ion-select-option>
+            <ion-select-option value="sv" [selected]="'sv' === (langObs | async)">svenska</ion-select-option>
+            <ion-select-option value="ta" [selected]="'ta' === (langObs | async)">தமிழ்</ion-select-option>
+            <ion-select-option value="te" [selected]="'te' === (langObs | async)">తెలుగు</ion-select-option>
+            <ion-select-option value="th" [selected]="'th' === (langObs | async)">ไทย</ion-select-option>
+            <ion-select-option value="tr" [selected]="'tr' === (langObs | async)">Türk</ion-select-option>
+            <ion-select-option value="uk" [selected]="'uk' === (langObs | async)">Українська</ion-select-option>
+            <ion-select-option value="ur" [selected]="'ur' === (langObs | async)">اردو</ion-select-option>
+            <ion-select-option value="vi" [selected]="'vi' === (langObs | async)">Tiếng Việt</ion-select-option>
+            <ion-select-option value="cy" [selected]="'cy' === (langObs | async)">Cymraeg</ion-select-option>
+            <ion-select-option value="yi" [selected]="'yi' === (langObs | async)">ייִדיש</ion-select-option>
         </ion-select>
     </ion-card>
     <br/>

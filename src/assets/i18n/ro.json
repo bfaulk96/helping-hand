@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Mână de ajutor"
+	},
+	"setup": {
+		"next": "Următor →",
+		"welcome": "Bine ati venit!",
+		"choice": "Alegeți limba dvs."
+	},
+	"settings": {
+		"title": "Setări",
+		"language": "Alegeți limba dvs.",
+		"apply": "Aplicați setările"
+	},
+	"menu": {
+		"title": "Meniul"
+	},
+	"home": {
+		"title": "Acasă",
+		"secondaryTitle": "Imigrația inovării",
+		"welcome": "Bine ați venit la aplicație",
+		"findOut": "Află mai multe",
+		"resources": "Verificați resursele din comunitatea dvs.",
+		"register": "Nevoie de ajutor? Doriți să ajutați pe ceilalți? Înregistrați-vă astăzi!",
+		"vision": "Ceva din apropiere trebuie tradus sau trebuie să spui într-o altă limbă? Încearcă 'viziune'."
+	},
+	"about": {
+		"title": "Despre",
+		"whatIs": "Ce este",
+		"description": "O aplicație creată pentru imigranți care oferă servicii pe termen scurt sau pe termen lung pe care imigranții le-ar putea avea (limbă, cultură etc.)",
+		"lookingForResources": "Căutați resurse comunitare?",
+		"checkOutPage": "Consultați această pagină"
+	},
+	"register": {
+		"title": "Inregistreaza-te",
+		"info": "Informații utilizator",
+		"type": "Tip de utilizator",
+		"helper": "Ajutor",
+		"helpSeeker": "Ajutor Căutător",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Parola",
+			"confirmPassword": "confirma parola"
+		},
+		"succeeded": "Înregistrare Succes.",
+		"failed": "Inregistrare esuata."
+	},
+	"resources": {
+		"title": "Resurse"
+	},
+	"login": {
+		"title": "Logare",
+		"spaceTitle": "Logare",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Parola"
+		},
+		"button": "Logare",
+		"okay": "bine",
+		"succeeded": "Autentificare Succes.",
+		"failed": "Autentificare esuata."
+	},
+	"logout": {
+		"title": "Deconectare",
+		"spaceTitle": "Deconectați-vă",
+		"confirm": "Sigur doriți să vă deconectați?",
+		"cancel": "Anulare",
+		"yes": "da"
+	},
+	"vision": {
+		"title": "Viziune"
+	},
+	"verify": {
+		"title": "Verifica contul"
+	}
+}

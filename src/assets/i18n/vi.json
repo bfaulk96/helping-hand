@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Bàn tay giúp đỡ"
+	},
+	"setup": {
+		"next": "Kế tiếp",
+		"welcome": "Chào mừng bạn!",
+		"choice": "Chọn ngôn ngữ của bạn"
+	},
+	"settings": {
+		"title": "Cài đặt",
+		"language": "Chọn ngôn ngữ của bạn",
+		"apply": "Áp dụng cài đặt"
+	},
+	"menu": {
+		"title": "Thực đơn"
+	},
+	"home": {
+		"title": "Nhà",
+		"secondaryTitle": "Cải cách xuất nhập cảnh",
+		"welcome": "Chào mừng bạn đến với ứng dụng",
+		"findOut": "Tìm hiểu thêm",
+		"resources": "Xem tài nguyên trong cộng đồng của bạn",
+		"register": "Cần giúp đỡ? Muốn giúp đỡ người khác? Đăng ký ngay hôm nay!",
+		"vision": "Một cái gì đó gần đó bạn cần dịch hoặc cần phải nói bằng một ngôn ngữ khác? Hãy thử 'tầm nhìn'."
+	},
+	"about": {
+		"title": "Trong khoảng",
+		"whatIs": "Những gì là",
+		"description": "Ứng dụng được xây dựng cho những người nhập cư cung cấp dịch vụ cho các vấn đề ngắn hạn hoặc dài hạn mà người nhập cư có thể có (ngôn ngữ, văn hóa, v.v.)",
+		"lookingForResources": "Bạn đang tìm kiếm tài nguyên cộng đồng?",
+		"checkOutPage": "Xem trang này"
+	},
+	"register": {
+		"title": "Ghi danh",
+		"info": "thông tin người dùng",
+		"type": "Loại người dùng",
+		"helper": "Người giúp đỡ",
+		"helpSeeker": "Trợ giúp người tìm kiếm",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Mật khẩu",
+			"confirmPassword": "Xác nhận mật khẩu"
+		},
+		"succeeded": "Đăng ký thành công.",
+		"failed": "Đăng ký không thành công."
+	},
+	"resources": {
+		"title": "Tài nguyên"
+	},
+	"login": {
+		"title": "Đăng nhập",
+		"spaceTitle": "Đăng nhập",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Mật khẩu"
+		},
+		"button": "Đăng nhập",
+		"okay": "đuợc",
+		"succeeded": "Đăng nhập Thành công.",
+		"failed": "Đăng nhập thất bại."
+	},
+	"logout": {
+		"title": "Đăng xuất",
+		"spaceTitle": "Đăng xuất",
+		"confirm": "Bạn có chắc chắn muốn đăng xuất không?",
+		"cancel": "Hủy bỏ",
+		"yes": "Vâng"
+	},
+	"vision": {
+		"title": "Tầm nhìn"
+	},
+	"verify": {
+		"title": "Xác nhận tài khoản"
+	}
+}

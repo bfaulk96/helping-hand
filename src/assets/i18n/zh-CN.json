@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "帮助手"
+	},
+	"setup": {
+		"next": "下一个",
+		"welcome": "欢迎！",
+		"choice": "选择你的语言"
+	},
+	"settings": {
+		"title": "设置",
+		"language": "选择你的语言",
+		"apply": "应用设置"
+	},
+	"menu": {
+		"title": "菜单"
+	},
+	"home": {
+		"title": "家",
+		"secondaryTitle": "移民创新",
+		"welcome": "欢迎来到该应用程序",
+		"findOut": "了解更多",
+		"resources": "查看社区中的资源",
+		"register": "需要帮忙？想帮助别人吗？立即注册！",
+		"vision": "您需要翻译附近还是需要用其他语言说些什么？试试'愿景'。"
+	},
+	"about": {
+		"title": "关于",
+		"whatIs": "什么是",
+		"description": "为移民建立的应用程序，为移民可能拥有的短期或长期问题提供服务（语言，文化等）",
+		"lookingForResources": "寻找社区资源？",
+		"checkOutPage": "看看这个页面"
+	},
+	"register": {
+		"title": "寄存器",
+		"info": "用户信息",
+		"type": "用户类型",
+		"helper": "帮手",
+		"helpSeeker": "帮助搜索者",
+		"placeholder": {
+			"email": "电子邮件",
+			"password": "密码",
+			"confirmPassword": "确认密码"
+		},
+		"succeeded": "注册成功。",
+		"failed": "注册失败。"
+	},
+	"resources": {
+		"title": "资源"
+	},
+	"login": {
+		"title": "登录",
+		"spaceTitle": "登录",
+		"placeholder": {
+			"email": "电子邮件",
+			"password": "密码"
+		},
+		"button": "登录",
+		"okay": "好的",
+		"succeeded": "登录成功。",
+		"failed": "登录失败。"
+	},
+	"logout": {
+		"title": "登出",
+		"spaceTitle": "登出",
+		"confirm": "你确定要退出吗？",
+		"cancel": "取消",
+		"yes": "是"
+	},
+	"vision": {
+		"title": "视力"
+	},
+	"verify": {
+		"title": "验证账户"
+	}
+}

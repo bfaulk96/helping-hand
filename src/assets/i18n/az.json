@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Kömək əli"
+	},
+	"setup": {
+		"next": "İrəli",
+		"welcome": "Xoş gəldiniz!",
+		"choice": "Dilinizi seçin"
+	},
+	"settings": {
+		"title": "Ayarlar",
+		"language": "Dilinizi seçin",
+		"apply": "Ayarlar tətbiq edin"
+	},
+	"menu": {
+		"title": "Menyu"
+	},
+	"home": {
+		"title": "Ev",
+		"secondaryTitle": "İmmiqrasiya İnnovasiyası",
+		"welcome": "Ərizə xoş gəlmisiniz",
+		"findOut": "Daha çox məlumat əldə edin",
+		"resources": "Cəmiyyətinizdə olan resursları yoxlayın",
+		"register": "Kömək lazımdır? Başqalarına kömək etmək istəyirsiniz? Bu gün qeydiyyatdan keçin!",
+		"vision": "Yaxınlarınıza bir şey tərcümə və ya fərqli bir dildə danışmaq lazımdır? 'Görmə' cəhd edin."
+	},
+	"about": {
+		"title": "Haqqında",
+		"whatIs": "Nədir",
+		"description": "Qaçqınların (dil, mədəniyyət və sair) qısa müddətli və ya uzun müddətli problemlərə xidmət edən immiqrantlar üçün hazırladığı proqram",
+		"lookingForResources": "Cəmiyyət ehtiyaclarını axtarırsınız?",
+		"checkOutPage": "Bu səhifəyə baxın"
+	},
+	"register": {
+		"title": "Qeydiyyatdan keçin",
+		"info": "İstifadəçi Məlumatı",
+		"type": "İstifadəçi növü",
+		"helper": "Köməkçi",
+		"helpSeeker": "Arayana kömək edin",
+		"placeholder": {
+			"email": "E-poçt",
+			"password": "Şifrə",
+			"confirmPassword": "Şifrəni təsdiqləyin"
+		},
+		"succeeded": "Qeydiyyat müvəffəq oldu.",
+		"failed": "Qeydiyyat uğursuz oldu."
+	},
+	"resources": {
+		"title": "Resurslar"
+	},
+	"login": {
+		"title": "Daxil ol",
+		"spaceTitle": "Daxil ol",
+		"placeholder": {
+			"email": "E-poçt",
+			"password": "Şifrə"
+		},
+		"button": "Daxil ol",
+		"okay": "Tamam",
+		"succeeded": "Giriş müvəffəq oldu.",
+		"failed": "Giriş yapılamadı."
+	},
+	"logout": {
+		"title": "Çıxış",
+		"spaceTitle": "Çıxış",
+		"confirm": "Çıxış etmək istədiyinizə əminsiniz?",
+		"cancel": "Ləğv et",
+		"yes": "Bəli"
+	},
+	"vision": {
+		"title": "Vizyon"
+	},
+	"verify": {
+		"title": "Hesabı doğrulayın"
+	}
+}

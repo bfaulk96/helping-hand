@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Segítő kéz"
+	},
+	"setup": {
+		"next": "Következő",
+		"welcome": "Üdvözöljük!",
+		"choice": "Válasszon nyelvet"
+	},
+	"settings": {
+		"title": "Beállítások",
+		"language": "Válasszon nyelvet",
+		"apply": "Beállítások alkalmazása"
+	},
+	"menu": {
+		"title": "Menü"
+	},
+	"home": {
+		"title": "itthon",
+		"secondaryTitle": "Bevándorlási innováció",
+		"welcome": "Üdvözöljük az alkalmazást",
+		"findOut": "Tudjon meg többet",
+		"resources": "Nézze meg a közösség erőforrásait",
+		"register": "Kell segítség? Szeretne segíteni másoknak? Regisztrálj ma!",
+		"vision": "Van valami a közelben, amit le kell fordítanunk, vagy más nyelven kell beszélnünk? Próbálja meg a 'látást'."
+	},
+	"about": {
+		"title": "Ról ről",
+		"whatIs": "Mi a",
+		"description": "A bevándorlók számára kialakított alkalmazás, amely rövid távú vagy hosszú távú problémákat jelenthet a bevándorlók számára (nyelv, kultúra stb.)",
+		"lookingForResources": "Közösségi forrásokat keres?",
+		"checkOutPage": "Nézze meg ezt az oldalt"
+	},
+	"register": {
+		"title": "Regisztráció",
+		"info": "Felhasználói adatok",
+		"type": "Felhasználó típusa",
+		"helper": "Segítő",
+		"helpSeeker": "Súgó keresése",
+		"placeholder": {
+			"email": "Email",
+			"password": "Jelszó",
+			"confirmPassword": "Jelszó megerősítése"
+		},
+		"succeeded": "Regisztráció sikeresen megtörtént.",
+		"failed": "Regisztráció sikertelen."
+	},
+	"resources": {
+		"title": "Erőforrások"
+	},
+	"login": {
+		"title": "Belépés",
+		"spaceTitle": "Belépés",
+		"placeholder": {
+			"email": "Email",
+			"password": "Jelszó"
+		},
+		"button": "Belépés",
+		"okay": "oké",
+		"succeeded": "Belépés sikerült.",
+		"failed": "Bejelentkezés sikertelen."
+	},
+	"logout": {
+		"title": "Kijelentkezés",
+		"spaceTitle": "Kijelentkezés",
+		"confirm": "Biztosan ki szeretne jelentkezni?",
+		"cancel": "Megszünteti",
+		"yes": "Igen"
+	},
+	"vision": {
+		"title": "Látomás"
+	},
+	"verify": {
+		"title": "Fiók megerősítése"
+	}
+}

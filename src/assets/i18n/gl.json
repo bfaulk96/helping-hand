@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Axudando a man"
+	},
+	"setup": {
+		"next": "Seguinte",
+		"welcome": "Benvido!",
+		"choice": "Elixe o teu idioma"
+	},
+	"settings": {
+		"title": "Configuración",
+		"language": "Elixe o teu idioma",
+		"apply": "Aplicar configuracións"
+	},
+	"menu": {
+		"title": "Menú"
+	},
+	"home": {
+		"title": "Inicio",
+		"secondaryTitle": "Inmigración Innovación",
+		"welcome": "Benvido á aplicación",
+		"findOut": "Máis información",
+		"resources": "Consulte recursos na túa comunidade",
+		"register": "Preciso axuda? Queres axudar a outros? Rexístrese hoxe!",
+		"vision": "Algo preto que necesitas traducir ou necesitas dicir noutro idioma? Probe a 'visión'."
+	},
+	"about": {
+		"title": "Acerca de",
+		"whatIs": "Que é",
+		"description": "Unha aplicación construída para inmigrantes que presta servizos a problemas a curto ou longo prazo que os inmigrantes poderían ter (linguaxe, cultura, etc.)",
+		"lookingForResources": "Buscando recursos da comunidade?",
+		"checkOutPage": "Consulte esta páxina"
+	},
+	"register": {
+		"title": "Rexistrarse",
+		"info": "Información do usuario",
+		"type": "Tipo de usuario",
+		"helper": "Axudante",
+		"helpSeeker": "Axuda Buscador",
+		"placeholder": {
+			"email": "Correo electrónico",
+			"password": "Contrasinal",
+			"confirmPassword": "Confirme o contrasinal"
+		},
+		"succeeded": "Rexistrouse con éxito.",
+		"failed": "Fallou o rexistro."
+	},
+	"resources": {
+		"title": "Recursos"
+	},
+	"login": {
+		"title": "Acceder",
+		"spaceTitle": "Acceder",
+		"placeholder": {
+			"email": "Correo electrónico",
+			"password": "Contrasinal"
+		},
+		"button": "Acceder",
+		"okay": "Está ben",
+		"succeeded": "Accedeu con éxito.",
+		"failed": "Fallo de sesión."
+	},
+	"logout": {
+		"title": "Saír",
+		"spaceTitle": "Saír",
+		"confirm": "Estás seguro de que queres pechar sesión?",
+		"cancel": "Cancelar",
+		"yes": "Si"
+	},
+	"vision": {
+		"title": "Visión"
+	},
+	"verify": {
+		"title": "Verificar a conta"
+	}
+}

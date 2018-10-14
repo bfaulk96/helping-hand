@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Helpende hand"
+	},
+	"setup": {
+		"next": "volgende",
+		"welcome": "Welkom!",
+		"choice": "Kies je taal"
+	},
+	"settings": {
+		"title": "instellingen",
+		"language": "Kies je taal",
+		"apply": "Instellingen toepassen"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Huis",
+		"secondaryTitle": "Immigratie-innovatie",
+		"welcome": "Welkom bij de applicatie",
+		"findOut": "Meer te weten komen",
+		"resources": "Bekijk bronnen in uw community",
+		"register": "Hulp nodig? Wil je anderen helpen? Registreer vandaag!",
+		"vision": "Iets in de buurt dat u moet vertalen of in een andere taal moet zeggen? Probeer 'visie'."
+	},
+	"about": {
+		"title": "Wat betreft",
+		"whatIs": "Wat is",
+		"description": "Een applicatie gebouwd voor immigranten die diensten levert voor problemen op korte of lange termijn die immigranten zouden kunnen hebben (taal, cultuur, etc.)",
+		"lookingForResources": "Op zoek naar gemeenschapsbronnen?",
+		"checkOutPage": "Bekijk deze pagina"
+	},
+	"register": {
+		"title": "Registreren",
+		"info": "gebruikers informatie",
+		"type": "Type gebruiker",
+		"helper": "Helper",
+		"helpSeeker": "Help Seeker",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Wachtwoord",
+			"confirmPassword": "bevestig wachtwoord"
+		},
+		"succeeded": "Registratie slaagt.",
+		"failed": "Registratie mislukt."
+	},
+	"resources": {
+		"title": "Middelen"
+	},
+	"login": {
+		"title": "Log in",
+		"spaceTitle": "Log in",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Wachtwoord"
+		},
+		"button": "Log in",
+		"okay": "oke",
+		"succeeded": "Inloggen slaagt.",
+		"failed": "Aanmelden mislukt."
+	},
+	"logout": {
+		"title": "Uitloggen",
+		"spaceTitle": "Uitloggen",
+		"confirm": "Weet je zeker dat je wilt uitloggen?",
+		"cancel": "annuleren",
+		"yes": "Ja"
+	},
+	"vision": {
+		"title": "Visie"
+	},
+	"verify": {
+		"title": "Account verifiëren"
+	}
+}

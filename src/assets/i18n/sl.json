@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Roka pomoči"
+	},
+	"setup": {
+		"next": "Naslednji",
+		"welcome": "Dobrodošli!",
+		"choice": "Izberite svoj jezik"
+	},
+	"settings": {
+		"title": "Nastavitve",
+		"language": "Izberite svoj jezik",
+		"apply": "Uporabite Nastavitve"
+	},
+	"menu": {
+		"title": "Meni"
+	},
+	"home": {
+		"title": "Domov",
+		"secondaryTitle": "Inovacije priseljevanja",
+		"welcome": "Dobrodošli v aplikaciji",
+		"findOut": "Izvedi več",
+		"resources": "Oglejte si vire v vaši skupnosti",
+		"register": "Rabim pomoč? Želite pomagati drugim? Registriraj se danes!",
+		"vision": "Nekaj ​​v bližini, ki ga potrebujete prevedeno ali morate govoriti v drugem jeziku? Poskusite 'vizijo'."
+	},
+	"about": {
+		"title": "O podjetju",
+		"whatIs": "Kaj je",
+		"description": "Aplikacija, zgrajena za priseljence, ki zagotavlja storitve za kratkoročne ali dolgoročne težave, ki jih imigranti lahko imajo (jezik, kultura itd.)",
+		"lookingForResources": "Iščete skupne vire?",
+		"checkOutPage": "Oglejte si to stran"
+	},
+	"register": {
+		"title": "Registriraj se",
+		"info": "Uporabniške informacije",
+		"type": "Vrsta uporabnika",
+		"helper": "Pomočnik",
+		"helpSeeker": "Iskalec pomoči",
+		"placeholder": {
+			"email": "E-naslov",
+			"password": "Geslo",
+			"confirmPassword": "potrdi geslo"
+		},
+		"succeeded": "Registracija je uspela.",
+		"failed": "Registracija ni uspela."
+	},
+	"resources": {
+		"title": "Viri"
+	},
+	"login": {
+		"title": "Vpiši se",
+		"spaceTitle": "Vpiši se",
+		"placeholder": {
+			"email": "E-naslov",
+			"password": "Geslo"
+		},
+		"button": "Vpiši se",
+		"okay": "v redu",
+		"succeeded": "Prijava se je končala.",
+		"failed": "Prijava ni uspela."
+	},
+	"logout": {
+		"title": "Izpisati",
+		"spaceTitle": "Izpisati",
+		"confirm": "Ali ste prepričani, da se želite odjaviti?",
+		"cancel": "Prekliči",
+		"yes": "Ja"
+	},
+	"vision": {
+		"title": "Vizija"
+	},
+	"verify": {
+		"title": "Preverite račun"
+	}
+}

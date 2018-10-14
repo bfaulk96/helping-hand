@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Hjálpar hönd"
+	},
+	"setup": {
+		"next": "Næst",
+		"welcome": "Velkominn!",
+		"choice": "Veldu tungumálið þitt"
+	},
+	"settings": {
+		"title": "Stillingar",
+		"language": "Veldu tungumálið þitt",
+		"apply": "Notaðu Stillingar"
+	},
+	"menu": {
+		"title": "Valmynd"
+	},
+	"home": {
+		"title": "Heim",
+		"secondaryTitle": "Nýsköpunar nýsköpun",
+		"welcome": "Velkomin á umsóknina",
+		"findOut": "Finndu Meira út",
+		"resources": "Skoðaðu auðlindir í samfélaginu þínu",
+		"register": "Þurfa hjálp? Viltu hjálpa öðrum? Skráðu þig í dag!",
+		"vision": "Eitthvað í nágrenninu sem þú þarft að þýða eða þurfa að segja á öðru tungumáli? Prófaðu 'sýn'."
+	},
+	"about": {
+		"title": "Um",
+		"whatIs": "Hvað er",
+		"description": "Umsókn byggð fyrir innflytjendur sem veita þjónustu til skamms tíma eða langtíma vandamál sem innflytjendur geta haft (tungumál, menning o.fl.)",
+		"lookingForResources": "Ertu að leita að auðlindum samfélagsins?",
+		"checkOutPage": "Skoðaðu þessa síðu"
+	},
+	"register": {
+		"title": "Nýskráning",
+		"info": "Notendaupplýsingar",
+		"type": "Tegund notanda",
+		"helper": "Hjálparstarfsmaður",
+		"helpSeeker": "Hjálp umsækjandi",
+		"placeholder": {
+			"email": "Email",
+			"password": "Lykilorð",
+			"confirmPassword": "Staðfesta lykilorð"
+		},
+		"succeeded": "Skráning tókst.",
+		"failed": "Skráning mistókst."
+	},
+	"resources": {
+		"title": "Resources"
+	},
+	"login": {
+		"title": "Skrá inn",
+		"spaceTitle": "Skrá inn",
+		"placeholder": {
+			"email": "Email",
+			"password": "Lykilorð"
+		},
+		"button": "Skrá inn",
+		"okay": "allt í lagi",
+		"succeeded": "Innskráning tókst.",
+		"failed": "Innskráning mistókst."
+	},
+	"logout": {
+		"title": "Að skrá þig út",
+		"spaceTitle": "Að skrá þig út",
+		"confirm": "Ertu viss um að þú viljir skrá þig út?",
+		"cancel": "Hætta við",
+		"yes": "Já"
+	},
+	"vision": {
+		"title": "Sýn"
+	},
+	"verify": {
+		"title": "Staðfestu reikning"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Uluran tangan"
+	},
+	"setup": {
+		"next": "Berikutnya",
+		"welcome": "Selamat datang!",
+		"choice": "Pilih bahasamu"
+	},
+	"settings": {
+		"title": "Pengaturan",
+		"language": "Pilih bahasamu",
+		"apply": "Terapkan pengaturan"
+	},
+	"menu": {
+		"title": "Menu"
+	},
+	"home": {
+		"title": "Rumah",
+		"secondaryTitle": "Inovasi Imigrasi",
+		"welcome": "Selamat datang di aplikasi",
+		"findOut": "Temukan lebih banyak lagi",
+		"resources": "Periksa sumber daya di komunitas Anda",
+		"register": "Butuh bantuan? Ingin membantu orang lain? Daftar hari ini!",
+		"vision": "Sesuatu di dekat Anda perlu diterjemahkan atau perlu dikatakan dalam bahasa yang berbeda? Coba 'visi'."
+	},
+	"about": {
+		"title": "Tentang",
+		"whatIs": "apa yang",
+		"description": "Aplikasi yang dibuat untuk imigran yang menyediakan layanan untuk masalah jangka pendek atau jangka panjang yang dapat dimiliki oleh imigran (bahasa, budaya, dll.)",
+		"lookingForResources": "Mencari sumber daya komunitas?",
+		"checkOutPage": "Lihat halaman ini"
+	},
+	"register": {
+		"title": "Daftar",
+		"info": "Info Pengguna",
+		"type": "Jenis Pengguna",
+		"helper": "Pembantu",
+		"helpSeeker": "Pencari Bantuan",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Kata sandi",
+			"confirmPassword": "konfirmasi sandi"
+		},
+		"succeeded": "Pendaftaran Berhasil.",
+		"failed": "Registrasi gagal."
+	},
+	"resources": {
+		"title": "Sumber daya"
+	},
+	"login": {
+		"title": "Masuk",
+		"spaceTitle": "Masuk",
+		"placeholder": {
+			"email": "E-mail",
+			"password": "Kata sandi"
+		},
+		"button": "Masuk",
+		"okay": "baik",
+		"succeeded": "Masuk Berhasil.",
+		"failed": "Gagal masuk."
+	},
+	"logout": {
+		"title": "Keluar",
+		"spaceTitle": "Keluar",
+		"confirm": "Anda yakin ingin keluar?",
+		"cancel": "Membatalkan",
+		"yes": "iya nih"
+	},
+	"vision": {
+		"title": "Penglihatan"
+	},
+	"verify": {
+		"title": "verifikasi akun"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "Käsi abistamine"
+	},
+	"setup": {
+		"next": "Järgmine",
+		"welcome": "Tere tulemast!",
+		"choice": "Vali oma keel"
+	},
+	"settings": {
+		"title": "Seaded",
+		"language": "Vali oma keel",
+		"apply": "Rakenda seadeid"
+	},
+	"menu": {
+		"title": "Menüü"
+	},
+	"home": {
+		"title": "Kodu",
+		"secondaryTitle": "Immigratsiooni innovatsioon",
+		"welcome": "Tere tulemast rakendusse",
+		"findOut": "Leia rohkem",
+		"resources": "Vaadake oma kogukonna ressursse",
+		"register": "Abi vajama? Kas soovite teisi aidata? Registreeru juba täna!",
+		"vision": "Midagi läheduses peate tõlkima või peate ütlema teises keeles? Proovi 'visiooni'."
+	},
+	"about": {
+		"title": "Umbes",
+		"whatIs": "Mis on",
+		"description": "Immigrantidele mõeldud rakendus, mis pakub sisserändajatele lühiajalisi või pikaajalisi probleeme (keel, kultuur jne)",
+		"lookingForResources": "Otsite kogukonna ressursse?",
+		"checkOutPage": "Vaadake seda lehte"
+	},
+	"register": {
+		"title": "Registreeru",
+		"info": "Kasutaja info",
+		"type": "Kasutaja tüüp",
+		"helper": "Abimees",
+		"helpSeeker": "Abi saaja",
+		"placeholder": {
+			"email": "E-post",
+			"password": "Parool",
+			"confirmPassword": "Kinnita salasõna"
+		},
+		"succeeded": "Registreerimine õnnestus.",
+		"failed": "Registreerimine ebaõnnestus."
+	},
+	"resources": {
+		"title": "Ressursid"
+	},
+	"login": {
+		"title": "Logi sisse",
+		"spaceTitle": "Logi sisse",
+		"placeholder": {
+			"email": "E-post",
+			"password": "Parool"
+		},
+		"button": "Logi sisse",
+		"okay": "Okei",
+		"succeeded": "Sisselogimine õnnestus.",
+		"failed": "Sisselogimine ebaõnnestus."
+	},
+	"logout": {
+		"title": "Logi välja",
+		"spaceTitle": "Logi välja",
+		"confirm": "Kas olete kindel, et soovite välja logida?",
+		"cancel": "Loobu",
+		"yes": "Jah"
+	},
+	"vision": {
+		"title": "Visioon"
+	},
+	"verify": {
+		"title": "Kontrollige kontot"
+	}
+}

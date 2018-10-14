@@ -1,0 +1,76 @@
+{
+	"app": {
+		"title": "救いの手"
+	},
+	"setup": {
+		"next": "次",
+		"welcome": "ようこそ！",
+		"choice": "言語を選んでください"
+	},
+	"settings": {
+		"title": "設定",
+		"language": "言語を選んでください",
+		"apply": "設定を適用"
+	},
+	"menu": {
+		"title": "メニュー"
+	},
+	"home": {
+		"title": "ホーム",
+		"secondaryTitle": "移民のイノベーション",
+		"welcome": "アプリケーションへようこそ",
+		"findOut": "詳細を見る",
+		"resources": "あなたのコミュニティのリソースをチェックしてください",
+		"register": "助けが必要？他人を助けたいですか？今日登録する！",
+		"vision": "近くの何かが翻訳されたり、別の言語で言う必要がありますか？ 「ビジョン」を試してみてください。"
+	},
+	"about": {
+		"title": "約",
+		"whatIs": "何ですか",
+		"description": "移民が抱える短期的または長期的な問題（言語、文化など）にサービスを提供する移民向けのアプリケーション。",
+		"lookingForResources": "コミュニティリソースをお探しですか？",
+		"checkOutPage": "このページを見る"
+	},
+	"register": {
+		"title": "登録",
+		"info": "ユーザー情報",
+		"type": "ユーザーのタイプ",
+		"helper": "ヘルパー",
+		"helpSeeker": "助けを求める人",
+		"placeholder": {
+			"email": "Eメール",
+			"password": "パスワード",
+			"confirmPassword": "パスワードを認証する"
+		},
+		"succeeded": "登録が成功しました。",
+		"failed": "登録に失敗しました。"
+	},
+	"resources": {
+		"title": "リソース"
+	},
+	"login": {
+		"title": "ログイン",
+		"spaceTitle": "ログイン",
+		"placeholder": {
+			"email": "Eメール",
+			"password": "パスワード"
+		},
+		"button": "ログイン",
+		"okay": "はい",
+		"succeeded": "ログインが成功しました。",
+		"failed": "ログインに失敗しました。"
+	},
+	"logout": {
+		"title": "ログアウト",
+		"spaceTitle": "ログアウト",
+		"confirm": "ログアウトしてもよろしいですか？",
+		"cancel": "キャンセル",
+		"yes": "はい"
+	},
+	"vision": {
+		"title": "ビジョン"
+	},
+	"verify": {
+		"title": "アカウントを確認します"
+	}
+}
