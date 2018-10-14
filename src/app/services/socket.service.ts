@@ -14,15 +14,13 @@ export class SocketService {
     private socketClient: SocketIOClient.Socket;
 
     constructor(
-      private apiHelper: ApiHelper,
+        private apiHelper: ApiHelper,
     ) {
     }
 
-    initSocket(): void {
+    initSocket(token: string): void {
         this.socketClient = io.connect(this.apiHelper.getServiceEndPoint(), {
-            query: {
-                token: "Test token"
-            }
+            query: {token}
         });
     }
 

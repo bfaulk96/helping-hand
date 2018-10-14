@@ -95,7 +95,6 @@ export class AppComponent {
             }, () => {
                 AppComponent.staticIsLoggedIn = this.isLoggedIn = !!this.userDao.currentUser;
             });
-            this.socketService.initSocket();
             this.socketService.onException().subscribe(message => console.log({message}));
         });
     }
