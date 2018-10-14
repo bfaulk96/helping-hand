@@ -36,7 +36,7 @@ export class RequestsPage implements OnInit {
                                     const helpers = [];
                                     res.users.forEach(
                                         (user: User) => {
-                                            if (user.isHelper) {
+                                            if (user.isHelper && this.relevantHelper(user, this.userDAO.currentUser.helpCategories[0])) {
                                                 helpers.push(user);
                                             }
                                         }
@@ -141,5 +141,15 @@ export class RequestsPage implements OnInit {
                 console.error(error);
             }
         );
+    }
+
+    public relevantHelper(helper: User, helpCategory: string): boolean {
+        for (let i: number = 0; i < helper.helpCategories.length; i++) {
+            if (helper.helpCategories[i] === helpCategory) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
