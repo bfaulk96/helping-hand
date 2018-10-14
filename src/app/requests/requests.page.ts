@@ -88,8 +88,7 @@ export class RequestsPage implements OnInit {
                     title: "test title",
                     description: "test description",
                     senderId: user._id,
-                    // receiverId: helper._id,
-                    receiverId: "5bc2509502ed722737a7100c",
+                    receiverId: helper._id,
                     helpCategory: user.helpCategories[0]
                 }, {
                     headers: {
