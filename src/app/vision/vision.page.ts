@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {CameraOptions} from "@ionic-native/camera";
 import {Camera} from "@ionic-native/camera/ngx";
+import {TranslateService} from "@ngx-translate/core";
 
 import {DomSanitizer} from "@angular/platform-browser";
 import {HttpClient} from "@angular/common/http";
@@ -16,10 +17,12 @@ import {Observable} from "rxjs";
 export class VisionPage implements OnInit {
     constructor(private camera: Camera,
                 private httpClient: HttpClient,
-                public _DomSanitizationService: DomSanitizer) {
+                public _DomSanitizationService: DomSanitizer,
+                private translateService: TranslateService) {
     }
 
     public url: string = "https://vision.googleapis.com/v1/images:annotate?key=";
+    public url_translate: string = "https://translation.googleapis.com/language/translate/v2";
     public rawImage: string = "";
     public base64Image: string = "";
     public text: any;
@@ -86,15 +89,32 @@ export class VisionPage implements OnInit {
         return this.httpClient.post(this.url, request);
     }
 
+    public translateText(text) {
+        this.sendTextToCloudTranslateHandler(text).subscribe((res) => {
+            this.text = res.data.translations[0].translatedText;
+        });
+    }
+
+    public sendTextToCloudTranslateHandler(text): Observable<any> {
+        const currentLanguage = this.translateService.currentLang;
+        const request = {
+                "q": text,
+                "target": currentLanguage,
+        };
+        return this.httpClient.post(this.url_translate, request);
+    }
+
     public parseData(res) {
         if (this.translate) {
             this.text = res.responses[0].textAnnotations[0].description;
             this.text = this.text.replace("\\n", " ");
 
+
         } else {
             this.text = res.responses[0].labelAnnotations[0].description;
             this.text = this.text.replace("\\n", " ");
         }
+        this.translateText(this.text);
     }
 
     public closePreview() {
