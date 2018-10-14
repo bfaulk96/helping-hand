@@ -1,17 +1,18 @@
 import {Component} from "@angular/core";
 
-import {Platform} from '@ionic/angular';
-import {SplashScreen} from '@ionic-native/splash-screen/ngx';
-import {StatusBar} from '@ionic-native/status-bar/ngx';
-import {TranslateService} from '@ngx-translate/core';
-import {ApiHelper} from './services/api-helper';
+import {Platform} from "@ionic/angular";
+import {SplashScreen} from "@ionic-native/splash-screen/ngx";
+import {StatusBar} from "@ionic-native/status-bar/ngx";
+import {TranslateService} from "@ngx-translate/core";
+import {ApiHelper} from "./services/api-helper";
 import {UserDAO} from "./services/dao/user.dao";
-import {Router} from '@angular/router';
+import {Router} from "@angular/router";
+import {SocketService} from "./services/socket.service";
 
 @Component({
-    selector: 'app-root',
-    templateUrl: 'app.component.html',
-    styleUrls: ['app.component.scss']
+    selector: "app-root",
+    templateUrl: "app.component.html",
+    styleUrls: ["app.component.scss"]
 })
 export class AppComponent {
     public isLoggedIn: boolean = false;
@@ -66,17 +67,23 @@ export class AppComponent {
                 private translate: TranslateService,
                 private userDao: UserDAO,
                 private apiHelper: ApiHelper,
-                private router: Router) {
+                private router: Router,
+                private socketService: SocketService) {
         this.initializeApp();
     }
 
     initializeApp() {
-        this.apiHelper.setEnv('local');
+        this.apiHelper.setEnv("local");
         this.platform.ready().then(() => {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
             this.initTranslate();
             this.isLoggedIn = !!this.apiHelper.getAccessToken();
+
+            this.socketService.initSocket();
+
+            this.socketService.onConnectedCount().subscribe(number => console.log({number}));
+            this.socketService.onException().subscribe(message => console.log({message}));
         });
     }
 
@@ -91,7 +98,7 @@ export class AppComponent {
             } else {
                 this.translate.use("en");
             }
-            this.router.navigate(['setup']);
+            this.router.navigate(["setup"]);
         }
 
     }
