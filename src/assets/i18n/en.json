@@ -76,5 +76,8 @@
   },
   "verify": {
     "title": "Verify Account"
+  },
+  "connect": {
+    "title": "Connect"
   }
 }

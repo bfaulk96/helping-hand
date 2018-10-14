@@ -86,16 +86,14 @@
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
     <plugin name="cordova-plugin-fcm-with-dependecy-updated" spec="^2.2.5" />
-    <engine name="ios" spec="4.5.5" />
-    <engine name="android" spec="7.0.0" />
-    <engine name="android" spec="7.1.1" />
     <plugin name="cordova-plugin-geolocation" spec="4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
     <plugin name="cordova-plugin-camera" spec="4.0.3" />
-    <engine name="ios" spec="~4.5.5" />
     <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
         <string>Used to take pictures</string>
     </edit-config>
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
+    <engine name="ios" spec="4.5.5" />
+    <engine name="android" spec="7.1.1" />
 </widget>

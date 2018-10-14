@@ -122,6 +122,13 @@ export class AppComponent {
                 }
                 this.router.navigate(["setup"]);
             }
+        }, () => {
+            if (this.translate.getBrowserLang() !== undefined) {
+                this.translate.use(this.translate.getBrowserLang());
+            } else {
+                this.translate.use("en");
+            }
+            this.router.navigate(["setup"]);
         });
     }
 
