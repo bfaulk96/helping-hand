@@ -88,4 +88,8 @@
     <plugin name="cordova-plugin-geolocation" spec="4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
+    <!-- Required for iOS 10: Camera permission prompt -->
+    <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+        <string>Used to take pictures</string>
+    </edit-config>
 </widget>
