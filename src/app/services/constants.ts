@@ -1,8 +1,8 @@
 export class Constants {
     public static API: any = {
         ENDPOINTS: {
-            LOCAL: "http://378f2e56.ngrok.io",
-            PROD: "http://378f2e56.ngrok.io"
+            LOCAL: "http://b6fa84c1.ngrok.io",
+            PROD: "http://b6fa84c1.ngrok.io"
         },
         VERBS: {
             GET: "GET",

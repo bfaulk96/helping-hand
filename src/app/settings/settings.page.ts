@@ -8,7 +8,7 @@ import {Router} from "@angular/router";
     styleUrls: ["./settings.page.scss"],
 })
 export class SettingsPage implements OnInit {
-    public language: string = "en";
+    public language: string = this.translate.currentLang;
     public languages: string[] = ["en", "es", "ar"];
 
     constructor(private translate: TranslateService,
