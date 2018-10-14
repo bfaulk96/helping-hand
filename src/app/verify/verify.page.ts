@@ -16,41 +16,36 @@ export class VerifyPage implements OnInit {
     constructor(private route: ActivatedRoute,
                 private authService: AuthService,
                 private router: Router) {
-        setTimeout(
-            (): void => {
-                this.route.queryParamMap.subscribe(
-                    (params: ParamMap): void => {
-                        if (params.has("token")) {
-                            const token: string = params.get("token");
-                            this.authService.verify(token).subscribe(
-                                (verifyResponse: boolean): void => {
-                                    if (verifyResponse === true) {
-                                        this.verificationResult = VerificationResult.VALID;
-                                    } else {
-                                        this.verificationResult = VerificationResult.INVALID;
-                                    }
-                                },
-                                (error: HttpErrorResponse): void => {
-                                    console.error(error);
-                                    if (error.status === 400) {
-                                        this.verificationResult = VerificationResult.INVALID;
-                                    } else {
-                                        this.verificationResult = VerificationResult.ERROR;
-                                    }
-                                }
-                            );
-                        } else {
-                            console.error("No token provided.");
-                            this.verificationResult = VerificationResult.ERROR;
+        this.route.queryParamMap.subscribe(
+            (params: ParamMap): void => {
+                if (params.has("token")) {
+                    const token: string = params.get("token");
+                    this.authService.verify(token).subscribe(
+                        (verifyResponse: boolean): void => {
+                            if (verifyResponse === true) {
+                                this.verificationResult = VerificationResult.VALID;
+                            } else {
+                                this.verificationResult = VerificationResult.INVALID;
+                            }
+                        },
+                        (error: HttpErrorResponse): void => {
+                            console.error(error);
+                            if (error.status === 400) {
+                                this.verificationResult = VerificationResult.INVALID;
+                            } else {
+                                this.verificationResult = VerificationResult.ERROR;
+                            }
                         }
-                    },
-                    (error: Error): void => {
-                        console.error(error);
-                        this.verificationResult = VerificationResult.ERROR;
-                    }
-                );
+                    );
+                } else {
+                    console.error("No token provided.");
+                    this.verificationResult = VerificationResult.ERROR;
+                }
             },
-            2000
+            (error: Error): void => {
+                console.error(error);
+                this.verificationResult = VerificationResult.ERROR;
+            }
         );
     }
 

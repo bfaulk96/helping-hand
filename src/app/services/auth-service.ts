@@ -19,7 +19,7 @@ export class AuthService {
         this.userDao = userDao;
     }
 
-    public register(email: string, password: string, isHelper: boolean): Observable<void> {
+    public register(email: string, password: string, isHelper: boolean): Observable<boolean> {
         const data: any = {
             email: email,
             password: password,
@@ -27,11 +27,11 @@ export class AuthService {
         };
 
         return Observable.create(
-            (observer: Observer<any>): void => {
+            (observer: Observer<boolean>): void => {
                 this.apiHelper.makeApiCall(
                     this.apiCallFactory.getDefaultForRegister(data)
                 ).subscribe(
-                    (registerResponse: any): void => {
+                    (registerResponse: boolean): void => {
                         observer.next(registerResponse);
                         observer.complete();
                     },

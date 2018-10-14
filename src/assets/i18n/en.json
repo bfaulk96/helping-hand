@@ -55,5 +55,8 @@
   },
   "vision": {
     "title": "Vision"
+  },
+  "verify": {
+    "title": "Verify Account"
   }
 }
