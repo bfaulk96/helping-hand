@@ -66,7 +66,7 @@ export class AppComponent {
             title: "connect.title",
             viewType: "loggedIn",
             url: "/connect",
-            icon: "connect",
+            icon: "contacts",
         }
     ];
 
