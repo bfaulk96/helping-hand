@@ -8,7 +8,7 @@ import {ApiHelper} from "./services/api-helper";
 import {UserDAO} from "./services/dao/user.dao";
 import {Router} from "@angular/router";
 import {SocketService} from "./services/socket.service";
-import { Storage } from '@ionic/storage';
+import {Storage} from "@ionic/storage";
 import {fromPromise} from "rxjs/internal/observable/fromPromise";
 
 @Component({
@@ -54,6 +54,12 @@ export class AppComponent {
             viewType: "both",
             url: "/settings",
             icon: "settings",
+        },
+        {
+            title: "connect.title",
+            viewType: "loggedIn",
+            url: "/connect",
+            icon: "connect",
         }
     ];
 
@@ -97,7 +103,7 @@ export class AppComponent {
                 } else {
                     this.translate.use("en");
                 }
-                this.router.navigate(['setup']);
+                this.router.navigate(["setup"]);
             }
         });
     }
