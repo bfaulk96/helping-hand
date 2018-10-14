@@ -13,6 +13,18 @@ export class FcmService {
 
     }
 
+  onTokenReceived(tokenReceived): void {
+
+
+      this.userDAO.updateDeviceInfo(tokenReceived).subscribe(
+        data => {
+          console.log(data);
+        },
+        error1 => {
+          console.log(error1);
+        }
+      );
+    }
 
 
 }

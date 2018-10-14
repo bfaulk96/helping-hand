@@ -2,6 +2,7 @@ import {Injectable} from "@angular/core";
 import * as io from "socket.io-client";
 import {Socket} from "socket.io";
 import {Observable} from "rxjs";
+import {ApiHelper} from "./api-helper";
 
 export interface ObjectDictionary<T> {
     [key: string]: T;
@@ -12,11 +13,13 @@ export class SocketService {
 
     private socketClient: SocketIOClient.Socket;
 
-    constructor() {
+    constructor(
+      private apiHelper: ApiHelper,
+    ) {
     }
 
     initSocket(): void {
-        this.socketClient = io.connect("http://b6fa84c1.ngrok.io", {
+        this.socketClient = io.connect(this.apiHelper.getServiceEndPoint(), {
             query: {
                 token: "Test token"
             }

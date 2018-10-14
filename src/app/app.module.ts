@@ -21,6 +21,8 @@ import {SocketService} from "./services/socket.service";
 import {LogoutGuard} from "./services/route-guards/logout.guard";
 import {Geolocation} from "@ionic-native/geolocation/ngx";
 import {GeoLocationService} from "./services/geo-location.service";
+import {FcmService} from "./services/fcm-service";
+import {FCM} from "@ionic-native/fcm/ngx";
 import {AuthGuard} from "./services/route-guards/auth-guard";
 
 // AoT requires an exported function for factories
@@ -58,7 +60,9 @@ export function HttpLoaderFactory(http: HttpClient) {
         LogoutGuard,
         AuthGuard,
         Geolocation,
-        GeoLocationService
+        GeoLocationService,
+        FcmService,
+        FCM,
     ],
     bootstrap: [AppComponent]
 })
