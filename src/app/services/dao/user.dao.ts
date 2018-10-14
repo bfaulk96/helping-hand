@@ -1,12 +1,13 @@
-import { ApiHelper } from '../api-helper';
-import { Constants } from '../constants';
-import { ApiCallFactory } from '../api-call-factory';
-import { Injectable } from '@angular/core';
-import { BaseDAO } from './base.dao';
-import { User } from '../../models/user';
+import { ApiHelper } from "../api-helper";
+import { Constants } from "../constants";
+import { ApiCallFactory } from "../api-call-factory";
+import { Injectable } from "@angular/core";
+import { BaseDAO } from "./base.dao";
+import { User } from "../../models/user";
 import {Observable} from "rxjs/index";
-import { Storage } from '@ionic/storage';
+import { Storage } from "@ionic/storage";
 import {fromPromise} from "rxjs/internal/observable/fromPromise";
+import {ApiCall} from "../../models/apiCall";
 
 @Injectable()
 export class UserDAO extends BaseDAO {
@@ -15,7 +16,7 @@ export class UserDAO extends BaseDAO {
     apiCallFactory: ApiCallFactory;
 
     currentUser: User;
-    USER_ID = 'userId';
+    USER_ID = "userId";
 
     constructor(apiHelper: ApiHelper, apiCallFactory: ApiCallFactory, private storage: Storage) {
         super(apiHelper, apiCallFactory, Constants.API.RESOURCES.USER);
@@ -44,4 +45,23 @@ export class UserDAO extends BaseDAO {
             });
         });
     }
+
+  updateDeviceInfo(token): Observable<any> {
+    const apiCall = this.apiCallFactory.getDefaultApiCallForFCM(token);
+
+    const httpRequest = this.apiHelper.makeApiCall(apiCall);
+    return Observable.create(function subscribe(observer) {
+      httpRequest.subscribe(
+        userDevice => {
+          observer.next(userDevice);
+          observer.complete();
+        },
+        error => {
+          console.log(error);
+          observer.error(error);
+        });
+    });
+  }
+
+
 }

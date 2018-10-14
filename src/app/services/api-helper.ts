@@ -55,14 +55,31 @@ export class ApiHelper {
     }
 
     public makeApiCall<T>(apiCall: ApiCall): Observable<T> {
-        const reqOptions: any = {
-            headers: apiCall.headers,
-            body: apiCall.data,
+      // const reqOptions: any = {
+      //     body: apiCall.data,
+      // };
+
+      let httpOptions = null;
+
+
+
+      if (this.accessToken) {
+        httpOptions = {
+          headers: new HttpHeaders({
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + this.accessToken
+          })
         };
-        reqOptions.headers = new HttpHeaders({
-            "Content-Type": "application/json",
-            "Authorization": "Bearer" + this.getAccessToken()
-        });
+      } else {
+        httpOptions = {
+          headers: new HttpHeaders({
+            'Content-Type': 'application/json',
+          })
+        };
+      }
+
+      httpOptions.body = apiCall.data;
+      console.log(httpOptions);
 
         let qs: string = "";
         if (apiCall.params) {
@@ -82,7 +99,7 @@ export class ApiHelper {
 
         const that = this;
         const obs = Observable.create(function subscribe(observer) {
-            const httpRequest = that.httpClient.request(apiCall.method, apiCall.url + qs, reqOptions);
+            const httpRequest = that.httpClient.request(apiCall.method, apiCall.url + qs, httpOptions);
             httpRequest.subscribe(
                 data => {
                     observer.next(data);

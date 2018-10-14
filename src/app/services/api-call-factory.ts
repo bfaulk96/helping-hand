@@ -24,7 +24,7 @@ export class ApiCallFactory {
     }
 
     getDefaultForRegister(data: any): ApiCall {
-        this.apiCall.url = this.apiHelper.getServiceEndPoint() + "/" + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.REGISTER;
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.REGISTER;
         this.apiCall.method = Constants.API.VERBS.POST;
         this.apiCall.data = data;
         this.apiCall.params = null;
@@ -32,18 +32,28 @@ export class ApiCallFactory {
     }
 
     getDefaultForVerify(params: any): ApiCall {
-        this.apiCall.url = this.apiHelper.getServiceEndPoint() + "/" + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.VERIFY;
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.VERIFY;
         this.apiCall.method = Constants.API.VERBS.GET;
         this.apiCall.params = params;
         return this.apiCall;
     }
 
     getDefaultForLogin(data: any): ApiCall {
-        this.apiCall.url = this.apiHelper.getServiceEndPoint() + "/" + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.LOGIN;
+        this.apiCall.url = this.apiHelper.getServiceEndPoint() + Constants.API.RESOURCES.USER + "/" + Constants.API.RESOURCES.LOGIN;
         this.apiCall.method = Constants.API.VERBS.POST;
         this.apiCall.data = data;
         this.apiCall.params = null;
         return this.apiCall;
+    }
+
+    getDefaultApiCallForFCM(token): ApiCall {
+      this.apiCall.url = this.apiHelper.getServiceEndPoint() + "users/update-fcm";
+      this.apiCall.method = Constants.API.VERBS.PUT;
+      this.apiCall.data = {
+          token: token
+      };
+      this.apiCall.params = null;
+      return this.apiCall;
     }
 
 }

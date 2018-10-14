@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "799490547356",
+    "firebase_url": "https://gh7-server.firebaseio.com",
+    "project_id": "gh7-server",
+    "storage_bucket": "gh7-server.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799490547356:android:6cbb66fdc5936f5e",
+        "android_client_info": {
+          "package_name": "com.g7.helping.hand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799490547356-17qb63fspktfb7qng41av318mnseq476.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5lvR_Vt3cx_jdctQGvHaZib50oCBm1RQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
