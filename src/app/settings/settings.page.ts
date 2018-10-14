@@ -12,7 +12,7 @@ import {Storage} from '@ionic/storage';
 })
 export class SettingsPage implements OnInit {
     public language: string = null;
-    public languages: string[] = ["ar", "bg", "en", "es"];
+    public languages: string[] = ["ar", "bg", "en", "es", "ga"];
 
     private langSub: BehaviorSubject<any> = new BehaviorSubject<any>(null);
     langObs: Observable<string> = this.langSub.asObservable();

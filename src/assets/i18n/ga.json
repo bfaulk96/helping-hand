@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Ag cabhrú le lámh"
+  },
+  "setup": {
+    "next": "Ar Aghaidh",
+    "welcome": "Fáilte!",
+    "choice": "Roghnaigh do theanga"
+  },
+  "settings": {
+    "title": "Socruithe",
+    "language": "Roghnaigh do theanga",
+    "apply": "Socruithe Iarratas"
+  },
+  "menu": {
+    "title": "Roghchlár"
+  },
+  "home": {
+    "title": "Baile",
+    "secondaryTitle": "Nuálaíocht Inimirce",
+    "welcome": "Fáilte chuig an iarratas",
+    "findOut": "Faigh amach níos mó",
+    "resources": "Seiceáil na hacmhainní i do phobal",
+    "register": "An riachtanas is gá Cabhair? Ar mhaith leat cabhrú le daoine eile? Cláraigh inniu!",
+    "vision": "Rud éigin in aice láimhe is gá duit a aistriú nó a rá i dteanga eile? Bain triail as fís."
+  },
+  "about": {
+    "title": "Maidir",
+    "whatIs": "Cad é",
+    "description": "Tógadh iarratas d'inimircigh a sholáthraíonn seirbhísí le haghaidh fadhbanna gearrthéarmacha nó fadtéarmacha a bhféadfadh inimircigh a bheith acu (teanga, cultúr, etc.)",
+    "lookingForResources": "Ag féachaint d'acmhainní pobail?",
+    "checkOutPage": "Amharc ar an leathanach seo"
+  },
+  "register": {
+    "title": "Cláraigh",
+    "info": "Eolas Úsáideora",
+    "type": "Cineál Úsáideora",
+    "helper": "Helper",
+    "helpSeeker": "Cabhair Iarrthóir",
+    "placeholder": {
+      "email": "R-phost",
+      "password": "Pasfhocal",
+      "confirmPassword": "Dearbhaigh Pasfhocal"
+    },
+    "succeeded": "Rinneadh an clárúchán ar aghaidh.",
+    "failed": "Theip ar chlárú."
+  },
+  "resources": {
+    "title": "Acmhainní"
+  },
+  "login": {
+    "title": "Logáil isteach",
+    "spaceTitle": "Logáil isteach",
+    "placeholder": {
+      "email": "R-phost",
+      "password": "Pasfhocal"
+    },
+    "button": "Logáil isteach",
+    "okay": "Maith go leor",
+    "succeeded": "Logáil isteach D'éirigh leis.",
+    "failed": "Theip ar Logáil isteach."
+  },
+  "logout": {
+    "title": "Logáil isteach",
+    "spaceTitle": "Logáil Amach",
+    "confirm": "An bhfuil tú cinnte gur mhaith leat logáil isteach?",
+    "cancel": "Cealaigh",
+    "yes": "Tá"
+  },
+  "vision": {
+    "title": "Fís"
+  },
+  "verify": {
+    "title": "Fíoraigh Cuntas"
+  }
+}
