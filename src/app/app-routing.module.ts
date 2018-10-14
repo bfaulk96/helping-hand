@@ -44,6 +44,13 @@ const routes: Routes = [
         path: "connect",
         canActivate: [AuthGuard],
         loadChildren: "./connect/connect.module#ConnectPageModule"
+    }, {
+        path: "requests",
+        loadChildren: "./requests/requests.module#RequestsPageModule"
+    }, {
+        path: "requests",
+        canActivate: [AuthGuard],
+        loadChildren: "./requests/requests.module#RequestsPageModule"
     }
 ];
 

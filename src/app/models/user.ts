@@ -9,4 +9,9 @@ export class User {
     rating: number;
     ratingCount: number;
     updatedAt: string;
+    helpCategories: string[];
+    firstName: string;
+    lastName: string;
+    phone: string;
+    nickname: string;
 }
